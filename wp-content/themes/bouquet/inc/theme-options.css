@@ -1,0 +1,23 @@
+#bouquet select option {
+	padding-right: 5px;
+}
+#bouquet-colors td {
+	padding-top: 15px;
+}
+#bouquet-colors label {
+	display: block;
+	float: left;
+	margin: 0 20px 20px 2px;
+	position: relative;
+}
+#bouquet-colors input {
+	margin: 0 0 10px;
+}
+#bouquet-colors span {
+	display: block;
+	width: 136px;
+}
+#bouquet-colors img {
+	display: block;
+	margin-left: -2px;
+}

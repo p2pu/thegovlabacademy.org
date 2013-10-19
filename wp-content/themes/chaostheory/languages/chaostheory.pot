@@ -1,0 +1,267 @@
+# Copyright (C) 2010 ChaosTheory
+# This file is distributed under the same license as the ChaosTheory package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ChaosTheory 1.1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/chaostheory\n"
+"POT-Creation-Date: 2012-01-06 17:39:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:12
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:14
+msgid ""
+"Apologies, but we were unable to find what you were looking for. Perhaps the "
+"search box will help."
+msgstr ""
+
+#: 404.php:20 inc/widgets.php:16 sidebar.php:43
+msgid "Find &raquo;"
+msgstr ""
+
+#: archive.php:13
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:15
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:17
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:19 author.php:12
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:21
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:23 sidebar.php:26
+msgid "Archives"
+msgstr ""
+
+#: archive.php:29 archive.php:54 author.php:16 author.php:41 category.php:15
+#: category.php:40 index.php:36 search.php:17 search.php:43
+msgid "&laquo; Older posts"
+msgstr ""
+
+#: archive.php:30 archive.php:55 author.php:17 author.php:42 category.php:16
+#: category.php:41 index.php:37 search.php:18 search.php:44
+msgid "Newer posts &raquo;"
+msgstr ""
+
+#: archive.php:37 author.php:24 category.php:23 index.php:16 page.php:16
+#: search.php:25
+msgid "Permanent link to %s"
+msgstr ""
+
+#: archive.php:39 author.php:26 category.php:25 index.php:18 search.php:27
+#: single.php:18
+msgid "%1$s &#8211; %2$s"
+msgstr ""
+
+#: archive.php:40 author.php:27 category.php:26 index.php:19 search.php:28
+#: single.php:19
+msgid "Posted in %s"
+msgstr ""
+
+#: archive.php:41 author.php:28 category.php:27 index.php:20 search.php:29
+#: single.php:20
+msgid "Tagged"
+msgstr ""
+
+#: archive.php:42 author.php:29 category.php:28 index.php:21 search.php:30
+#: single.php:21
+msgid "Edit"
+msgstr ""
+
+#: archive.php:43 author.php:30 category.php:29 index.php:22 search.php:31
+msgid "Leave a Comment"
+msgstr ""
+
+#: archive.php:43 author.php:30 category.php:29 index.php:22 search.php:31
+msgid "Comments (1)"
+msgstr ""
+
+#: archive.php:43 author.php:30 category.php:29 index.php:22 search.php:31
+msgid "Comments (%)"
+msgstr ""
+
+#: archive.php:47 author.php:34 category.php:33 index.php:26 search.php:35
+#: single.php:25
+msgid "Read More &raquo;"
+msgstr ""
+
+#: archives.php:22
+msgid "Archives by Category"
+msgstr ""
+
+#: archives.php:28
+msgid "Archives by Month"
+msgstr ""
+
+#: archives.php:33 page.php:21
+msgid "Edit this entry."
+msgstr ""
+
+#: category.php:11
+msgid "Category Archives:"
+msgstr ""
+
+#: comments.php:14
+msgid "This post is password protected. Enter the password to proceed."
+msgstr ""
+
+#: footer.php:8
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:22
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:47 inc/widgets.php:8 sidebar.php:39
+msgid "Search"
+msgstr ""
+
+#: functions.php:48 inc/widgets.php:29 sidebar.php:58
+msgid "Meta"
+msgstr ""
+
+#: functions.php:49
+msgid "Links"
+msgstr ""
+
+#: functions.php:50
+msgid "Home Link"
+msgstr ""
+
+#: functions.php:51 inc/widgets.php:85
+msgid "RSS Links"
+msgstr ""
+
+#: functions.php:75
+msgid ""
+"<li>Posted %1$s at %2$s</li> <li><a href=\"%3$s\" title=\"Permalink to this "
+"comment\">Permalink</a></li>"
+msgstr ""
+
+#: functions.php:79 functions.php:101
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:82
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:96
+msgid "By %1$s on %2$s at %3$s"
+msgstr ""
+
+#: functions.php:104
+msgid "<em>Your trackback/pingback is awaiting moderation.</em>"
+msgstr ""
+
+#: header.php:51
+msgid "Skip navigation to the content"
+msgstr ""
+
+#: header.php:51
+msgid "Skip navigation"
+msgstr ""
+
+#: inc/widgets.php:47 sidebar.php:14
+msgid "&laquo; Home"
+msgstr ""
+
+#: inc/widgets.php:69
+msgid "Adds a link to the home page on every page <em>except</em> the home."
+msgstr ""
+
+#: inc/widgets.php:72
+msgid "Link Text:"
+msgstr ""
+
+#: inc/widgets.php:90 sidebar.php:53
+msgid "All posts"
+msgstr ""
+
+#: inc/widgets.php:91 sidebar.php:54
+msgid "All comments"
+msgstr ""
+
+#: inc/widgets.php:111
+msgid "Title:"
+msgstr ""
+
+#: index.php:27 page.php:20 single.php:26
+msgid "Pages: "
+msgstr ""
+
+#: search.php:14
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:50
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:52
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: search.php:58
+msgid "Search &raquo;"
+msgstr ""
+
+#: sidebar.php:17
+msgid "Pages"
+msgstr ""
+
+#: sidebar.php:20
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:51
+msgid "RSS Feeds"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ChaosTheory"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wordpress.org/extend/themes/chaostheory"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A dark single-column theme with a minimal, techy feel."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"black, dark, one-column, fixed-width, sticky-post, blue, custom-menu, rtl-"
+"language-support, translation-ready, custom-background, custom-header, "
+"featured-images, featured-image-header, blog, photography, portfolio, clean, "
+"dark, minimal, tech"
+msgstr ""

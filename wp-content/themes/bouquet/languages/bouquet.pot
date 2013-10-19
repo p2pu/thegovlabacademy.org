@@ -1,0 +1,363 @@
+# Copyright (C) 2012 Automattic
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bouquet 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/bouquet\n"
+"POT-Creation-Date: 2012-11-05 22:07:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:16
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+
+#: archive.php:22 archive.php:24 archive.php:26
+msgid "Archive | %s"
+msgstr ""
+
+#: archive.php:28
+msgid "Archive by Author | %s"
+msgstr ""
+
+#: archive.php:30
+msgid "Tag Archive | %s"
+msgstr ""
+
+#: archive.php:32
+msgid "Archives"
+msgstr ""
+
+#: archive.php:58 index.php:41 search.php:35
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:62 index.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:32
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: content-gallery.php:12 content-gallery.php:42 content.php:10
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-gallery.php:25 content.php:18
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-gallery.php:41
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: content-gallery.php:48 content-page.php:17 content-single.php:18
+#: content.php:19 image.php:85
+msgid "Pages:"
+msgstr ""
+
+#: content-gallery.php:55 content-page.php:19 content-single.php:24
+#: content.php:25
+msgid "Leave a comment"
+msgstr ""
+
+#: content-gallery.php:55 content-page.php:19 content-single.php:24
+#: content.php:25
+msgid "1 Comment"
+msgstr ""
+
+#: content-gallery.php:55 content-page.php:19 content-single.php:24
+#: content.php:25
+msgid "% Comments"
+msgstr ""
+
+#: content-gallery.php:57 content-page.php:21 content-single.php:26
+#: content.php:27 functions.php:329 functions.php:352
+msgid "(Edit)"
+msgstr ""
+
+#: footer.php:19
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:19
+msgid "Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:19
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:21
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:78
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:275
+msgid "Sidebar 1"
+msgstr ""
+
+#: functions.php:277
+msgid "Drag widgets here to activate the sidebar."
+msgstr ""
+
+#: functions.php:294
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:298
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: functions.php:299
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: functions.php:304
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:308
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:329
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:339
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:342
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:350
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:386 functions.php:419
+msgid ", "
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:394
+msgid ""
+"This entry was posted on %5$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:396
+msgid ""
+"This entry was posted on %5$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:402
+msgid ""
+"This entry was posted on %5$s, in %1$s and tagged %2$s. Bookmark the <a href="
+"\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:404
+msgid ""
+"This entry was posted on %5$s, in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:427
+msgid "This entry was posted on %3$s and tagged %2$s."
+msgstr ""
+
+#: functions.php:429
+msgid "This entry was posted on %3$s."
+msgstr ""
+
+#: functions.php:435
+msgid "This entry was posted on %3$s, in %1$s and tagged %2$s."
+msgstr ""
+
+#: functions.php:437
+msgid "This entry was posted on %3$s, in %1$s."
+msgstr ""
+
+#: header.php:38
+msgid "Page %s"
+msgstr ""
+
+#: header.php:67
+msgid "Main menu"
+msgstr ""
+
+#: header.php:68
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:25
+msgid ""
+"Published at <a href=\"%1$s\" title=\"Link to full-size image\">%2$s &times; "
+"%3$s</a> in <a href=\"%4$s\" title=\"Return to %5$s\" rel=\"gallery\">%5$s</"
+"a>"
+msgstr ""
+
+#: image.php:33 image.php:99
+msgid "Edit"
+msgstr ""
+
+#: image.php:37
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:38
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:91
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:93
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:95
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:97
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: inc/theme-options.php:26
+msgid "Theme Options"
+msgstr ""
+
+#: inc/theme-options.php:34
+msgid "Pink Dogwood (Default)"
+msgstr ""
+
+#: inc/theme-options.php:38
+msgid "Forget-Me-Not"
+msgstr ""
+
+#: inc/theme-options.php:42
+msgid "Tiger Lily"
+msgstr ""
+
+#: inc/theme-options.php:57
+msgid " Theme Options"
+msgstr ""
+
+#: inc/theme-options.php:60
+msgid "Options saved"
+msgstr ""
+
+#: inc/theme-options.php:70 inc/theme-options.php:72
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/theme-options.php:105
+msgid "Save Options"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Bouquet"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wordpress.org/extend/themes/bouquet"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Bouquet is an elegant, simple theme inspired by the beauty found in flowers. "
+"Notable features include two floral schemes, a responsive layout structure "
+"that adapts to smaller devices, a right sidebar, a full-width template, "
+"support for post formats, custom background, and custom header."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"blog, craft, journal, nature, outdoors, photoblogging, clean, curved, "
+"earthy, flowery, natural, outdoorsy, simple, sophisticated, blue, orange, "
+"pink, white, light, one-column, two-columns, right-sidebar, responsive-"
+"width, custom-background, custom-header, custom-menu, full-width-template, "
+"post-formats, rtl-language-support, translation-ready, infinite-scroll"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full-width, no sidebar"
+msgstr ""

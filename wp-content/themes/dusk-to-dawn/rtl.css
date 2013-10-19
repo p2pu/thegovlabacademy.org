@@ -1,0 +1,114 @@
+/*
+Theme Name: Dusk To Dawn
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+caption, th, td {
+	text-align: right;
+}
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+ul,
+ol {
+	margin: 0 18px 22px 0;
+}
+blockquote {
+	margin: 0 54px 0 0;
+}
+input#s {
+	background: #000 url(images/search.png) no-repeat scroll 96% 8px;
+	padding: 6px 38px 6px 10px;
+}
+#primary input#s {
+	background: #fafafa url(images/search.png) no-repeat scroll 98% 8px;
+}
+#branding hgroup {
+	margin: 2px 54px 54px 0;
+}
+.right-sidebar #branding hgroup {
+	margin: 2px 390px 54px 0;
+}
+.entry-content td,
+.comment-body td {
+	padding: 6px 0 6px 10px;
+}
+body.attachment #content nav {
+	float: left;
+}
+#content .nav-previous a,
+#content .nav-next a {
+	float: right;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-left: 13px;
+	margin-right: 0;
+}
+/*  Link Posts */
+.format-link .link a:after{
+	content: "\2190";
+	padding-left: 0;
+	padding-right: 6px;
+}
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	margin: -5px -30px 44px 0;
+}
+.right-sidebar .format-gallery .gallery-thumb {
+	margin: -5px -84px 44px 0;
+}
+.comment .comment-meta,
+.trackback .comment-meta,
+.pingback .comment-meta {
+	left: 0;
+	right: auto;
+}
+.no-sidebar .comment img.avatar,
+body.attachment .comment img.avatar {
+	left: auto;
+	right: -45px;
+}
+#comments .bypostauthor > .comment-body .comment-meta {
+	left: 22px;
+	right: auto;
+}
+.commentlist .children {
+	margin: 0 30px 0 0;
+}
+ol .comment-body ul,
+ol .comment-body ol {
+	margin: 0 18px 22px 0;
+}
+.full-width .commentlist,
+.image-attachment .commentlist {
+	margin: 0 46px 0 0;
+}
+.widget-title,
+.menu-title {
+	background: url(images/widget_heading.png) no-repeat right 6px;
+	padding: 0 18px 11px 0;
+}
+.widget_calendar #wp-calendar caption {
+	text-align: right;
+}
+.widget_calendar #wp-calendar tfoot #prev {
+	text-align: right;
+}
+.widget_calendar #wp-calendar tfoot #next {
+	text-align: left;
+}
+.widget_authors img {
+	float: right;
+	padding-left: 10px;
+	padding-right: 0;
+}
+.widget-area .widget_search input {
+	float: right;
+}

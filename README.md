@@ -1,4 +1,4 @@
-thegovlabacademy.org
-====================
+govlab
+======
 
-The GovLab Academy
+The Govlab Academy

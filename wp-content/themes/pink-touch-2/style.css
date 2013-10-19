@@ -1,0 +1,1212 @@
+/*
+Theme Name: Pink Touch 2
+Theme URI: http://theme.wordpress.com/themes/pink-touch-2
+Author: Automattic
+Author URI: http://automattic.com
+Version: 1.0
+Description: A theme that has a stellar mix of color, texture and typography. Designed by <a href="http://versiontexto.com/">Kcmr</a>. It features a custom header, custom background, and maximum three widget areas in the footer. It comes with supports for several post formats including aside, gallery, image, quote, link, chat, and audio.
+Tags: gray, pink, red, silver, light, one-column, fixed-width, custom-background, custom-header, custom-menu, post-formats, rtl-language-support, sticky-post, translation-ready
+License: GNU General Public License
+License URI: license.txt
+*/
+
+
+/* =Reset
+----------------------------------------------- */
+
+html {
+	background: #fff;
+	color: #000;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,
+img {
+	border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+caption,
+th {
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	outline: 0;
+}
+legend {
+	color: #000;
+}
+
+
+/* =Global Setting
+-------------------------------------------------------------- */
+
+body {
+	background: url(images/bg.jpg) repeat fixed;
+	font-family: Cambria, Georgia, Times, serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: #000;
+	font-family: Arvo, Cambria, Georgia, Times, serif;
+	font-weight: normal;
+	line-height: 1.3em;
+	text-shadow: 0 1px 0 #fff;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.375em;
+}
+p,
+dd,
+table {
+	margin-bottom: 1.375em;
+}
+ul,
+ol,
+pre,
+blockquote {
+	margin-bottom: 0.9375em;
+}
+ul, ol {
+	margin: 0 0 1.375em 2em;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.375em;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+pre {
+	background: #ddd;
+	font: 1em monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: 0.75em 1.625em;
+}
+code,
+kbd {
+	font: 1em monospace;
+}
+abbr,
+acronym,
+dfn {
+	border-bottom: 1px dotted #a9a9a9;
+	cursor: help;
+}
+input,
+select,
+textarea,
+button {
+	font-family: Cambria, Georgia, Times, serif;
+	color: #000;
+}
+button,
+label,
+a {
+	cursor: pointer;
+}
+address {
+	font-style: normal;
+	display: block;
+	margin: 0 0 1.375em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+/* Links */
+a {
+	color: #eb374b;
+}
+a:hover {
+	color: #05b2c2;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	text-decoration: none;
+}
+/* Clear setting */
+.clear {
+	clear: both;
+	display: block;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+div:after,
+form li:after,
+ul:after {
+	clear: both;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* =Structure
+-------------------------------------------------------------- */
+
+#wrapper {
+	margin: 0 auto;
+	padding-bottom: 60px;
+	position: relative;
+	text-align: left;
+}
+#header {
+	margin: 10px auto 15px;
+	min-height: 73px;
+	padding: 35px 0 77px;
+	position: relative;
+	text-align: center;
+	width: 690px;
+}
+#navigation {
+	background: #f1f1f1; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#fafafa, #f1f1f1);
+	background: -o-linear-gradient(#fafafa, #f1f1f1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fafafa), to(#f1f1f1)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#fafafa, #f1f1f1);
+	border-top: 1px solid #fff;
+	left: 0;
+	min-height: 29px;
+	padding-top: 7px;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+#navigation-frill {
+	background: url(images/nav.png) 0 0 repeat-x;
+	height: 9px;
+	width: 100%;
+}
+#content {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 690px;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 690px;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#header h1 {
+	font-size: 2.45em;
+	line-height: 1.1em;
+}
+#header h1 a {
+	color: #000;
+}
+#header h1 a:hover {
+	color: #05b2c2;
+}
+#description {
+	margin: 4px 0 0 0;
+}
+#description p {
+	color: #817f7f;
+	font-size: 1.125em;
+	font-style: italic;
+	margin: 0 auto;
+	max-width: 100%;
+	text-shadow: 0 1px 0 #fff;
+	width: 690px;
+}
+#header-image {
+	height: 230px;
+	margin: -40px auto 60px;
+	width: 690px;
+}
+#searchfield {
+	background: url(images/sprite.png) 0 -600px no-repeat;
+	float: right;
+	height: 1.375em;
+	padding-left: 0.9375em;
+	padding-top: 1px;
+	width: 11.4375em;
+}
+#searchfield input {
+	background: transparent;
+	border: none;
+	color: #a5a5a5;
+	font-size: 1em;
+	width: 9.75em;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#nav-menu {
+	display: block;
+	float: left;
+	font-family: Arvo, Cambria, Georgia, Times, serif;
+	font-size: 17px;
+	margin: -4px 0 4px -16px;
+	width: 490px;
+}
+#nav-menu > ul {
+	margin: 0 0 0 -1em;
+}
+#nav-menu ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#nav-menu li {
+	float: left;
+	position: relative;
+}
+#nav-menu a {
+	color: #000;
+	display: block;
+	line-height: 2em;
+	padding: 0 0.85em;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+}
+#nav-menu ul ul {
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+	display: none;
+	float: left;
+	left: 0;
+	position: absolute;
+	top: 2em;
+	z-index: 99999;
+}
+#nav-menu ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#nav-menu ul ul a {
+	background: #eee;
+	height: auto;
+	line-height: 1em;
+	padding: .5em .85em;
+	width: 10em;
+}
+#nav-menu li:hover > a,
+#nav-menu ul ul :hover > a {
+	background: #eee;
+	color: #05b2c2;
+}
+#nav-menu ul ul a:hover {
+	background: #e5e5e5;
+}
+#nav-menu ul li:hover > ul {
+	display: block;
+}
+#nav-menu .current_page_item > a,
+#nav-menu .current_page_ancestor > a,
+#nav-menu .current-menu-item > a,
+#nav-menu .current-menu-ancestor > a {
+	color: #05b2c2;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.page-title {
+	font-family: Cambria, Georgia, Times, serif;
+	font-size: 1.125em;
+	line-height: 150%;
+	margin-bottom: 1.375em;
+	text-align: center;
+}
+.hentry {
+	-moz-box-shadow: 0 4px 0 rgba(94, 94, 94, 0.1);
+	-webkit-box-shadow: 0 4px 0 rgba(94, 94, 94, 0.1);
+	box-shadow: 0 4px 0 rgba(94, 94, 94, 0.1);
+	background: #f2f2f2;
+	margin-bottom: 90px;
+	padding: 25px 90px 22px;
+}
+.hentry .date {
+	background: url(images/sprite.png) bottom left no-repeat;
+	float: left;
+	margin-left: -120px;
+	padding-bottom: 14px;
+	width: 100px;
+}
+.page .hentry .date {
+	display: none;
+}
+.hentry .date p {
+	background: #eb374b;
+	color: #fff;
+	font-family: Arvo, Cambria, Georgia, Times, serif;
+	font-size: 0.75em;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 5px 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+.hentry .date .day {
+	clear: both;
+	display: block;
+	font-size: 1.6875em;
+}
+.entry-title {
+	font-size: 1.6em;
+	line-height:1.2em;
+	margin: 0 0 1.1em;
+}
+.entry-title a {
+	color: #000;
+}
+.entry-title a:hover {
+	color: #05b2c2;
+}
+.content {
+	border-bottom: 1px dotted #a9a9a9;
+	float: left;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.info {
+	clear: both;
+	line-height: 21px;
+}
+.info p{
+	color: #474646;
+	font-size: 0.875em;
+	margin-bottom: 0;
+}
+.info .notes {
+	padding-left: 10px;
+}
+.page .info p:first-child {
+	display: none;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1.375em;
+}
+/* entry-content */
+.entry-content h1,
+.comment-body h1 {
+	font-size: 2.5em;
+	margin-bottom: 12px;
+}
+.entry-content h2,
+.comment-body h2 {
+	font-size: 1.6875em;
+	margin-bottom: 12px;
+}
+.entry-content h3,
+.comment-body h3 {
+	font-size: 1.125em;
+	margin-bottom: 12px;
+}
+.entry-content h4,
+.comment-body h4 {
+ 	font-size: 0.8125em;
+ 	margin-bottom: 12px;
+}
+.entry-content h5,
+.comment-body h5 {
+	font-size: 0.6875em;
+	margin-bottom: 12px;
+}
+.entry-content h6,
+.comment-body h6 {
+	font-size: 0.5em;
+	margin-bottom: 12px;
+}
+.entry-content table,
+.comment-body table {
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 1.625em;
+	width: 100%;
+}
+.entry-content th,
+.comment-body th {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 2.6em;
+	text-transform: uppercase;
+}
+.entry-content td,
+.comment-body td {
+	border-top: 1px solid #ddd;
+	padding: 6px 10px 6px 0;
+}
+.entry-content blockquote,
+.entry-content blockquote[class*="align"] {
+	font-size: 1.5em;
+	line-height: 1.166666em;
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+.entry-content blockquote * {
+	font-size: 1em;
+	margin-bottom: 0.9166666666666666em;
+}
+div.gallery {
+	margin-bottom: 1.375em !important;
+}
+dd.gallery-caption {
+	color: #6a6a6a;
+	font-size: 0.8em;
+	font-style: italic;
+	margin: 0;
+}
+/* Author Info */
+#author-info {
+	border-top: 1px dotted #a9a9a9;
+	padding: 15px 0;
+}
+#author-avatar {
+	float: left;
+	margin-right: -80px;
+}
+#author-avatar img {
+	border: 1px solid #fff;
+}
+#author-description {
+	float: left;
+	margin-left: 95px;
+}
+.entry-content #author-description h3 {
+	color: #000;
+	margin-bottom: 2px;
+}
+.entry-content #author-description {
+	color: #474646;
+	font-size: 0.875em;
+	line-height: 21px;
+}
+/* Sticky */
+.sticky .date p {
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+/* 404 page */
+.hentry.error404 #searchfield {
+	float: none;
+	margin: 30px auto;
+}
+/* Attachment page */
+body.attachment .entry-content {
+	clear: both;
+}
+body.attachment .entry-content .entry-attachment {
+	margin: 0 0 5px;
+	text-align: center;
+}
+body.attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+body.attachment .pagination {
+	margin: 0 0 10px 0;
+}
+body.attachment .pagination p {
+	font-size: 1.0em;
+}
+body.attachment .entry-caption {
+	color: #6a6a6a;
+	font-style: italic;
+}
+
+
+/* =Pagination
+-------------------------------------------------------------- */
+
+.pagination {
+	margin: -30px 0 30px;
+}
+.pagination a {
+	text-decoration: underline;
+}
+.pagination p {
+	font-size: 1.125em;
+	margin-bottom: 0;
+}
+.pagination .older {
+	float: left;
+}
+.pagination .newer {
+	float: right;
+}
+
+
+/* =Post Formats
+-------------------------------------------------------------- */
+
+.format-aside .entry-title,
+.format-image .entry-title,
+.format-quote .entry-title,
+.format-video .entry-title,
+.format-audio .entry-title {
+	display: none;
+}
+/* Gallery Posts */
+.gallery-info {
+	color: #6a6a6a;
+	font-style: italic;
+}
+/* Link Posts */
+.format-link .link a {
+	color: #000;
+}
+.format-link .link a:after{
+	content: "\2192";
+	padding-left: 6px;
+}
+.format-link .link a:hover {
+	color: #05b2c2;
+}
+/* Chat Posts */
+.format-chat .entry-content p{
+	background: #e0f1f3;
+	border-left: 7px solid #cef0f3;
+	margin-bottom: 2px;
+	padding-left: 13px;
+}
+.format-chat .entry-content p:nth-child(odd) {
+	background: none;
+	border-left-color: #eb374b;
+}
+/* Quote Posts */
+.hentry.format-quote {
+	background: #feffe0;
+}
+.format-quote blockquote {
+	border-left: none;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-left: 0;
+}
+/* Audio Posts */
+.format-audio .player {
+	direction: ltr;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 10px; /* a small bottom margin prevents content floating under images */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.comment-content img,
+.entry-content img,
+.widget img {
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+}
+img.alignleft,
+.entry-content .alignleft {
+	margin: 4px 15px 0 0;
+}
+img.alignright,
+.entry-content .alignright {
+	margin: 4px 0 0 15px;
+}
+.wp-caption {
+	max-width: 100%;
+}
+.wp-caption .wp-caption-text {
+	color: #6a6a6a;
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 0.2em 0 0.5em;
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* Comments
+-------------------------------------------------------------------*/
+
+#comments #respond {
+	padding-top: 0;
+}
+#comments #respond h3 {
+	padding: 0 0 0.7em;
+}
+#comments .pagination {
+	margin: 20px 0 0 0;
+}
+#comments .pagination.below {
+	margin: 20px 0 30px;
+}
+.commentlist,
+.commentlist ul {
+	margin: 0;
+}
+.comment,
+.trackback,
+.pingback {
+	border-bottom: 1px dotted #a9a9a9;
+	margin-top: 25px;
+	padding: 0 0 25px 0;
+}
+.children .comment {
+	border-bottom: none;
+	margin-top: 0;
+	padding-bottom: 0;
+}
+#comments li {
+	font-size: inherit;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 58px;
+	position: relative;
+}
+.commentlist .comment-body ul,
+.commentlist .comment-body ol {
+	margin: 0 0 1.375em 2em;
+}
+#comments .commentlist .comment-body ul li {
+	list-style: square;
+}
+#comments .commentlist .comment-body ol li {
+	list-style: decimal;
+}
+#comments .commentlist .comment-body ol li ol li{
+	list-style: upper-alpha;
+}
+#comments .commentlist .comment-body ol li ol li ol li{
+	list-style: lower-roman;
+}
+.commentlist .comment-body ul ul,
+.commentlist .comment-body ol ol,
+.commentlist .comment-body ul ol,
+.commentlist .comment-body ol ul {
+	margin-bottom: 0;
+}
+#comments .comment-body li {
+	padding-left: 0;
+}
+#comments .comment-body h3 {
+	border-bottom: 0;
+	font-size: 1.125em;
+	padding: 0;
+}
+.comment p{
+	color: #666;
+}
+.comment .says {
+	display: none;
+}
+.comment .avatar {
+	left: 0;
+	position: absolute;
+}
+.comment-body {
+	margin: -3px 0 0 0;
+}
+.comment-body h3 {
+	border: none;
+}
+#comments .comment .children li {
+	margin: 5px 0 0;
+	padding: 10px 0 0 52px;
+}
+#comments .comment .children li .comment-body {
+	background: #ebebeb;
+	border-left: 2px solid #ebebeb;
+	margin-left: -52px;
+	padding: 10px 10px 10px 52px;
+}
+#comments .bypostauthor .comment-body {
+	border-left: 2px solid #ccc !important;
+	font-style: italic;
+}
+#comments .commentlist .bypostauthor .comment-author {
+	font-size: 19px;
+}
+#comments .commentlist .bypostauthor .comment-meta {
+	font-size: 16px;
+}
+#comments .commentlist .bypostauthor .reply {
+	font-size: 13px;
+	font-style: normal;
+}
+#comments .commentlist >.bypostauthor .comment-body {
+	border-left: none !important;
+}
+#comments .comment .children li.depth-3 .comment-body {
+	background-color: #efefef;
+	border-left: 2px solid #efefef;
+}
+#comments .comment .children li.depth-4 .comment-body {
+	background-color: #f1f1f1;
+	border-left: 2px solid #f1f1f1;
+}
+#comments .comment .children li.depth-5 .comment-body {
+	background-color: #f3f3f3;
+}
+#comments .comment .children li .avatar {
+	height: 32px;
+	left: 10px;
+	width: 32px;
+}
+#cancel-comment-reply {
+	float: left;
+	margin-top: 15px;
+	text-transform: capitalize;
+}
+.comment-reply-link{
+	display: block;
+}
+.comment-author {
+	font-size: 1.2em;
+	margin: 0 200px 4px 0;
+}
+.comment-author cite {
+	font-style: normal;
+	font-weight: bold;
+}
+.comment-meta {
+	font-size: 1em;
+	font-style: italic;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#comments .comment .children .comment-meta {
+	right: 10px;
+	top: 20px;
+}
+a.comment-reply-link {
+	background: #b9b9b9;
+	border: none;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a.comment-reply-link:hover {
+	color: #222;
+}
+.nocomments {
+	border-top: 1px solid #ccc;
+	font-size: 1.2em;
+	padding: 25px 0 0;
+}
+.commentlist .edit-link {
+	padding: 0 0 0 10px;
+}
+.comment-body blockquote {
+	border-left: 3px solid #eb374b;
+	font-style: italic;
+	padding: 0 0 0 20px;
+}
+/* Comment form */
+#comments h3 {
+	font-size: 1.4em;
+}
+#comments h3,
+legend span {
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0.7em;
+}
+#comments #respond h3#reply-title {
+	padding-top: 0.7em;
+}
+#respond .comment-notes,
+#respond .logged-in-as {
+	color: #555;
+	font-size: 15px;
+	margin-top: 5px;
+}
+#respond input[type=text],
+#respond textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 6px 0;
+	padding: 8px;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin-bottom: 1em;
+	width: 80%;
+}
+#respond label {
+	background: #eb374b;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 5px;
+	text-transform: uppercase;
+}
+#respond .form-allowed-tags {
+	display: none;
+}
+#respond input[type=submit] {
+	font-size: 18px;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+#widgets {
+	border-top: 1px solid #ccc;
+	margin: 30px 0 0 0;
+	padding: 30px 0 0 0;
+}
+.widget-title {
+	font-size: 1.3em;
+	margin: 0 0 12px 0;
+}
+.widget-title a {
+	color: #000;
+	text-decoration: none;
+}
+#widgets.one .widget-area {
+	width: 690px;
+}
+#widgets.two .widget-area {
+	float: left;
+	margin-right: 30px;
+	width: 330px;
+}
+#widgets.three .widget-area {
+	float: left;
+	margin-right: 15px;
+	width: 220px;
+}
+#widgets.two #second,
+#widgets.three #third {
+	margin-right: 0;
+}
+.widget {
+	margin: 0 0 30px 0;
+}
+.widget ul {
+	margin: 0 0 0 1.3em;
+}
+.widget {
+	line-height: 1.375em;
+}
+/* Calendar Widget */
+.widget_calendar #wp-calendar {
+	color: #555;
+	text-align: center;
+	width: 100%;
+}
+.widget_calendar #wp-calendar caption,
+.widget_calendar #wp-calendar td,
+.widget_calendar #wp-calendar th {
+	text-align: center;
+}
+.widget_calendar #wp-calendar caption {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 0 3px 0;
+	text-transform: uppercase;
+}
+.widget_calendar #wp-calendar th {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	color: #000;
+	font-weight: bold;
+}
+.widget_calendar #wp-calendar tfoot td {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+/* Recent Comments Widget */
+.widget_recent_comments .avatar {
+	max-width: none;
+}
+.widget_recent_comments td.recentcommentstexttop,
+.widget_recent_comments td.recentcommentstextend {
+	vertical-align: top;
+}
+.widget_recent_comments td.recentcommentstextend {
+	line-height: 1.1em;
+}
+/* Authors Widget */
+.widget_authors li {
+	background: none !important;
+	overflow: hidden;
+}
+.widget_authors {
+	padding: 0 !important;
+}
+.widget_authors ul ul li {
+	overflow: hidden;
+}
+.widget_authors img {
+	float: left;
+	margin-bottom: 12px !important;
+	padding-right: 10px;
+}
+/* Flickr Widget (WP.com) */
+#flickr_badge_uber_wrapper a {
+	color: #eb374b !important;
+	text-decoration: underline !important;
+}
+#flickr_badge_uber_wrapper a:hover{
+	color: #05b2c2 !important;
+}
+.widget_flickr #flickr_badge_wrapper {
+	background-color: transparent !important;
+	border: none !important;
+}
+.widget_flickr table {
+	margin: 0 !important;
+}
+.widget_flickr .flickr-size-thumbnail {
+	margin: 0 auto;
+}
+.widget_flickr .flickr-size-thumbnail br,
+.widget_flickr .flickr-size-small br {
+	display: none;
+}
+.widget_flickr .flickr-size-thumbnail img {
+	display: block;
+	margin-bottom: 10px;
+}
+.widget_flickr .flickr-size-small img {
+	display: block;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+/* Authors Widget */
+.widget_author_grid ul,
+.widget_authors ul {
+	list-style: none;
+	margin: 0;
+}
+/* Search Widget */
+.widget #searchfield {
+	float: left;
+}
+/* Twitter Widget */
+.widget .tweets li {
+	margin: 0 0 10px 0;
+}
+ /* Cloud Widgets */
+.wp_widget_tag_cloud div,
+.widget_tag_cloud div {
+ 	word-wrap: break-word;
+}
+ /* RSS Widgets */
+.widget_rss li {
+	margin: 0 0 10px 0;
+}
+.widget_rss_links p img {
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#footer-frill {
+	background: transparent url(images/sprite.png) 0 -300px repeat-x;
+	height: 12px;
+	width: 100%;
+}
+#footer {
+	background-color: #f2f2f2;
+	margin-top: -5px;
+	padding: 25px 0;
+	position: relative;
+}
+.info-theme {
+	clear: both;
+	color: #474646;
+	font-size: 0.875em;
+	text-align: left;
+}

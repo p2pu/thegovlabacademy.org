@@ -1,0 +1,293 @@
+# Copyright (C) 2010 Pink Touch 2
+# This file is distributed under the same license as the Pink Touch 2 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pink Touch 2 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pink-touch-2\n"
+"POT-Creation-Date: 2011-09-15 12:47:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: content.php:10 content.php:20 functions.php:230 image.php:94
+#: content-gallery.php:10 content-gallery.php:20 content-gallery.php:40
+#: content-audio.php:12 content-audio.php:22 content-link.php:10
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:12 content-gallery.php:12 content-audio.php:14
+#: content-link.php:12
+msgid "Featured"
+msgstr ""
+
+#: content.php:23 functions.php:289 content-gallery.php:24
+#: content-audio.php:44 content-link.php:49
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content.php:24 image.php:68 content-gallery.php:46 content-audio.php:45
+#: content-link.php:50
+msgid "Pages:"
+msgstr ""
+
+#: comments.php:9
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:18
+msgid "One response to &#8220;%2$s&#8221;"
+msgid_plural "%1$s responses to &#8220;%2$s&#8221;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:25 comments.php:36
+msgid "&larr; Older comments"
+msgstr ""
+
+#: comments.php:26 comments.php:37
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:42
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:164
+msgid "Footer Area One"
+msgstr ""
+
+#: functions.php:166 functions.php:175 functions.php:184
+msgid "An optional widget in the footer"
+msgstr ""
+
+#: functions.php:173
+msgid "Footer Area Two"
+msgstr ""
+
+#: functions.php:182
+msgid "Footer Area Three"
+msgstr ""
+
+#: functions.php:199
+msgid ""
+"Posted by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%1$s\" "
+"title=\"%2$s\" rel=\"author\">%3$s</a></span> in %4$s"
+msgstr ""
+
+#: functions.php:201 functions.php:212
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions.php:203 functions.php:221
+msgid ", "
+msgstr ""
+
+#: functions.php:210
+msgid ""
+"Posted by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%1$s\" "
+"title=\"%2$s\" rel=\"author\">%3$s</a></span>"
+msgstr ""
+
+#: functions.php:220
+msgid "Posted in %s"
+msgstr ""
+
+#: functions.php:227 image.php:91
+msgid "<p class=\"tag-list\">Tags: "
+msgstr ""
+
+#: functions.php:230 image.php:94
+msgid "Permalink"
+msgstr ""
+
+#: functions.php:233 image.php:96
+msgid "Leave a comment"
+msgstr ""
+
+#: functions.php:233 image.php:96
+msgid "1 Comment"
+msgstr ""
+
+#: functions.php:233 image.php:96
+msgid "% Comments"
+msgstr ""
+
+#: functions.php:237 image.php:98
+msgid "Edit"
+msgstr ""
+
+#: functions.php:249
+msgid ""
+"<span class=\"older\"><span class=\"meta-nav\">&larr;</span> Older posts</"
+"span>"
+msgstr ""
+
+#: functions.php:250
+msgid ""
+"<span class=\"newer\">Newer posts <span class=\"meta-nav\">&rarr;</span></"
+"span>"
+msgstr ""
+
+#: functions.php:314
+msgid "About %s"
+msgstr ""
+
+#: functions.php:318
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:359
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:359 functions.php:384
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:370
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: functions.php:377
+msgid "<a href=\"%1$s\"><time pubdate datetime=\"%2$s\">%3$s</time></a>"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:381
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:388
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:395
+msgid "Reply <span>&darr;</span>"
+msgstr ""
+
+#: image.php:19
+msgid "<a href=\"%1$s\" title=\"Return to %2$s\" rel=\"bookmark\">%2$s</a>"
+msgstr ""
+
+#: image.php:71
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:72
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:82
+msgid ""
+"<p class=\"attachment-meta\"><span class=\"meta-prep meta-prep-entry-date"
+"\">Published</span> at <a href=\"%1$s\" title=\"Link to full-size image\">%2"
+"$s &times; %3$s</a> in <a href=\"%4$s\" title=\"Return to %5$s\" rel="
+"\"gallery\">%5$s</a></p>"
+msgstr ""
+
+#: searchform.php:8
+msgid "Search"
+msgstr ""
+
+#: content-gallery.php:39
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:16
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: index.php:18
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: index.php:20
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: index.php:22
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: index.php:24
+msgid "Posted by: %s"
+msgstr ""
+
+#: index.php:26
+msgid "Category Archives: %s"
+msgstr ""
+
+#: index.php:28
+msgid "Archives"
+msgstr ""
+
+#: index.php:42
+msgid "Search Results for: %s"
+msgstr ""
+
+#: index.php:61
+msgid "Nothing Found."
+msgstr ""
+
+#: index.php:67
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: footer.php:20
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: single.php:15
+msgid ""
+"<span class=\"older\"><span class=\"meta-nav\">&larr;</span> Previous post</"
+"span>"
+msgstr ""
+
+#: single.php:16
+msgid ""
+"<span class=\"newer\">Next post <span class=\"meta-nav\">&rarr;</span></span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Pink Touch 2"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://theme.wordpress.com/themes/pink-touch-2"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A theme that has a stellar mix of color, texture and typography. It features "
+"a custom header, custom background, and maximum three widget areas in the "
+"footer. It comes with supports for several post formats including aside, "
+"gallery, image, quote, link, chat, and audio."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Kcmr"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://versiontexto.com"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"gray, pink, red, silver, light, one-column, fixed-width, custom-background, "
+"custom-header, custom-menu, post-formats, rtl-language-support, sticky-post, "
+"translation-ready, blog, design, fashion, journal, news, notes, tumblelog, "
+"video, bright, clean, light, modern, simple, textured"
+msgstr ""

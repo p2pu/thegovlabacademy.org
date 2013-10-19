@@ -1,0 +1,186 @@
+/*
+Theme Name: Pink Touch 2
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th {
+	text-align: right;
+}
+ul, ol {
+	margin: 0 2em 1.375em 0;
+}
+blockquote {
+	padding-left: 0;
+	padding-right: 20px;
+}
+#wrapper {
+	text-align: right;
+}
+#searchfield {
+	background: url(images/sprite-rtl.png) right -600px no-repeat;
+	float: left;
+	padding-left: 0;
+	padding-right: 0.9375em;
+}
+#nav-menu {
+	float: right;
+	margin: -4px -16px 4px 0;
+}
+#nav-menu > ul {
+	margin: 0 -1em 0 0;
+}
+#nav-menu ul {
+	padding-right: 0;
+}
+#nav-menu li {
+	float: right;
+}
+#nav-menu ul ul {
+	float: right;
+	left: auto;
+	right: 0;
+}
+#nav-menu ul ul ul {
+	left: auto;
+	right: 100%;
+}
+.date {
+	background: url(images/sprite-rtl.png) bottom right no-repeat;
+	float: right;
+	margin-left: 0;
+	margin-right: -120px;
+}
+.date p {
+	text-align: left;
+}
+.content {
+	float: right;
+}
+.info .notes {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.entry-content td {
+	padding: 6px 0 6px 10px;
+}
+#author-avatar {
+	float: right;
+	margin-left: -80px;
+	margin-right: 0;
+}
+#author-description {
+	float: right;
+	margin-left: 0;
+	margin-right: 95px;
+}
+.pagination .older {
+	float: right;
+}
+.pagination .newer {
+	float: left;
+}
+.format-link .link a:after{
+	content: "\2190";
+	padding-left: 0;
+	padding-right: 6px;
+}
+.format-chat .entry-content p{
+	border-left: none;
+	border-right: 7px solid #cef0f3;
+	padding-left: 0;
+	padding-right: 13px;
+}
+.format-chat .entry-content p:nth-child(odd) {
+	border-right-color: #eb374b;
+}
+.format-quote blockquote {
+	padding-right: 0;
+}
+#comments li {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 58px;
+}
+.comment .avatar {
+	left: auto;
+	right: 0;
+}
+#comments .comment .children li {
+	padding: 10px 52px 0 10px;
+}
+#comments .comment .children li .comment-body {
+	border-left: none;
+	border-right: 2px solid #ebebeb;
+	margin-left: 0;
+	margin-right: -52px;
+	padding: 10px 52px 10px 10px;
+}
+#comments .bypostauthor .comment-body {
+	border-left: none !important;
+	border-right: 2px solid #ccc !important;
+}
+#comments .commentlist >.bypostauthor .comment-body {
+	border-right: none !important;
+}
+#comments .comment .children li.depth-3 .comment-body {
+	border-left: none;
+	border-right: 2px solid #efefef;
+}
+#comments .comment .children li.depth-4 .comment-body {
+	border-left: none;
+	border-right: 2px solid #f1f1f1;
+}
+#comments .comment .children li .avatar {
+	left: auto;
+	right: 10px;
+}
+#cancel-comment-reply {
+	float: right;
+}
+.comment-author {
+	margin: 0 0 0 200px;
+}
+.comment-meta {
+	left: 0;
+	right: auto;
+}
+#comments .comment .children .comment-meta {
+	left: 10px;
+	right: auto;
+}
+#widgets.two .widget-area {
+	float: right;
+	margin-left: 30px;
+}
+#widgets.three .widget-area {
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+#widgets.two #second,
+#widgets.three #third {
+	margin-left: 0;
+}
+.widget ul {
+	margin: 0 1.3em 0 0;
+}
+.widget_author_grid ul,
+.widget_authors ul {
+	margin: 0;
+}
+.widget_authors img {
+	float: right;
+	padding-left: 10px;
+	padding-right: 0;
+}

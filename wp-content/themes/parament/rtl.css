@@ -1,0 +1,261 @@
+#main {
+	float: right;
+	margin: 0 10px 30px 25px;
+}
+
+
+/* =Inline Elements
+-------------------------------------------------------------- */
+
+ins {
+	padding-left: 3px;
+	padding-right: 4px;
+}
+
+
+/* =Block-level Elements
+-------------------------------------------------------------- */
+blockquote {
+	text-align: right;
+}
+ol,
+ul {
+	padding-right: 30px;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+h1#site-title {
+	margin: 20px 15px 0 0;
+}
+h2#site-description {
+	margin: 0 15px 20px 0;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#menu {
+	float: right;
+}
+#menu ul {
+	padding-right: 0;
+}
+#menu li {
+	float: right;
+}
+#menu ul ul {
+	float: right;
+	right: 0;
+}
+#menu ul ul ul {
+	right: 100%;
+}
+
+
+/* =Intro (For archive views)
+-------------------------------------------------------------- */
+
+#introduction hgroup {
+	float: right;
+}
+.search-results #page-title,
+.search-results #page-tagline {
+	float: right;
+}
+#introduction #searchform {
+	right: auto;
+	left: 15px;
+}
+
+
+/* =Entry
+-------------------------------------------------------------- */
+
+.entry-byline {
+	right: -10px;
+	left: auto;
+}
+.entry-byline span,
+.entry-byline .post-edit-link {
+	float: right;
+}
+div.entry-navigation {
+	float: right;
+}
+.entry-navigation span {
+	float: right;
+	margin: 0 0 5px 5px;
+	min-width: 27px;
+}
+.sticky {
+	right: -10px; /* Offset left margin of #main. */
+}
+
+
+/* =Shadows
+-------------------------------------------------------------- */
+
+#branding.has-image,
+#menu,
+#introduction,
+#respond,
+.bypostauthor .comment-meta img,
+.commentlist article,
+.commentlist .pingback,
+.entry-byline,
+.hentry,
+.widget {
+	-webkit-box-shadow: -.2em .2em .3em rgba( 0, 0, 0, 0.45 );
+	-moz-box-shadow: -.2em .2em .3em rgba( 0, 0, 0, 0.45 );
+	box-shadow: -.2em .2em .3em rgba( 0, 0, 0, 0.45 );
+}
+#branding,
+#cancel-comment-reply-link,
+#comments-title,
+#respond #submit,
+#subscribe-blog input[type="submit"],
+.entry-byline,
+.nocomments,
+.sticky h2.entry-title {
+	text-shadow: #000 -2px 1px 1px;
+}
+
+
+/* =Paged Navigation
+-------------------------------------------------------------- */
+
+.nav-older {
+	float: right;
+	text-align: right;
+}
+.nav-newer {
+	float: left;
+	text-align: left;
+}
+
+
+/* =Sidebar
+-------------------------------------------------------------- */
+
+#sidebar {
+	float: left;
+}
+.widget-title {
+	right: -15px;
+}
+.widget ul ul,
+.widget ul ol,
+.widget ol ul,
+.widget ol ol {
+	padding: 0 15px 0 0;
+}
+#prev {
+	text-align: right;
+}
+#next {
+	text-align: left;
+}
+
+
+/* =Comment List
+-------------------------------------------------------------- */
+
+#comments-title,
+.nocomments {
+	margin: 60px 15px 0 0;
+}
+.commentlist .pingback,
+.commentlist .depth-1 article {
+	border-bottom-left-radius: 0;
+}
+.commentlist .pingback {
+	border-bottom-left-radius: 7px;
+}
+/* Individual Comments. */
+.comment-meta .avatar {
+	float: right;
+}
+.comment-author,
+.comment-awaiting-moderation {
+	margin-right: 60px;
+}
+.comment .reply {
+	float: left;
+}
+.comment .reply a {
+	border-right: 1px solid #33353d;
+	border-left-width: 0;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 0;
+
+}
+
+
+/* =Comment Form
+-------------------------------------------------------------- */
+
+.comment-form-author label,
+.comment-form-url label,
+.comment-form-email label {
+	float: right;
+}
+.comment-form-author .required,
+.comment-form-url .required,
+.comment-form-email .required {
+	float: right;
+}
+.comment-form-url input {
+	position: relative;
+	right: 15px;
+}
+
+
+/* =General
+-------------------------------------------------------------- */
+
+.alignleft,
+div.alignleft {
+	float: right;
+	margin: 5px 0 15px 15px;
+}
+.alignright,
+div.alignright {
+	float: left;
+	margin: 5px 15px 15px 0;
+}
+/* Captions */
+#main div.wp-caption {
+	padding: 15px 10px 10px;
+}
+#main .wp-caption-text {
+	color: #989eae;
+	display: block;
+	font-size: 12px;
+	line-height: 1.4;
+}
+/* Search form */
+#s {
+	background: #fff url( images/search.gif ) 100% -3px no-repeat;
+	padding: 3px 22px 3px 3px;
+}
+
+
+/* =WordPress.com
+-------------------------------------------------------------- */
+
+#authors .avatar {
+	margin-left: 5px;
+}
+#respond.js h3#reply-title {
+	padding-right: 15px;
+}
+#respond.js #cancel-comment-reply-link {
+	left: 15px;
+}
+#subscribe-blog input[type="submit"] {
+	padding: 2px 5px;
+}

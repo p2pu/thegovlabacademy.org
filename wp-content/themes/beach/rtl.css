@@ -1,0 +1,199 @@
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: right;
+}
+
+
+/* =Structure
+----------------------------------------------- */
+
+#content {
+	float: left;
+}
+#sidebar {
+	float: right;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+/* Primary Menu resting on the beach */
+#main .access div {
+	float: right;
+}
+#main .access li {
+	float: right;
+}
+#main .access a {
+	margin: 0 0 4px 4px;
+}
+#main .access ul ul {
+	float: right;
+	right: 0;
+	width: 200px;
+	z-index: 99999;
+}
+#main .access ul ul ul {
+	right: 200px;
+}
+
+/* Secondary Menu floating amongst the clouds */
+#branding .access {
+	margin-right: 200px;
+	right: 50%;
+	width: 220px;
+}
+#branding .access ul {
+	float: left;
+	text-align: left;
+}
+#branding .access a {
+	background: url("images/white-trans-25.png");
+	border-right: 5px solid rgba(255, 255, 255, 0.25);
+	border-left: none;
+}
+#branding .access ul ul {
+	float: right;
+	right: -225px;
+}
+#branding .access ul ul ul {
+	right: -225px;
+}
+
+
+/* =Content
+----------------------------------------------- */
+
+.entry-content th {
+    padding-left: 1em;
+    text-align: right;
+}
+
+/* Galleries */
+.format-gallery .gallery-thumb {
+	float: right;
+	margin: 0 0 1.5em 1.5em;
+}
+
+/* Status */
+.format-status .entry-content {
+	margin: 0 68px 1.5em 0;
+}
+.format-status .avatar {
+	float: right;
+}
+
+/* Quotes */
+.format-quote blockquote cite {
+	text-align: left;
+}
+
+/* Navigation */
+#content nav .nav-previous {
+	float: right;
+}
+#content nav .nav-next {
+	float: left;
+	text-align: left;
+}
+
+
+/* =Attachments
+----------------------------------------------- */
+
+.image-attachment .entry-header .entry-meta {
+	float: right;
+}
+.image-attachment #content nav {
+	float: left;
+}
+.image-attachment .next-image {
+	padding: 0 .5em 0 0;
+}
+.image-attachment .attachment img {
+	clear: both;
+	display: block;
+	margin: 0 auto 1.5em;
+}
+
+
+/* =Comments
+----------------------------------------------- */
+
+ul.children li.comment {
+	margin-left: 10px;
+}
+.comment footer {
+	float: left;
+    margin: 0 0 10px 10px;
+}
+.comment-content {
+	margin: 0 10px 10px 130px;
+}
+#reply-title small {
+	left: 10px;
+	right: auto;
+}
+#commentform {
+	padding: 20px 20px 1px;
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget-title {
+	margin: 0 -10px 7px;
+}
+.widget ul {
+	margin-right: 1.5em;
+}
+.widget ul ul {
+	margin-right: 2.5em;
+}
+
+/* Calendar widget */
+#wp-calendar caption {
+	text-align: right;
+}
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+
+
+/* =WP.com
+----------------------------------------------- */
+
+/* Authors Widget */
+.widget_authors ul ul {
+	margin: 0 1.5em 1.5em 0;
+}
+
+/* =IE
+----------------------------------------------- */
+
+.ie7 #branding .access ul ul,
+.ie8 #branding .access ul ul {
+	right: -220px;
+}
+.ie7 .rtl .entry-header {
+	padding: 0;
+	position: static;
+}
+.ie7 .rtl .entry-header .entry-meta {
+	position: static;
+}
+.ie7 .format-status .entry-content {
+	margin: 0;
+}
+.ie7 .format-status .avatar {
+	float: none;
+	margin: 0 0 .5em;
+}
+
+

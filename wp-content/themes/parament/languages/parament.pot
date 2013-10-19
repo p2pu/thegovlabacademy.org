@@ -1,0 +1,240 @@
+# Copyright (C) 2011 Parament
+# This file is distributed under the same license as the Parament package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Parament 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/parament\n"
+"POT-Creation-Date: 2011-11-08 00:54:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: footer.php:12
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: image.php:23 content.php:18
+msgid "Posted by %1$s on %2$s"
+msgstr ""
+
+#: image.php:26 content.php:21
+msgid "View all posts by %1$s"
+msgstr ""
+
+#: image.php:45
+msgid "This is an image for %1$s."
+msgstr ""
+
+#: image.php:49
+msgid "Images navigation"
+msgstr ""
+
+#: image.php:50
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:51
+msgid "Next &rarr;"
+msgstr ""
+
+#: archive.php:16
+msgid "Archives"
+msgstr ""
+
+#: archive.php:22
+msgid "All posts tagged %1$s"
+msgstr ""
+
+#: archive.php:27
+msgid "All posts for the day %1$s"
+msgstr ""
+
+#: archive.php:27
+msgid "F jS, Y"
+msgstr ""
+
+#: archive.php:29
+msgid "All posts for the month %1$s"
+msgstr ""
+
+#: archive.php:29
+msgid "F, Y"
+msgstr ""
+
+#: archive.php:31
+msgid "All posts for the year %1$s"
+msgstr ""
+
+#: archive.php:31
+msgid "Y"
+msgstr ""
+
+#: archive.php:34
+msgid "All posts by %1$s"
+msgstr ""
+
+#: archive.php:58 search.php:31 content.php:75 index.php:22
+msgid "Posts navigation"
+msgstr ""
+
+#: archive.php:59 search.php:32 index.php:23
+msgid "&larr; Older Entries"
+msgstr ""
+
+#: archive.php:60 search.php:33 index.php:24
+msgid "Newer Entries &rarr;"
+msgstr ""
+
+#: search.php:15
+msgid "Search Results"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:19
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma.
+#: content.php:34 content.php:42
+msgid ", "
+msgstr ""
+
+#: content.php:37
+msgid "Posted in: %1$s."
+msgstr ""
+
+#: content.php:45
+msgid "Tagged: %1$s."
+msgstr ""
+
+#: content.php:51
+msgid "Leave a Comment"
+msgstr ""
+
+#: content.php:52
+msgid "1 comment"
+msgstr ""
+
+#: content.php:53
+msgid "% comments"
+msgstr ""
+
+#: content.php:62 content-page.php:20
+msgid "Continue Reading"
+msgstr ""
+
+#: functions.php:25
+msgid "Primary"
+msgstr ""
+
+#: functions.php:176
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:202
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:202 functions.php:227
+msgid "Edit"
+msgstr ""
+
+#. translators: 1: comment author, 2: date and time
+#: functions.php:216
+msgid "%1$s on %2$s said:"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:222
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:231
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:240
+msgid "Reply"
+msgstr ""
+
+#: comments.php:11
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:14
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:33
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:34
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:35
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: content-excerpt.php:16 content-page.php:16
+msgid "Edit This"
+msgstr ""
+
+#: content-404.php:10
+msgid "Nothing Found"
+msgstr ""
+
+#: content-404.php:13
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Parament"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://theme.wordpress.com/themes/parament/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Parament is a great all-purpose theme featuring a dark color scheme with "
+"bright orange highlights and a textured background. Add your own personal "
+"flair by uploading a custom header or background image. Parament's full-"
+"width image template allows your images to display as large as possible for "
+"maximum impact."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"black, dark, orange, two-columns, fixed-width, custom-background, custom-"
+"header, custom-menu, microformats, rtl-language-support, sticky-post, "
+"translation-ready, art, artwork, blog, clean, colorful, curved, design, "
+"geometric, journal, textured, vibrant"
+msgstr ""

@@ -1,0 +1,259 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+body {
+	direction:rtl;
+	unicode-bidi:embed;
+}
+caption, th, td {
+	text-align: right;
+}
+/* =Structure
+-------------------------------------------------------------- */
+
+#primary {
+	float: right;
+	margin: 0 0 0 -29.2434%;
+}
+#secondary-wrapper {
+	float: left;
+}
+#content-wrapper {
+	 margin: 0 0 0 30.4%;
+}
+#content,
+
+/* =Forms
+-------------------------------------------------------------- */
+
+input#s {
+	padding: 0.5em 2em 0.5em 0;
+}
+#primary input#s {
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#branding {
+	box-shadow:
+		5px -5px 5px 5px rgba(0, 0, 0, 0.5),
+	    -5px -5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+#branding hgroup {
+	padding: 3em 0.5em 0 0;
+}
+#site-title {
+	font: 50px "Sorts Mill Goudy", "Times New Roman", serif;
+}
+#site-title a,
+#site-title a:hover {
+	margin: 0 -0.4em 0 0;
+}
+#site-description {
+	padding: 0 1.9em .8em 0;
+}
+
+
+/* =Menu and Search Area
+-------------------------------------------------------------- */
+
+#access {
+	box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.5);
+	float: right;
+}
+.menu {
+	margin-left: 0;
+	margin-right: 1em;
+}
+#access ul {
+	padding-right: 0;
+}
+#access li {
+	float: right;
+}
+#access ul ul {
+	float: right;
+	left: auto;
+	right: 0;
+}
+#access ul ul ul {
+	left: auto;
+	right: 100%;
+}
+#access ul ul a {
+	padding: .5em 1em .5em .5em;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.entry-date {
+	border: 5px solid #fff;
+	border-left-width: 0;
+	border-radius: 0 10px 10px 0;
+	left: auto;
+	right: -6.2em;
+}
+.entry-content ul,
+.comment-content ul {
+	margin-left: 0;
+	margin-right: 16px;
+}
+.entry-content ol,
+.comment-content ol {
+	margin-left: 0;
+	margin-right: 32px;
+}
+.entry-content table {
+	margin: 0 0 25px -1px;
+	text-align: right;
+}
+.entry-content blockquote,
+.entry-content blockquote[class*="align"],
+.comment-content blockquote {
+	margin-left: 0;
+	margin-right: 15px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+#content nav .nav-previous {
+	float: right;
+}
+#content nav .nav-next {
+	float: left;
+	text-align: left;
+}
+
+/* =Forms
+-------------------------------------------------------------- */
+
+input[type=text],
+input#s {
+	margin: 0.3em 0 0.3em 1em;
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+
+#comments ol {
+	margin-right: 0;
+}
+#comments ul {
+	margin-left: 0;
+	margin-right: 1.5em;
+}
+#comments .pingback .comment-content,
+#comments .comment .comment-content {
+    margin-left: 0;
+    margin-right: 2em;
+}
+#comments .comment-author {
+	padding-left: 0;
+	padding-right: 50px;
+}
+#comments .comment .comment-meta {
+    margin-left: 0;
+    margin-right: 50px;
+}
+#comments .avatar {
+	left: auto;
+	right: 0;
+}
+#comments .children .avatar {
+	left: auto;
+	right: 0;
+}
+#comments .children .comment-content {
+	margin-left: 0;
+	margin-right: 55px;
+}
+#comments .comment-content ul,
+#comments .comment-content ol {
+	margin: 0 2.5em 1.7em 0;
+}
+.comment-reply-link {
+    right: auto;
+    left: 0;
+}
+#cancel-comment-reply-link {
+	text-align: left;
+}
+#respond input[type=text] {
+	margin: 0 5px 15px 0;
+}
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget-area .widget_search input {
+	float: right;
+}
+.widget-area .widget_search input#s {
+	float: right;
+}
+
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+/* Menu & Categories Widgets (With Sub-Items) */
+.widget-area .sub-menu,
+.widget-area .children {
+	margin-left:  0;
+	margin-right:  1.5em;
+}
+.widget_authors img {
+	float: right;
+	padding-right: 0;
+	padding-left: 10px;
+}
+
+/* =Responsive Structure
+-------------------------------------------------------------- */
+
+@media (max-width: 1140px) {
+	.entry-date {
+	    border-left-width: 5px;
+	    border-right-width: 0;
+	    left: auto;
+	    right: -1.3em;
+	}
+	.entry-title {
+		margin-left: 0;
+		margin-right: 1.4em;
+	}
+}
+
+@media (max-width: 860px) {
+	#content .gallery-columns-3 .gallery-item {
+		padding-right: 0;
+		padding-left: 2%;
+	}
+}
+
+@media (max-width: 650px) {
+	.entry-date {
+	    left: auto;
+	    right: -0.6em;
+	}
+	.entry-title {
+		margin-left: 0;
+		margin-right: 1.6em;
+	}
+}
+
+@media (max-width: 450px) {
+	#site-title a,
+	#site-title a:hover {
+		margin: 0.3em 0 0;
+	}
+}
+
+
+/* =IE Styles
+-------------------------------------------------------------- */
+#ie8 .entry-date {
+	left: auto;
+	right: -5.2em;
+}

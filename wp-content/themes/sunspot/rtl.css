@@ -1,0 +1,242 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+caption, th, td {
+	text-align: right;
+}
+
+/* =Structure
+----------------------------------------------- */
+
+.wrap {
+	background: url("images/wrapper-bg-rtl.png") repeat-y 72% 0;
+	margin: 0 1.692em -1em 0;
+}
+.site-header {
+	float: right;
+}
+#main {
+	float: left;
+}
+.site-content {
+	float: right;
+}
+#main .widget-area {
+	float: left;
+}
+#secondary {
+	border-right: 1px solid #393636;
+	border-left: none;
+}
+
+/* =Global
+----------------------------------------------- */
+
+.sunstrip,
+.sunstrip-small {
+	background: -moz-linear-gradient(right,  #b94f25 1%, #ffa800 21%, #ffa800 31%, #b94f25 41%);
+	background: -webkit-gradient(linear, right top, left top, color-stop(1%,#b94f25), color-stop(21%,#ffa800), color-stop(31%,#ffa800), color-stop(41%,#b94f25));
+	background: -webkit-linear-gradient(right,  #b94f25 1%,#ffa800 21%,#ffa800 31%,#b94f25 41%);
+	background: -o-linear-gradient(right,  #b94f25 1%,#ffa800 21%,#ffa800 31%,#b94f25 41%);
+	background: -ms-linear-gradient(right,  #b94f25 1%,#ffa800 21%,#ffa800 31%,#b94f25 41%);
+	background: linear-gradient(right,  #b94f25 1%,#ffa800 21%,#ffa800 31%,#b94f25 41%);
+}
+
+/* Text elements */
+ul, ol {
+	margin: 0 3.23em 1.615em 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-right: 1.615em;
+	margin-left: auto;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#b94f25), color-stop(100%,#b73a09), color-stop(100%,#7db9e8));
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#b7471b), color-stop(100%,#b53000));
+}
+textarea {
+	padding-right: 3px;
+	padding-left: 0;
+}
+
+/* Alignment */
+.alignright {
+	float: right;
+	margin-left: 1.615em;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+	margin-right: 1.615em;
+	margin-left: auto;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation ul ul {
+	right: 222px;
+	left: auto;
+}
+.main-navigation ul ul li a {
+	padding-right: 1em;
+	padding-left: 0;
+}
+
+
+/* =Post Columnar Structure
+----------------------------------------------- */
+
+/* Double Column on Front Page */
+.post-column {
+	float: right;
+}
+.odd-col {
+	margin-left: 4.53752182%;
+	margin-right: auto;
+}
+/* Single Column Posts */
+#content {
+	padding-left: 2.167em;
+	padding-right: 0;
+}
+.two-col-posts #content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* =Content
+----------------------------------------------- */
+
+.sticky-label {
+	margin-right: 0.3em;
+	margin-left: auto;
+}
+
+/* Post Headings */
+.entry-title {
+	margin: 0 0 0 50px;
+}
+.comments-link {
+	left: 0;
+	right: auto;
+}
+.comments-link a:before {
+	right: -0.2em;
+	left: auto;
+}
+.more-link .meta-nav {
+	margin-right: 0.3em;
+	margin-left: auto;
+}
+.entry-content ul,
+.comment-content ul {
+	margin-right: 1.231em;
+	margin-left: auto;
+}
+.entry-content ol,
+.comment-content ol {
+	margin-right: 2.462em;
+	margin-left: auto;
+}
+.entry-content table {
+	margin: 0 0 1.923em 0.077em;
+	text-align: right;
+}
+.entry-content blockquote,
+.entry-content blockquote[class*="align"],
+.comment-content blockquote {
+	margin: 1.538em 4.154em 0 0;
+}
+
+/* =Navigation
+----------------------------------------------- */
+
+#content .nav-previous,
+.previous-image {
+	float: right;
+}
+#content .nav-next,
+.next-image {
+	float: left;
+	margin-left: 2em;
+	text-align: left;
+	margin-right: auto;
+}
+
+/* =Comments
+----------------------------------------------- */
+
+.commentlist {
+	margin-right: 0;
+	margin-left: auto;
+}
+.commentlist li.comment {
+	padding: 1.615em 6.538em 0 0;
+}
+.commentlist .avatar {
+	right: 0;
+	left: auto;
+}
+.comment-meta {
+	margin-right: 0.6em;
+	margin-left: auto;
+}
+
+/* Comments form */
+#respond input[type="text"] {
+	margin-right: 0.5em 0 0 0.5em;
+	margin-left: auto;
+}
+.children #respond {
+	margin: 0 0 0 1.846em;
+}
+
+/* =Widgets
+----------------------------------------------- */
+
+/* Menu & Categories Widgets (With Sub-Items) */
+.widget-area .sub-menu,
+.widget-area .children {
+	margin-right:  1.5em;
+	margin-left: auto;
+}
+
+/* Authors Widget */
+.widget_authors img {
+	float: right;
+	padding-left: 0.833em;
+	padding-right: 0;
+}
+
+/* Calendar Widget */
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+
+/* Recent Comments Widget */
+.widget_recent_comments td.recentcommentstexttop,
+.widget_recent_comments td.recentcommentstextend {
+	padding: 0 !important 1.1em 0.615em;
+}
+
+/* =Internet Explorer
+----------------------------------------------- */
+
+#ie9 .sunstrip,
+#ie9 .sunstrip-small, 
+#ie8 .sunstrip, 
+#ie8 .sunstrip-small {
+	background: url("images/ie-sunstrip-rtl.png") repeat-y;
+}

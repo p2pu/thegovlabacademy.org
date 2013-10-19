@@ -1,0 +1,20 @@
+#layout tr td {
+	padding-top: 15px;
+}
+.sunspot-label {
+	display: block;
+	float: left;
+	margin: 0 20px 20px 2px;
+	position: relative;
+}
+#layout input {
+	margin: 0 0 10px;
+}
+.sunspot-layouts {
+	display: block;
+	width: 136px;
+}
+.sunspot-layouts img {
+	display: block;
+	margin-left: -2px;
+}

@@ -1,0 +1,432 @@
+/*
+Theme Name: Sundance
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+
+/* =Reset
+-------------------------------------------------------------- */
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption, th, td {
+	text-align: right;
+}
+
+/* =Structure
+----------------------------------------------- */
+
+.site-content {
+	float: right;
+	margin: 0 0 0 -22.76422764%;
+}
+#content {
+	margin: 0 0 0 22.76422764%;
+}
+#secondary {
+	float: left;
+}
+.site-footer {
+	padding: 1.5714285714em 11.17886178% 1.5714285714em 0;
+}
+
+
+/* =Global
+----------------------------------------------- */
+
+/* Text elements */
+ul, ol {
+	margin: 0 1.5714285714em 1.5714285714em 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-right: 1.5714285714em;
+	margin-left: auto;
+}
+blockquote {
+	border-right: 5px solid #267172;
+	border-left: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(60%,#fafafa), color-stop(100%,#e6e6e6));
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(60%,#f5f5f5), color-stop(100%,#dcdcdc));
+}
+textarea {
+	padding-right: 5px;
+	padding-left: 0;
+}
+
+/* =Header
+----------------------------------------------- */
+
+#masthead hgroup {
+	margin: 0 11.17886178% 1.1428571428em 0;
+}
+.site-title {
+	float: right;
+}
+.site-description {
+	float: left;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation {
+	margin: 0 10.16260162% 0 0;
+}
+.main-navigation ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+.main-navigation li {
+	float: right;
+}
+.main-navigation ul ul {
+	float: right;
+	right: 0;
+	left: auto;
+}
+.main-navigation ul ul ul {
+	right: 100%;
+	left: auto;
+}
+
+
+/* =Featured Content
+----------------------------------------------- */
+
+.featured-posts-wrapper {
+	margin: -0.8571428571em 11.17886178% 4.7142857142em 0;
+}
+.featured-posts .featured {
+	float: right;
+}
+.featured-content {
+	float: right;
+}
+.featured-content-info {
+	float: left;
+	margin: 0 0 0 2.79069767%;
+}
+.flex-direction-nav {
+	left: 0;
+	margin: 21px 0 0 -34px;
+	right: auto;
+}
+.flex-direction-nav li a {
+	background-position: 0 -28px ;
+}
+.flex-direction-nav li .next {
+	background-position: 0 0;
+}
+.flex-control-nav {
+	left: auto;
+	right: 79.06976744%;
+	text-align: right;
+}
+.flex-control-nav li {
+	margin: 0 3px 0 0;
+}
+
+/* =Content
+----------------------------------------------- */
+
+.hentry {
+	margin: 0 14.28571428% 3.1428571428em 0;
+}
+.full-width .hentry,
+.image-attachment .hentry,
+.no-sidebar .hentry,
+.error404 .not-found {
+	margin: 0 11.17886178% 3.1428571428em 0;
+}
+.entry-header .avatar {
+	float: right;
+	margin: 9px -16.66666666% 0 0;
+}
+.no-sidebar .entry-header .avatar {
+	margin: 9px -12.58581235% 0 0;
+}
+.entry-content td {
+	padding: 0.5em 0 0.5em 0.7142857142em;
+}
+.page-header {
+	margin: 0 14.28571428% 3.1428571428em 0;
+}
+.no-sidebar .page-header {
+	margin: 0 11.17886178% 3.1428571428em 0;
+}
+
+
+/* =Navigation
+----------------------------------------------- */
+
+#content .site-navigation {
+	margin: 0 14.28571428% 1.5714285714em 0;
+}
+.no-sidebar #content .site-navigation {
+	margin: 0 11.17886178% 1.5714285714em 0;
+}
+#content .nav-previous {
+	float: right;
+}
+#content .nav-next {
+	float: left;
+	text-align: left;
+}
+
+
+/* =Comments
+----------------------------------------------- */
+
+#comments {
+	margin: 0 14.28571428% 1.5714285714em 0;
+}
+.full-width #comments,
+.image-attachment #comments,
+.no-sidebar #comments {
+	margin: 0 11.17886178% 1.5714285714em 0;
+}
+.children {
+	margin: 0 14.24242424% 0 0;
+}
+.full-width .children,
+.image-attachment .children,
+.no-sidebar .children {
+	margin: 0 10.98398169% 0 0;
+}
+.comment .avatar {
+	float: right;
+	margin: 3px -16.66666666% 0 0;
+}
+.full-width .comment .avatar,
+.image-attachment .comment .avatar,
+.no-sidebar .comment .avatar {
+	margin: 3px -12.58581235% 0 0;
+}
+.reply {
+	left: 0;
+	right: auto;
+}
+
+
+/* =Syndicate
+----------------------------------------------- */
+
+.syndicate li {
+	float: right;
+	margin: 0 0 0.933333333em 5.91397849%;
+}
+.syndicate li:last-child {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget ul ul {
+	margin-right: 0.7142857142em;
+	margin-left: auto;
+}
+/* Authors Widget */
+.widget_authors img {
+	float: right;
+	margin: 0 0 5px 5px !important;
+}
+/* Calendar Widget */
+.widget_calendar #wp-calendar caption {
+	text-align: right;
+}
+.widget_calendar #wp-calendar tfoot #prev {
+	text-align: right;
+}
+.widget_calendar #wp-calendar tfoot #next {
+	text-align: left;
+}
+
+
+/* =Responsive Structure
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+	.flex-direction-nav {
+		bottom: -36px;
+		left: 21px;
+		margin: 0;
+		right: auto;
+		top: auto;
+	}
+	.flex-direction-nav li {
+		float: right;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.site-title {
+		float: none;
+	}
+	.site-description {
+		float: none;
+	}
+	#masthead hgroup {
+		margin: 0 11.17886178% 2.2857142856em 0;
+	}
+	.site-content {
+		float: none;
+		margin: 0;
+	}
+	#content {
+		margin: 0;
+	}
+	#secondary {
+		float: none;
+	}
+	.hentry {
+		margin: 0 11.17886178% 3.1428571428em 0;
+	}
+	.entry-header .avatar {
+		margin: 9px -12.58581235% 0 0;
+	}
+	#content .site-navigation {
+		margin: 0 11.17886178% 1.5714285714em 0;
+	}
+	.syndicate,
+	.widget {
+		padding: 1.6666666666em 11.17886178% 0 0;
+	}
+	.page-header {
+		margin: 0 11.17886178% 3.1428571428em 0;
+	}
+	.featured-content {
+		float: none;
+	}
+	.featured-content-info {
+		float: none;
+		margin: 0;
+	}
+	.flex-direction-nav {
+		bottom: -35px;
+		left: 0;
+		margin: 0;
+		right: auto;
+		top: auto;
+		width: 100%;
+	}
+	.flex-direction-nav li {
+		float: none;
+	}
+	.flex-direction-nav li a {
+		position: absolute;
+	}
+	.flex-direction-nav li .prev {
+		left: auto;
+		margin: 0 -6px 0 0;
+		right: 0;
+	}
+	.flex-direction-nav li .next{
+		left: 0;
+		margin: 0 0 0 -6px;
+		right: auto;
+		top: 0;
+	}
+	.flex-control-nav {
+		bottom: 0;
+		left: auto;
+		right: 0;
+		text-align: center;
+		width: 100%;
+	}
+	#comments {
+		margin: 0 11.17886178% 1.5714285714em 0;
+	}
+	.comment .avatar {
+		margin: 3px -12.58581235% 0 0;
+	}
+	.syndicate li {
+		margin: 0 20px 0.933333333em 0;
+	}
+	.syndicate li:first-child {
+		margin-right: 0;
+	}
+	.syndicate li:last-child {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#masthead {
+		margin: 0 0 3.1428571428em 0;
+	}
+	#masthead hgroup {
+		margin: 0 0 2em 0;
+	}
+	.featured-posts-wrapper {
+		margin: -0.8571428571em 0 4.7142857142em 0;
+	}
+	.hentry,
+	.full-width .hentry,
+	.image-attachment .hentry,
+	.no-sidebar .hentry,
+	.error404 .not-found {
+		margin: 0 0 3.1428571428em 0;
+	}
+	.no-sidebar .page-header {
+		margin: 0 0 3.1428571428em 0;
+	}
+	#comments,
+	.full-width #comments,
+	.image-attachment #comments,
+	.no-sidebar #comments {
+		margin: 0 0 1.5714285714em 0;
+	}
+	#content .site-navigation {
+		margin: 0 0 1.5714285714em 0;
+	}
+	.page-header {
+		margin: 0 0 3.1428571428em 0;
+	}
+	.syndicate, .widget {
+		padding: 1.6666666666em 0 0 0;
+	}
+	.site-footer {
+		padding: 1.5714285714em 0 1.5714285714em 0;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	#page {
+		padding: 1.5714285714em 0.5714285714em 0;
+	}
+	#masthead {
+		margin: 0 0 1.5714285714em 0;
+	}
+	#masthead hgroup {
+		margin: 0 0 1.1428571428em 0;
+	}
+	.hentry {
+		margin: 0 0 1.5714285714em 0;
+	}
+	.entry-content, .entry-summary {
+		margin: 0.7857142857em 0 0 0;
+	}
+	.commentmetadata {
+		margin: 0 0 0.9166666666em 0;
+	}
+}

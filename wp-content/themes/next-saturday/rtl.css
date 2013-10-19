@@ -1,0 +1,341 @@
+/* =Global Typography
+-------------------------------------------------------------- */
+/* Assistive text */
+
+ul, ol {
+	margin: 0 2.5em 1.625em 0;
+}
+blockquote {
+	border-right: 2px solid #7ed4a8;
+	margin: 1em 0 1em 1em;
+	padding-right: 1em;
+	padding-left: 0;
+	border-left: none;
+}
+
+/* =Theme Structure
+-------------------------------------------------------------- */
+
+#primary-wrapper {
+	float: right;
+}
+#primary {
+	float: right;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access .menu {
+	float: right;
+}
+#access ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+#access li {
+	float: right;
+}
+#access a {
+	margin: 0 0 0 1px;
+}
+#access ul ul {
+	float: right;
+	right: 0;
+	left: auto;
+}
+#access ul ul ul {
+	right: 100%;
+	left: auto;
+}
+#access ul ul a {
+	padding: .66em 1em .5em .5em;
+}
+
+/* =Headings and Titles
+-------------------------------------------------------------- */
+
+.archive-header {
+	margin: 1em 1em 2em 0;
+}
+.archive-title {
+	margin-left: .5em;
+	margin-right: auto;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#description-bar {
+	float: right;
+	margin-right: -11px;
+	margin-left: auto;
+}
+#site-description-wrapper {
+	float: right;
+	margin: .8em .5em .5em 0;
+}
+#site-rss-link {
+	float: left;
+}
+.site-rss-link li {
+	float: left;
+	margin-left: .5em;
+	margin-right: auto;
+}
+#description-bar-shadow {
+	float: right;
+	margin-right: -10px;
+}
+
+/* =In-Post Formatting
+-------------------------------------------------------------- */
+
+.post {
+	float: right;
+}
+.entry-date-wrapper {
+	float: right;
+	margin-right: 15px;
+	margin-left: auto;
+}
+.entry-container {
+	float: left;
+	margin-right: 13px;
+	margin-left: auto;
+}
+.entry-content td,
+.comment-content td {
+	padding: 6px 0 6px 10px;
+}
+
+
+/* =Global Images and embeds
+-------------------------------------------------------------- */
+
+#content .gallery-columns-4 .gallery-item {
+	padding-left: 2%;
+	padding-right: 0;
+}
+
+/* =Attachment Pages
+-------------------------------------------------------------- */
+
+body.attachment .entry-container {
+	margin-right: 4px;
+	margin-left: auto;
+}
+body.attachment .entry-meta {
+	margin-left: 1.3em;
+	margin-right: auto;
+}
+
+/* =Post Formats
+---------------------------------------------------------------*/
+
+/* Image Format */
+.format-image .wp-caption {
+	text-align: left;
+}
+
+/* Quotes */
+.format-quote .sharing,
+.format-chat .sharing,
+.format-audio .sharing,
+.format-aside .sharing {
+	padding-right: 8px;
+	padding-left: 0;
+}
+.format-aside .status-avatar {
+	float: right;
+}
+
+
+/* =Entry Metadata and Author Info Box
+-------------------------------------------------------------- */
+
+.entry-meta-wrap {
+	float: left;
+}
+.entry-meta {
+	margin-left: .5em;
+	text-align: left;
+	margin-right: auto;
+}
+.edit-link {
+	text-align: left;
+}
+#author-avatar {
+	float: right;
+}
+#author-description {
+	margin-right: 4.5em;
+	margin-left: auto;
+}
+#author-link {
+	text-align: left;
+}
+#wpl-button {
+	margin-right: 9em;
+	margin-left: auto;
+}
+
+/* =Post Navigation
+-------------------------------------------------------------- */
+
+.page-link a {
+	margin-left: 4px;
+	margin-right: auto;
+}
+.nav-previous,
+.previous-image {
+	float: right;
+	margin-right: 1em;
+	margin-left: auto;
+}
+.nav-previous a,
+.previous-image a {
+	background: url('images/right-arrow.png') no-repeat;
+}
+.nav-next,
+.next-image {
+	float: left;
+	margin-left: 1em;
+	margin-right: auto;
+}
+.nav-next a,
+.next-image a {
+	background: url('images/left-arrow.png') no-repeat;
+	float: left;
+}
+
+/* =Search
+-------------------------------------------------------------- */
+
+#search-form-wrapper {
+	margin-right: 10px;
+	margin-left: auto;
+}
+#search-field-wrapper {
+	float: right;
+}
+#search-button-wrapper {
+	float: left;
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+/* =Comments & Comments Form
+-------------------------------------------------------------- */
+
+.nocomments {
+	margin: 0 85px 15px 0;
+}
+#comments ol {
+	margin-right: 0;
+	margin-left: auto;
+}
+#comments ul {
+	margin-right: 0.425em;
+	margin-left: auto;
+}
+#comments .comment-author {
+	margin: 0 65px 0.85em 0;
+}
+#comments .children .comment-author {
+	margin-right: 75px;
+	margin-left: auto;
+}
+#comments .avatar {
+	right: 10px;
+	left: auto;
+}
+#comments .children .avatar {
+	right: 25px;
+	left: auto;
+}
+#comments .comment-content {
+	margin-right: 45px;
+	margin-left: auto;
+}
+#comments .children .comment-content {
+	margin-right: 55px;
+	margin-left: auto;
+}
+#comments .comment-content p {
+	margin: 0 20px 15px 0;
+}
+#comments .comment-content ul, 
+#comments .comment-content ol {
+	margin: 0 2.5em 1.7em 0;
+}
+#comments .reply {
+	text-align: left;
+}
+#cancel-comment-reply-link {
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+/* =Sidebar and Widgets
+-------------------------------------------------------------- */
+
+/* Sidebar Structure */
+#secondary-wrapper {
+	float: left;
+}
+div.secondary-area-shadow {
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+/* Calendar Widget */
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+
+/* Authors Widget */
+.widget_authors img {
+	float: right;
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+/* RSS Widget */
+.widget_rss .widget-title {
+	padding-right: .4em;
+	padding-left: 0;
+}
+
+/* Menu & Categories Widgets (With Sub-Items) */
+.widget-area .sub-menu,
+.widget-area .children {
+	margin-right:  1.5em;
+	margin-left: auto;
+}
+
+/* Alignment */
+.alignleft {
+	float: right;
+	margin-left: 1.666em;
+}
+.alignright {
+	float: left;
+	margin-right: 1.666em;
+}
+
+/* =IE Styles
+-------------------------------------------------------------- */
+
+#ie7 .post {
+	clear: both;
+	float: none;
+}
+#ie7 .commentlist {
+	overflow: hidden;
+}
+#ie7 .entry-container {
+	margin-right: 0;
+	margin-left: 13px;
+}

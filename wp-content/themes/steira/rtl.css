@@ -1,0 +1,320 @@
+/*
+Theme: Steira
+RTL: Yoav Farhi, yoav@automattic.com
+*/
+
+body {
+	direction:rtl;
+	unicode-bidi:embed;
+	font: 13px/20px "Tahoma", Verdana, sans-serif;
+}
+a {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+strong {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+em {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+	font-style: italic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+h4 a.permlink {
+	float: left;
+	padding-right: 20px;
+	padding-left:0;
+}
+h2.haslink a span.new {
+	float: right;
+	margin: 7px 0 0 10px;
+}
+h2.haslink a span.posted {
+	float: left;
+	margin-right: 20px;
+	margin-left: 0;
+}
+h2.haslink a span.more,
+#sidebar h3 span.more a {
+	float: left;
+	padding-right: 20px;
+	padding-left:0;
+}
+blockquote p {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+span.quote {
+	font-family: Georgia, serif;
+}
+select {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+input.submit {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+input.text,
+textarea {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+small {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#wrapper {
+	background-position: 390px 0 ;
+}
+#masthead h1 {
+	float: none;
+}
+#navigation {
+	float: left;
+}
+#navigation li {
+	float: right;
+}
+#navigation li.current_page_item {
+	background: url(img/navigation-current.gif) no-repeat center 57px;
+}
+#navigation li a {
+	float: right;
+}
+ul#navigation ul {
+	right: 0;
+	left: auto;
+	-webkit-box-shadow: -1px 1px 3px #888;
+	-moz-box-shadow: -1px 1px 3px #888;
+	box-shadow: -1px 1px 3px #888;
+}
+ul#navigation ul ul {
+	left: auto;
+	right: 100%;
+}
+#subhead form {
+	left: 0;
+	right:auto;
+}
+#subhead form label {
+	right: 0;
+	left:auto;
+}
+#subhead form input.text {
+	right: 10px;
+	left:auto;
+}
+#subhead form input.submit {
+	left: 10px;
+	right:auto;
+	background-position: 100% 0;
+}
+#content {
+	float: right;
+}
+#content .contentblock legend {
+	font-family:"Arial Narrow","Helvetica Neue",sans-serif;
+}
+#content .contentblock input {
+	font-family:"Arial Narrow","Helvetica Neue",sans-serif;
+}
+#content #searchform input.submit {
+	background-position: 100% 0;
+	right: 10px;
+	left:auto;
+}
+.sharing,
+.pd-rating {
+	margin-right: 20px;
+}
+#sidebar #wpl-likebox {
+	margin-right: 20px !important;
+}
+#content .contentblock table tr th {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#content .contentblock table tr th,
+#content .contentblock table tr td {
+	text-align: right;
+}
+#calendar_wrap table caption,
+#calendar_wrap table thead {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+	padding: 5px 0 10px 5px;
+	text-align: right;
+}
+#calendar_wrap table td {
+	padding: 5px 0 5px 36px;
+}
+#calendar_wrap table tr td#next {
+	text-align: left;
+}
+#content .contentblock ol {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#content .contentblock ol li {
+	padding: 0 0 0 20px;
+	margin-right: 30px;
+	margin-left: 0;
+}
+#content .contentblock ul {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#content .contentblock ul li {
+	padding: 0 25px 0 20px;
+	background: url(img/li.gif) no-repeat 0 8px;
+}
+#sidebar {
+	float: left;
+}
+.widget form input,
+.widget textarea {
+	font-family:"Arial Narrow","Helvetica Neue",sans-serif;
+}
+.aboutshort {
+	background: url(img/about-rtl.gif) no-repeat left bottom;
+}
+#footer {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#footer p#credits {
+	padding-left: 0;
+	padding-right:20px;
+}
+#footer p#generator {
+	float: left;
+	padding-right: 0;
+	padding-left:20px;
+}
+#sidebar #categoriesgrid {
+	padding-left: 0;
+	padding-right: 20px;
+}
+#categoriesgrid {
+	float: right;
+}
+#sidebar #categoriesgrid li {
+	float: right;
+	margin: 0 0 0 10px;
+}
+#categoriesgrid li a {
+	float: right;
+}
+.postdetails {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+.postdetails li.comments {
+	float: left;
+}
+.postdetails li.comments a {
+	padding-right: 20px;
+	padding-left:0;
+}
+#olderposts {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+.indexlist {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+	text-align: left;
+}
+.indexlist li {
+	background: url(img/line-dotted.gif) repeat-x 0 13px;
+}
+.indexlist li a span.name {
+	float: right;
+	padding: 0 0 0 5px;
+}
+.indexlist li a span.title {
+	padding-right: 5px;
+	padding-left:0;
+}
+#steira-recent-posts.indexlist {
+	text-align: right;
+}
+#steira-recent-posts.indexlist li a span.title {
+	padding-left: 5px;
+	padding-right: 0;
+}
+#steira-recent-posts.indexlist li a span.date {
+	float: left;
+	padding-right: 5px;
+	padding-left:0;
+}
+#intro {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#content .contentblock .image p {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+#commentform p.buttons {
+	padding: 0 80px 0 0;
+}
+#commentform p.buttons input.submit {
+	background-image: url(img/comment-submit.gif);
+	background-position: 100% 0;
+}
+#respond .form-submit {
+	margin-right: 20px;
+}
+.comment-form-author .required,
+.comment-form-email .required {
+	margin: 0;
+	float: left;
+}
+#commentform input.text,
+#commentform textarea {
+	font-family: "Lucida Grande", Verdana, sans-serif;
+}
+#commentform label.for-text {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+	margin-left: 10px;
+	margin-right:0;
+	text-align: left;
+	float: right;
+}
+#commentform label small {
+	left: 0;
+	right:auto;
+	text-align: right;
+}
+.comment h4,
+.comment p {
+	padding-right: 60px;
+	padding-left:0;
+}
+.comment h4 img {
+	right: 20px;
+	left:auto;
+}
+.children .comment {
+	padding: 5px 20px 5px 0;
+}
+.nav-previous {
+	float: right;
+}
+.nav-next {
+	float: left;
+	text-align:left;
+}
+.contact-form label {
+	float:right;
+	font-family:"Arial Narrow","Helvetica Neue",sans-serif;
+	text-align:left;
+}
+.contact-form input.textbox,
+form.contact-form textarea {
+	font-family:"Lucida Grande",Verdana,sans-serif;
+	float: left;
+}
+.contact-submit input {
+	float: left;
+}
+.contact-submit span {
+	float: left;
+	margin: 15px 10px 0 0;
+}
+body #content form.contact-form input.pushbutton-wide {
+	font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+}
