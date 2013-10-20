@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Topic Page Template
+Template Name: Theme Page Template
 */
 ?>
 
