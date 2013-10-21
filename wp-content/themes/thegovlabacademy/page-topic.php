@@ -17,16 +17,22 @@ get_header(); ?>
           </header> <?php // end article header ?>
 
           <section class="entry-content clearfix" itemprop="articleBody">
-            <?php include (get_template_directory()."/sections/topic_featured_section.php") ?>
 
             <div class="clearfix">
+              <?php include (get_template_directory()."/sections/topic_featured_section.php") ?>
+            </div><?php // End featured section ?>
 
+            <div class="clearfix">
               <?php include (get_template_directory() . "/sections/topic_learn_more_section.php") ;?>
-            </div>
+            </div><?php // End learn more section ?>
+
             <div class="clearfix">
               <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
-            </div>
-            <?php include (get_template_directory() . "/sections/topic_experts.php") ;?>
+            </div><?php // End literature section ?>
+
+            <div class="clearfix">
+              <?php include (get_template_directory() . "/sections/topic_experts.php") ;?>
+            </div><?php // End expert section ?>
 
           </section> <?php // end article section ?>
 
