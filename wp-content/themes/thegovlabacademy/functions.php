@@ -169,6 +169,5 @@ function _get_text_between_tags($string, $tagname) {
     return $matches[1];
 }
 
-include('fields/topic-page.php');
 ?>
 
