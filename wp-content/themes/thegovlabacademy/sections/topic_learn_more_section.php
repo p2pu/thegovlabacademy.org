@@ -19,7 +19,7 @@ switch ($number_of_videos){
 
 
 foreach ($learn_more_videos as $key => $values) {?>
-  <div class="<?php echo $col_class; if ($key === 0 or ($key %4) == 0) echo ' clear-left-margin'?>">
+  <div class="<?php echo $col_class; if ($key === 0 or ($key %4) == 0) echo ' first'?>">
     <iframe width="100%" height="315" src="<?php echo $values['topic_learn_more_video_link']; ?>" frameborder="0" allowfullscreen></iframe>
     <h5><?php echo $values['topic_learn_more_video_title']; ?></h5>
     <p><?php echo $values['topic_learn_more_video_description']; ?></p>

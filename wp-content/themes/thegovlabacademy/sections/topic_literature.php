@@ -3,7 +3,7 @@
 foreach ($documents_values as $key => $values) {
   ?>
   <div class="document">
-    <div class="twocol clear-left-margin">
+    <div class="twocol first">
       <i class="icon-file-text"></i>
     </div>
     <div class="tencol">
