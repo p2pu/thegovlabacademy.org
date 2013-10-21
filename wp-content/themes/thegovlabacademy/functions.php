@@ -196,5 +196,6 @@ function gla_youtube_shortcode( $atts, $content=null ){
 }
 add_shortcode( 'gla_youtube', 'gla_youtube_shortcode' );
 
+include_once('fields/topic-page.php');
 ?>
 
