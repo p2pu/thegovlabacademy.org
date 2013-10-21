@@ -1,4 +1,5 @@
 <?php
+ob_start();
 /**
  * WordPress Administration Template Header
  *
