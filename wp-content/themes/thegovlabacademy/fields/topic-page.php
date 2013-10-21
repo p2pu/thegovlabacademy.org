@@ -6,7 +6,39 @@ simple_fields_register_field_group('topic_page_featured_section', array(
   'fields' => array(
     array(
       'name' => 'Link to Youtube Video',
-      'slug' => 'youtube_link',
+      'slug' => 'topic_featured_youtube_link',
+      'description'=> 'If you wish to show video on featured jumbotron',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
+    array(
+      'name' => 'Link to Image',
+      'slug' => 'topic_featured_image_link',
+      'description'=> 'Put here link to featured image if it is hosted somewhere else',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
+    array(
+      'name' => 'Image Upload',
+      'slug' => 'topic_featured_image_upload',
+      'description'=> 'Upload an Image if is not hosted somewhere else',
+      'type' => 'file'
+    ),
+    array(
+      'name' => 'Call to Action Button',
+      'slug' => 'topic_featured_call_to_action_button',
+      'description'=> 'If you didn\'t put in either featured video or featured image you can call to action
+                        This will show up as a big button.' ,
+      'type' => 'text'
+    ),
+    array(
+      'name' => 'Call to Action Link',
+      'slug' => 'topic_featured_call_to_action_url',
+      'description'=> 'The url to go when call to action is enabled' ,
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
@@ -14,7 +46,7 @@ simple_fields_register_field_group('topic_page_featured_section', array(
     ),
     array(
       'name' => 'Title',
-      'slug' => 'title',
+      'slug' => 'topic_featured_title',
       'type' => 'text'
     ),
     array(

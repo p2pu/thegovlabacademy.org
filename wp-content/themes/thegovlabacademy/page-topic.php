@@ -6,36 +6,18 @@
 get_header(); ?>
 
 <div id="content">
-
   <div id="inner-content" class="wrap clearfix">
-
     <div id="main" class="twelvecol first clearfix" role="main">
-
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
         <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope
                  itemtype="http://schema.org/BlogPosting">
 
           <header class="article-header">
-
             <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
           </header> <?php // end article header ?>
 
           <section class="entry-content clearfix" itemprop="articleBody">
-
-            <div class="twelvecol clear-left-margin">
-              <div class="sixcol clear-left-margin">
-                <iframe width="100%" height="315"
-                        src="<?php echo simple_fields_value('youtube_link'); ?>"
-                        frameborder="0" allowfullscreen></iframe>
-              </div>
-              <div class="sixcol">
-                <h1><?php echo simple_fields_value('title');?></h1>
-                <h2><?php echo simple_fields_value('course_title');?></h2>
-                <p><?php echo simple_fields_value('description');?></p>
-              </div>
-            </div>
+            <?php include (get_template_directory()."/sections/topic_featured_section.php") ?>
 
             <div class="clearfix">
               <h1>Learn more</h1>
