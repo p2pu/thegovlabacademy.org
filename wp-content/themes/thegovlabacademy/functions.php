@@ -1,4 +1,4 @@
-<?php
+<?php include('fields/topic-page.php');
 /*
 Author: Eddie Machado
 URL: htp://themble.com/bones/
