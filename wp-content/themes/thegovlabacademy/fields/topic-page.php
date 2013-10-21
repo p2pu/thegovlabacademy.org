@@ -94,32 +94,30 @@ simple_fields_register_field_group('topic_learn_more_section', array(
   'deleted' => false
 ));
 
+// Read more section
 simple_fields_register_field_group('topic_literature', array(
   'name' => 'Read',
   'fields' => array(
     array(
-      'name' => 'Document Title',
-      'slug' => 'topic_page_document_title',
-      'description'=> 'Add title to display for document',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Document Description',
-      'slug' => 'topic_page_document_description',
-      'description'=> 'Add short description to display document',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Document Upload',
-      'slug' => 'topic_page_document_upload',
-      'description'=> 'Upload a file',
-      'type' => 'file'
-    ),
-    array(
       'name' => 'Document URL',
-      'slug' => 'topic_page_document_url',
-      'description'=> 'If documented can not be uploaded use url to it',
+      'slug' => 'topic_page_source_url',
+      'description'=> 'Add url to the source',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
+    array(
+      'name' => 'Source Title',
+      'slug' => 'topic_page_source_title',
+      'description'=> 'Add title for the source',
       'type' => 'text'
+    ),
+    array(
+      'name' => 'Source Description',
+      'slug' => 'topic_page_source_description',
+      'description'=> 'Add short description about the source',
+      'type' => 'textarea'
     )
   ),
   'repeatable' => TRUE,

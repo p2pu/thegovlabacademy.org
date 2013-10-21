@@ -1,15 +1,19 @@
 <h1>Read</h1>
 <?php $documents_values = simple_fields_fieldgroup('topic_literature');
-foreach ($documents_values as $key =>$values){
+foreach ($documents_values as $key => $values) {
   ?>
   <div class="document">
-    <i class="document"></i>
-    <h3>
-      <a href="<?php echo wp_get_attachment_url( $values['topic_page_document_upload']); ?>"
-         target="_blank">
-        <?php echo $values['topic_page_document_title']; ?>
-      </a>
-    </h3>
-    <p><?php echo $values['topic_page_document_description']; ?></p>
+    <div class="twocol clear-left-margin">
+      <i class="icon-file-text"></i>
+    </div>
+    <div class="tencol">
+      <h3>
+        <a href="<?php echo $values['topic_page_source_url']; ?>"
+           target="_blank">
+          <?php echo $values['topic_page_source_title']; ?>
+        </a>
+      </h3>
+      <p><?php echo $values['topic_page_source_description']; ?></p>
+    </div>
   </div>
 <?php } ?>
