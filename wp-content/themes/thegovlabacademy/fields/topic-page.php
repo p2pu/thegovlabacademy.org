@@ -1,6 +1,8 @@
 <?php
 
 // Code to create Topic Page Template
+
+// Featured section
 simple_fields_register_field_group('topic_page_featured_section', array(
   'name' => 'Featured Section',
   'fields' => array(
@@ -64,12 +66,14 @@ simple_fields_register_field_group('topic_page_featured_section', array(
   'deleted' => false
 ));
 
+
+// Learn more section
 simple_fields_register_field_group('topic_learn_more_section', array(
   'name' => 'Learn More Section',
   'fields' => array(
     array(
       'name' => 'Link to Youtube Video',
-      'slug' => 'you_tube_id',
+      'slug' => 'topic_learn_more_video_link',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
@@ -77,17 +81,12 @@ simple_fields_register_field_group('topic_learn_more_section', array(
     ),
     array(
       'name' => 'Title',
-      'slug' => 'title',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Course Title',
-      'slug' => 'course_title',
+      'slug' => 'topic_learn_more_video_title',
       'type' => 'text'
     ),
     array(
       'name' => 'Description',
-      'slug' => 'learn_more_description',
+      'slug' => 'topic_learn_more_video_description',
       'type' => 'textarea'
     )
   ),
