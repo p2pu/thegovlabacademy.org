@@ -124,7 +124,7 @@ simple_fields_register_field_group('topic_page_literature', array(
   'deleted' => false
 ));
 
-// Tools more section
+// Tools section
 simple_fields_register_field_group('topic_page_tools', array(
   'name' => 'Toolbox',
   'fields' => array(
@@ -147,6 +147,36 @@ simple_fields_register_field_group('topic_page_tools', array(
       'name' => 'Tool Description',
       'slug' => 'topic_page_tool_description',
       'description'=> 'Add short description about the tool',
+      'type' => 'textarea'
+    )
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
+
+// Activities section
+simple_fields_register_field_group('topic_page_activities', array(
+  'name' => 'Activities',
+  'fields' => array(
+    array(
+      'name' => 'Activity url',
+      'slug' => 'topic_page_activity_url',
+      'description'=> 'Add url to the activity',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
+    array(
+      'name' => 'Activity Title',
+      'slug' => 'topic_page_activity_title',
+      'description'=> 'Add title for the activity',
+      'type' => 'text'
+    ),
+    array(
+      'name' => 'Activity Description',
+      'slug' => 'topic_page_activity_description',
+      'description'=> 'Add short description about the activity',
       'type' => 'textarea'
     )
   ),
@@ -182,6 +212,10 @@ simple_fields_register_post_connector('topic_page_connector',
         'priority' => 'high'),
       array('name' => 'Topic Literature',
         'key' => 'topic_page_literature',
+        'context' => 'normal',
+        'priority' => 'high'),
+      array('name' => 'Topic Activities',
+        'key' => 'topic_page_activities',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Topic Toolbox',
