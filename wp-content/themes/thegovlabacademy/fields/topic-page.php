@@ -68,7 +68,7 @@ simple_fields_register_field_group('topic_page_featured_section', array(
 
 
 // Learn more section
-simple_fields_register_field_group('topic_learn_more_section', array(
+simple_fields_register_field_group('topic_page_learn_more_section', array(
   'name' => 'Learn More Section',
   'fields' => array(
     array(
@@ -95,7 +95,7 @@ simple_fields_register_field_group('topic_learn_more_section', array(
 ));
 
 // Read more section
-simple_fields_register_field_group('topic_literature', array(
+simple_fields_register_field_group('topic_page_literature', array(
   'name' => 'Read',
   'fields' => array(
     array(
@@ -117,6 +117,36 @@ simple_fields_register_field_group('topic_literature', array(
       'name' => 'Source Description',
       'slug' => 'topic_page_source_description',
       'description'=> 'Add short description about the source',
+      'type' => 'textarea'
+    )
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
+
+// Tools more section
+simple_fields_register_field_group('topic_page_tools', array(
+  'name' => 'Toolbox',
+  'fields' => array(
+    array(
+      'name' => 'Tool url',
+      'slug' => 'topic_page_tool_url',
+      'description'=> 'Add url to the tool',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
+    array(
+      'name' => 'Tool Title',
+      'slug' => 'topic_page_tool_title',
+      'description'=> 'Add title for the tool',
+      'type' => 'text'
+    ),
+    array(
+      'name' => 'Tool Description',
+      'slug' => 'topic_page_tool_description',
+      'description'=> 'Add short description about the tool',
       'type' => 'textarea'
     )
   ),
@@ -147,11 +177,15 @@ simple_fields_register_post_connector('topic_page_connector',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Learn More Section',
-        'key' => 'topic_learn_more_section',
+        'key' => 'topic_page_learn_more_section',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Topic Literature',
-        'key' => 'topic_literature',
+        'key' => 'topic_page_literature',
+        'context' => 'normal',
+        'priority' => 'high'),
+      array('name' => 'Topic Toolbox',
+        'key' => 'topic_page_tools',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Experts',
