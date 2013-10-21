@@ -162,4 +162,39 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
+/****************** SHORTCODES **********************/
+function _get_text_between_tags($string, $tagname) {
+    $pattern = "/<$tagname>([\w\W]*?)<\/$tagname>/";
+    preg_match($pattern, $string, $matches);
+    return $matches[1];
+}
+function topic( $atts, $content=null ){
+
+}
+add_shortcode( 'topic', 'topic_shortcode' );
+//[gla_youtube]
+function gla_youtube_shortcode( $atts, $content=null ){
+	extract( shortcode_atts( array(
+		'size' => 'large',
+		'link' => 'no link',
+	), $atts ) );
+
+	$content_arr = array(
+		'heading' => _get_text_between_tags($content, 'h1'),
+		'subheading' => _get_text_between_tags($content, 'h2'),
+		'desc' => _get_text_between_tags($content, 'p')
+		);	
+	$video = '<div class="wrap">
+	<div class="sixcol"><iframe width="100%" height="100%" src="//www.youtube.com/embed/Lbpx7iPm_Tg" frameborder="0" allowfullscreen></iframe></div>
+    <div class="sixcol">
+    <h1>'. $content_arr['heading'] . '</h1>
+    <h2>' .$content_arr['subheading'] . '</h2>
+    <p>' . $content_arr['desc'] . '</p>
+    </div>
+    </div>';
+    return $video;
+}
+add_shortcode( 'gla_youtube', 'gla_youtube_shortcode' );
+
 ?>
+
