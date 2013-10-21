@@ -5,10 +5,9 @@
 
     ?>
     <div class="expert">
-      <div class="twocol">
-        <img src="http://placehold.it/400x400&text=<?php echo $experts_values[$key] ?>" alt=""/>
+      <div class="onecol <?php if($key === 0) echo 'first'?>">
+        <img src="http://placehold.it/100x100&text=<?php echo $experts_values[$key] ?>" alt=""/>
       </div>
     </div>
   <?php } ?>
-
 </div>

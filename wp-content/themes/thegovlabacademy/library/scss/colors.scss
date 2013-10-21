@@ -1,0 +1,25 @@
+/* Theme Colors */
+
+.data { color: #50307f; }
+.crowd { color: #00adef; }
+.behave { color: #ed135a; }
+.history { color: #00a99c; }
+.soon { opacity: .6; }
+
+.theme-menu .data { background-color: #50307f;}
+.theme-menu .crowd { background-color: #00adef;}
+.theme-menu .behave { background-color: #ed135a;}
+.theme-menu .history { background-color: #00a99c;}
+
+.data.theme h2,
+.data.theme .info.
+.data.main-content > h2  { border-bottom-color: #50307f; }
+.crowd.theme h2,
+.crowd.theme .info,
+.crowd.main-content > h2 { border-bottom-color: #00adef; }
+.behave.theme .info,
+.behave.theme h2,
+.behave.main-content > h2 { border-bottom-color: #ed135a; }
+.history.theme .info,
+.history.theme h2,
+.history.main-content > h2 { border-bottom-color: #00a99c; }

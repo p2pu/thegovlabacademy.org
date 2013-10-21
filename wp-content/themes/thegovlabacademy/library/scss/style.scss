@@ -20,11 +20,15 @@ of the styles inside media queries.
 
 // import mixins
 @import "mixins";
-// import variables
-@import "variables";
 
 //import header
 @import "header";
+
+// styles in topic_page.scss
+@import "topic_page";
+
+// Govlab Styles
+@import "govlab_styles";
 
 /*
 BASE (MOBILE) SIZE
@@ -35,9 +39,6 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 
 // styles in base.scss
 @import "base";
-
-// styles in topic_page.scss
-@import "topic_page";
 
 /*
 LARGER MOBILE DEVICES

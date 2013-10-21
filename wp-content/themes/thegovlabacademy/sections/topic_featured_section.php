@@ -1,7 +1,7 @@
 <?php $featured_fields = simple_fields_fieldgroup('topic_page_featured_section');
   if (count(array_filter($featured_fields))){ ?>
-<div class="twelvecol clear-left-margin">
-  <div class="sixcol clear-left-margin"><?php
+<div class="twelvecol first">
+  <div class="sixcol first"><?php
       if ($featured_fields['topic_featured_youtube_link']){?>
       <iframe width="100%" height="315"
               src="<?php echo $featured_fields['topic_featured_youtube_link']; ?>"
