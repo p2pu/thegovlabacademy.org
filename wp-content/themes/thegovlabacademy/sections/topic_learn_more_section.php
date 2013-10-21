@@ -1,3 +1,4 @@
+<h1 class="section-heading">Learn more</h1>
 <?php
 $learn_more_videos = simple_fields_fieldgroup('topic_learn_more_section');
 $number_of_videos = count($learn_more_videos);

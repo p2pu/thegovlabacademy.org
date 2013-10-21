@@ -20,11 +20,11 @@ get_header(); ?>
             <?php include (get_template_directory()."/sections/topic_featured_section.php") ?>
 
             <div class="clearfix">
-              <h1>Learn more</h1>
+
               <?php include (get_template_directory() . "/sections/topic_learn_more_section.php") ;?>
-            <div>
-              <h1>Read</h1>
-              <?php include (get_template_directory() . "/sections/topic_read.php") ;?>
+            </div>
+            <div class="clearfix">
+              <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
             </div>
             <?php include (get_template_directory() . "/sections/topic_experts.php") ;?>
 
