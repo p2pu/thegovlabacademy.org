@@ -22,7 +22,7 @@ simple_fields_register_field_group('theme_page_featured_section', array(
   'fields' => array(
     array(
       'name' => 'Link to Youtube Video',
-      'slug' => 'theme_featured_youtube_link',
+      'slug' => 'theme_page_featured_youtube_link',
       'description'=> 'If you wish to show video on featured jumbotron',
       'type' => 'text',
       'options' => array(
@@ -31,7 +31,7 @@ simple_fields_register_field_group('theme_page_featured_section', array(
     ),
     array(
       'name' => 'Link to Image',
-      'slug' => 'theme_featured_image_link',
+      'slug' => 'theme_page_featured_image_link',
       'description'=> 'Put here link to featured image if it is hosted somewhere else',
       'type' => 'text',
       'options' => array(
@@ -40,20 +40,20 @@ simple_fields_register_field_group('theme_page_featured_section', array(
     ),
     array(
       'name' => 'Image Upload',
-      'slug' => 'theme_featured_image_upload',
+      'slug' => 'theme_page_featured_image_upload',
       'description'=> 'Upload an Image if is not hosted somewhere else',
       'type' => 'file'
     ),
     array(
       'name' => 'Call to Action Button',
-      'slug' => 'theme_featured_call_to_action_button',
+      'slug' => 'theme_page_featured_call_to_action_button',
       'description'=> 'If you didn\'t put in either featured video or featured image you can call to action
                         This will show up as a big button.' ,
       'type' => 'text'
     ),
     array(
       'name' => 'Call to Action Link',
-      'slug' => 'theme_featured_call_to_action_url',
+      'slug' => 'theme_page_featured_call_to_action_url',
       'description'=> 'The url to go when call to action is enabled' ,
       'type' => 'text',
       'options' => array(
@@ -62,12 +62,12 @@ simple_fields_register_field_group('theme_page_featured_section', array(
     ),
     array(
       'name' => 'Title of media',
-      'slug' => 'theme_featured_title',
+      'slug' => 'theme_page_featured_title',
       'type' => 'text'
     ),
     array(
       'name' => 'Description',
-      'slug' => 'theme_featured_description',
+      'slug' => 'theme_page_featured_description',
       'type' => 'textarea',
       'type_textarea_options' => array('use_html_editor' => 1)
     )
@@ -135,7 +135,7 @@ simple_fields_register_field_group('theme_page_experts', array(
   'fields' => array(
     array(
       'name' => 'Expert Twitter Handle',
-      'slug' => 'expert_twitter_handle',
+      'slug' => 'theme_page_expert_twitter_handle',
       'description'=> 'Add a Twitter handle of an expert',
       'type' => 'text'
     ),
@@ -165,7 +165,7 @@ simple_fields_register_post_connector('theme_page_connector',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Experts',
-        'key' => 'theme_experts',
+        'key' => 'theme_page_experts',
         'context' => 'normal',
         'priority' => 'high'),
     ),

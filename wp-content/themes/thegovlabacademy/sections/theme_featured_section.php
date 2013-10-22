@@ -2,29 +2,29 @@
 if (count(array_filter($featured_fields))) { ?>
   <div class="twelvecol first">
     <div class="sixcol first"><?php
-      if ($featured_fields['theme_featured_youtube_link']) {
+      if ($featured_fields['theme_page_featured_youtube_link']) {
         ?>
       <iframe width="100%" height="315"
-              src="<?php echo $featured_fields['theme_featured_youtube_link']; ?>"
+              src="<?php echo $featured_fields['theme_page_featured_youtube_link']; ?>"
               frameborder="0" allowfullscreen></iframe><?php
-      } elseif ($featured_fields['theme_featured_image_link']) {
+      } elseif ($featured_fields['theme_page_featured_image_link']) {
         ?>
         <div class="featured-img">
-        <img src="<?php echo $featured_fields['theme_featured_youtube_link'] ?>"
+        <img src="<?php echo $featured_fields['theme_page_featured_image_link'] ?>"
              alt="<?php echo $featured_fields['theme_featured_title'] ?> Image"/>
         </div><?php
-      } elseif ($featured_fields['theme_featured_image_upload']) {
+      } elseif ($featured_fields['theme_page_featured_image_upload']) {
         ?>
         <div class="featured-img">
-        <img src="<?php echo wp_get_attachment_url($featured_fields['theme_featured_image_upload']) ?>"
-             alt="<?php echo $featured_fields['topic_featured_title'] ?> Image"/>
+        <img src="<?php echo wp_get_attachment_url($featured_fields['theme_page_featured_image_upload']) ?>"
+             alt="<?php echo $featured_fields['theme_featured_title'] ?> Image"/>
         </div><?php
-      } elseif ($featured_fields['theme_featured_call_to_action_button']) {
+      } elseif ($featured_fields['theme_page_featured_call_to_action_button']) {
         ?>
         <div class="featured-call-to-action">
         <div class="button-extra-large">
-          <a class="btn" href="<?php echo $featured_fields['theme_featured_call_to_action_url'] ?>">
-            <?php echo $featured_fields['theme_featured_call_to_action_button'] ?>
+          <a class="btn" href="<?php echo $featured_fields['theme_page_featured_call_to_action_url'] ?>">
+            <?php echo $featured_fields['theme_page_featured_call_to_action_button'] ?>
           </a>
         </div>
         </div><?php
@@ -37,8 +37,8 @@ if (count(array_filter($featured_fields))) { ?>
 
     </div>
     <div class="sixcol">
-      <h1 class="featured-title"><?php echo simple_fields_value('theme_featured_title'); ?></h1>
-      <p class="feautured-description"><?php echo simple_fields_value('theme_featured_description'); ?></p>
+      <h1 class="featured-title"><?php echo simple_fields_value('theme_page_featured_title'); ?></h1>
+      <p class="feautured-description"><?php echo simple_fields_value('theme_page_featured_description'); ?></p>
     </div>
   </div><?php
 } ?>
