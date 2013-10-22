@@ -8,7 +8,7 @@ simple_fields_register_field_group('topic_page_featured_section', array(
   'fields' => array(
     array(
       'name' => 'Link to Youtube Video',
-      'slug' => 'topic_featured_youtube_link',
+      'slug' => 'topic_featured_video_link',
       'description'=> 'If you wish to show video on featured jumbotron',
       'type' => 'text',
       'options' => array(

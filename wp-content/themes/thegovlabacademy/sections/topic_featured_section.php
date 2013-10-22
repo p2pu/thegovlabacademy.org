@@ -2,10 +2,10 @@
 if (count(array_filter($featured_fields))) { ?>
   <div class="twelvecol first">
     <div class="sixcol first"><?php
-      if ($featured_fields['topic_featured_youtube_link']) {
+      if ($featured_fields['topic_featured_video_link']) {
         ?>
       <iframe width="100%" height="315"
-              src="<?php echo $featured_fields['topic_featured_youtube_link']; ?>"
+              src="<?php echo $featured_fields['topic_featured_video_link']; ?>"
               frameborder="0" allowfullscreen></iframe><?php
       } elseif ($featured_fields['topic_featured_image_link']) {
         ?>
