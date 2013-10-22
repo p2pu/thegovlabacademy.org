@@ -37,11 +37,11 @@ if (count(array_filter($featured_fields))) { ?>
 
     </div>
     <div class="sixcol">
-      <h1 class="featured-title"><?php echo simple_fields_value('title'); ?></h1>
+      <h1 class="featured-title"><?php echo simple_fields_value('topic_featured_title'); ?></h1>
 
-      <h2 class="featured-subtitle"><?php echo simple_fields_value('course_title'); ?></h2>
+      <h2 class="featured-subtitle"><?php echo simple_fields_value('topic_featured_subtitle'); ?></h2>
 
-      <p class="feautured-description"><?php echo simple_fields_value('description'); ?></p>
+      <p class="feautured-description"><?php echo simple_fields_value('topic_featured_description'); ?></p>
     </div>
   </div><?php
 } ?>
