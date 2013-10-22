@@ -59,7 +59,8 @@ simple_fields_register_field_group('topic_page_featured_section', array(
     array(
       'name' => 'Description',
       'slug' => 'description',
-      'type' => 'textarea'
+      'type' => 'textarea',
+      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => FALSE,
@@ -87,7 +88,8 @@ simple_fields_register_field_group('topic_page_learn_more_section', array(
     array(
       'name' => 'Description',
       'slug' => 'topic_learn_more_video_description',
-      'type' => 'textarea'
+      'type' => 'textarea',
+      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
@@ -117,7 +119,8 @@ simple_fields_register_field_group('topic_page_literature', array(
       'name' => 'Source Description',
       'slug' => 'topic_page_source_description',
       'description'=> 'Add short description about the source',
-      'type' => 'textarea'
+      'type' => 'textarea',
+      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
@@ -147,7 +150,8 @@ simple_fields_register_field_group('topic_page_tools', array(
       'name' => 'Tool Description',
       'slug' => 'topic_page_tool_description',
       'description'=> 'Add short description about the tool',
-      'type' => 'textarea'
+      'type' => 'textarea',
+      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
@@ -177,7 +181,8 @@ simple_fields_register_field_group('topic_page_activities', array(
       'name' => 'Activity Description',
       'slug' => 'topic_page_activity_description',
       'description'=> 'Add short description about the activity',
-      'type' => 'textarea'
+      'type' => 'textarea',
+      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
