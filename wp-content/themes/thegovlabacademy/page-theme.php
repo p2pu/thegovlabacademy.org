@@ -1,6 +1,7 @@
 <?php
 /*
   * Template name: Theme Page
+  * Simple Fields Connector: theme_page_connector
   */
 get_header(); ?>
 
@@ -16,49 +17,27 @@ get_header(); ?>
                  itemtype="http://schema.org/BlogPosting">
 
           <header class="article-header">
-
-            <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-          </header> <?php // end article header ?>
+            <h1 class="page-title" itemprop="headline">
+              <?php echo simple_fields_value('theme_page_subtitle'); ?>
+            </h1>
+          </header><?php // end article header ?>
 
           <section class="entry-content clearfix" itemprop="articleBody">
+            <div class="clearfix">
+              <?php include (get_template_directory()."/sections/theme_featured_section.php") ?>
+            </div><?php // End featured section ?>
 
             <div class="clearfix">
-              <div class="sixcol clear-left-margin">
-                <?php $video_url = simple_fields_value("video_url");?>
-                <iframe width="100%" height="315" src="<?php echo $video_url;?>" frameborder="0"
-                        allowfullscreen></iframe>
-              </div>
-              <div class="sixcol">
-                <h1 class="video-title">
-                  <?php echo simple_fields_value('video_title');?>
-                </h1>
-                <h2 class="video-subtitle">
-                  <?php echo simple_fields_value('video_subtitle');?>
-                </h2>
-                <p>
-                  <?php echo simple_fields_value('video_description');?>
-                </p>
+              <?php include (get_template_directory()."/sections/theme_inspirational_quote.php") ?>
+            </div><?php // End inspirational quote section ?>
 
-              </div>
-            </div>
-            <div class="subheading clearfix">
-              <h2>Stories on crowd sourcing</h2>
-            </div>
-            <div class="fourcol clear-left-margin">
-              <iframe width="100%" height="315" src="//www.youtube.com/embed/Lbpx7iPm_Tg" frameborder="0"
-                      allowfullscreen></iframe>
-              <div class="story-video">
-                <h1 class="video-title"><?php the_field('story_title'); ?></h1>
+            <div class="clearfix">
+              <?php include (get_template_directory()."/sections/theme_topics.php") ?>
+            </div><?php // End inspirational quote section ?>
 
-                <h2 class="video-subtitle"><?php the_field('subtitle'); ?></h2>
-
-                <p class="description"><?php the_field('description'); ?></p>
-              </div>
-            </div>
-            <div class="fourcol">
-
-            </div>
+            <div class="clearfix">
+              <?php include (get_template_directory() . "/sections/theme_experts.php") ;?>
+            </div><?php // End expert section ?>
 
           </section> <?php // end article section ?>
 

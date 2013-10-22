@@ -52,13 +52,13 @@ simple_fields_register_field_group('topic_page_featured_section', array(
       'type' => 'text'
     ),
     array(
-      'name' => 'Course Title',
-      'slug' => 'course_title',
+      'name' => 'Subtitle',
+      'slug' => 'topic_featured_subtitle',
       'type' => 'text'
     ),
     array(
       'name' => 'Description',
-      'slug' => 'description',
+      'slug' => 'topic_featured_description',
       'type' => 'textarea',
       'type_textarea_options' => array('use_html_editor' => 1)
     )
