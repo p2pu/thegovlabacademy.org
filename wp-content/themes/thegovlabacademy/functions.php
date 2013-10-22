@@ -169,6 +169,7 @@ function _get_text_between_tags($string, $tagname) {
     return $matches[1];
 }
 
-/*****************Simple fields *********************/
-include('fields/topic-page.php')
+/***************** SIMPLE FIELDS *********************/
+include('fields/topic-page.php');
+include('fields/theme-page.php');
 ?>
