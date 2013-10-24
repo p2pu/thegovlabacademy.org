@@ -130,14 +130,17 @@ simple_fields_register_field_group('theme_page_topics', array(
 ));
 
 // Experts section
-simple_fields_register_field_group('theme_page_experts', array(
-  'name' => 'Experts',
+simple_fields_register_field_group('theme_page_experts_group', array(
+  'name' => 'Theme experts',
   'fields' => array(
     array(
-      'name' => 'Expert Twitter Handle',
-      'slug' => 'theme_page_expert_twitter_handle',
-      'description'=> 'Add a Twitter handle of an expert',
-      'type' => 'text'
+      'name' => 'Expert',
+      'slug' => 'experts',
+      'description'=> 'Enter an Expert',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'expert'
+      )
     ),
   ),
   'repeatable' => TRUE,
@@ -164,8 +167,8 @@ simple_fields_register_post_connector('theme_page_connector',
         'key' => 'theme_page_topics',
         'context' => 'normal',
         'priority' => 'high'),
-      array('name' => 'Experts',
-        'key' => 'theme_page_experts',
+      array('name' => 'Theme Experts',
+        'key' => 'theme_page_experts_group',
         'context' => 'normal',
         'priority' => 'high'),
     ),
@@ -174,5 +177,3 @@ simple_fields_register_post_connector('theme_page_connector',
     'deleted' => false
   )
 );
-
-//simple_fields_register_post_type_default('video_section_connector', 'page');

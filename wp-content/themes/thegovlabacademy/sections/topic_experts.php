@@ -1,6 +1,6 @@
 <div class="experts">
   <h1>Meet the Experts</h1>
-  <?php $experts_values = simple_fields_fieldgroup('topic_experts');
+  <?php $experts_values = simple_fields_fieldgroup('expert_group');
   foreach ($experts_values as $key =>$values){
 
     ?>

@@ -170,6 +170,11 @@ function _get_text_between_tags($string, $tagname) {
 }
 
 /***************** SIMPLE FIELDS *********************/
+require_once('custom-types/custom-experts-type.php');
+
 include('fields/topic-page.php');
 include('fields/theme-page.php');
+include('fields/experts.php');
+
+
 ?>

@@ -189,14 +189,17 @@ simple_fields_register_field_group('topic_page_activities', array(
   'deleted' => false
 ));
 
-simple_fields_register_field_group('topic_experts', array(
+simple_fields_register_field_group('topic_page_experts_group', array(
   'name' => 'Experts',
   'fields' => array(
     array(
-      'name' => 'Expert Twitter Handle',
-      'slug' => 'expert_twitter_handle',
-      'description'=> 'Add a Twitter handle of an expert',
-      'type' => 'text'
+      'name' => 'Expert',
+      'slug' => 'experts',
+      'description'=> 'Enter an Expert',
+      'type' => 'text',
+      'options' => array(
+        'enabled_post_types' => 'expert'
+      )
     ),
   ),
   'repeatable' => TRUE,
@@ -228,7 +231,7 @@ simple_fields_register_post_connector('topic_page_connector',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Experts',
-        'key' => 'topic_experts',
+        'key' => 'topic_page_experts_group',
         'context' => 'normal',
         'priority' => 'high'),
     ),
