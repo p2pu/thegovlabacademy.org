@@ -2,9 +2,8 @@
 
 // Code to create Topic Page Template
 
-// Featured section
-simple_fields_register_field_group('topic_page_featured_section', array(
-  'name' => 'Featured Section',
+simple_fields_register_field_group('topic_page_video_group', array(
+  'name' => 'Video',
   'fields' => array(
     array(
       'name' => 'Video',
@@ -14,50 +13,8 @@ simple_fields_register_field_group('topic_page_featured_section', array(
         'enabled_post_types' => 'video'
       )
     ),
-    array(
-      'name' => 'Link to Image',
-      'slug' => 'theme_page_featured_image_link',
-      'description'=> 'Only put here link if no video has been chosen',
-      'type' => 'text',
-      'options' => array(
-        'subtype' => 'url'
-      )
-    ),
-    array(
-      'name' => 'Image Upload',
-      'slug' => 'theme_page_featured_image_upload',
-      'description'=> 'Only upload image if no video has been chosen and no link to image has been added',
-      'type' => 'file'
-    ),
-    array(
-      'name' => 'Call to Action Button',
-      'slug' => 'theme_page_featured_call_to_action_button',
-      'description'=> 'If You wish to call to action button to be displayed
-                       instead of video or image put the text here',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Call to Action Link',
-      'slug' => 'theme_page_featured_call_to_action_url',
-      'description'=> 'If you chose call to action button to be displayed, put in the link to the content of' ,
-      'type' => 'text',
-      'options' => array(
-        'subtype' => 'url'
-      )
-    ),
-    array(
-      'name' => 'Title of media',
-      'slug' => 'theme_page_featured_title',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Description',
-      'slug' => 'theme_page_featured_description',
-      'type' => 'textarea',
-      'type_textarea_options' => array('use_html_editor' => 1)
-    )
   ),
-  'repeatable' => FALSE,
+  'repeatable' => TRUE,
   'deleted' => false
 ));
 
@@ -190,7 +147,7 @@ simple_fields_register_post_connector('topic_page_connector',
     'name' => 'Topic Page',
     'field_groups' => array(
       array('name' => 'Featured Section',
-        'key' => 'topic_page_featured_section',
+        'key' => 'topic_page_video_group',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Learn More Section',
