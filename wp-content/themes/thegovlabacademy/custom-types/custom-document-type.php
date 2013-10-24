@@ -5,7 +5,7 @@ function document_post_type() {
   $labels = array(
     'name'                => _x( 'Documents', 'Post Type General Name', 'text_domain' ),
     'singular_name'       => _x( 'Document', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'           => __( 'Document', 'text_domain' ),
+    'menu_name'           => __( 'Documents', 'text_domain' ),
     'parent_item_colon'   => __( 'Parent Document:', 'text_domain' ),
     'all_items'           => __( 'All Document', 'text_domain' ),
     'view_item'           => __( 'View Document', 'text_domain' ),

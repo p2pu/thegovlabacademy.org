@@ -2,9 +2,9 @@
 
 // Code to create Topic Page Template
 
-// Video section
-simple_fields_register_field_group('topic_page_video_group', array(
-  'name' => 'Topic videos',
+// Featured section
+simple_fields_register_field_group('topic_page_featured_section', array(
+  'name' => 'Featured Section',
   'fields' => array(
     array(
       'name' => 'Video',
@@ -14,28 +14,10 @@ simple_fields_register_field_group('topic_page_video_group', array(
         'enabled_post_types' => 'video'
       )
     ),
-  ),
-  'repeatable' => TRUE,
-  'deleted' => false
-));
-
-// Featured section
-/*simple_fields_register_field_group('topic_page_featured_section', array(
-  'name' => 'Featured Section',
-  'fields' => array(
-    array(
-      'name' => 'Link to Youtube Video',
-      'slug' => 'topic_featured_video_link',
-      'description'=> 'If you wish to show video on featured jumbotron',
-      'type' => 'text',
-      'options' => array(
-        'subtype' => 'url'
-      )
-    ),
     array(
       'name' => 'Link to Image',
-      'slug' => 'topic_featured_image_link',
-      'description'=> 'Put here link to featured image if it is hosted somewhere else',
+      'slug' => 'theme_page_featured_image_link',
+      'description'=> 'Only put here link if no video has been chosen',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
@@ -43,47 +25,41 @@ simple_fields_register_field_group('topic_page_video_group', array(
     ),
     array(
       'name' => 'Image Upload',
-      'slug' => 'topic_featured_image_upload',
-      'description'=> 'Upload an Image if is not hosted somewhere else',
+      'slug' => 'theme_page_featured_image_upload',
+      'description'=> 'Only upload image if no video has been chosen and no link to image has been added',
       'type' => 'file'
     ),
     array(
       'name' => 'Call to Action Button',
-      'slug' => 'topic_featured_call_to_action_button',
-      'description'=> 'If you didn\'t put in either featured video or featured image you can call to action
-                        This will show up as a big button.' ,
+      'slug' => 'theme_page_featured_call_to_action_button',
+      'description'=> 'If You wish to call to action button to be displayed
+                       instead of video or image put the text here',
       'type' => 'text'
     ),
     array(
       'name' => 'Call to Action Link',
-      'slug' => 'topic_featured_call_to_action_url',
-      'description'=> 'The url to go when call to action is enabled' ,
+      'slug' => 'theme_page_featured_call_to_action_url',
+      'description'=> 'If you chose call to action button to be displayed, put in the link to the content of' ,
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
       )
     ),
     array(
-      'name' => 'Title',
-      'slug' => 'topic_featured_title',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Subtitle',
-      'slug' => 'topic_featured_subtitle',
+      'name' => 'Title of media',
+      'slug' => 'theme_page_featured_title',
       'type' => 'text'
     ),
     array(
       'name' => 'Description',
-      'slug' => 'topic_featured_description',
+      'slug' => 'theme_page_featured_description',
       'type' => 'textarea',
       'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => FALSE,
   'deleted' => false
-));*/
-
+));
 
 // Learn more section
 simple_fields_register_field_group('topic_page_learn_more_section', array(
@@ -129,35 +105,6 @@ simple_fields_register_field_group('topic_page_read_more', array(
   'repeatable' => TRUE,
   'deleted' => false
 ));
-/*simple_fields_register_field_group('topic_page_literature', array(
-  'name' => 'Read',
-  'fields' => array(
-    array(
-      'name' => 'Document URL',
-      'slug' => 'topic_page_source_url',
-      'description'=> 'Add url to the source',
-      'type' => 'text',
-      'options' => array(
-        'subtype' => 'url'
-      )
-    ),
-    array(
-      'name' => 'Source Title',
-      'slug' => 'topic_page_source_title',
-      'description'=> 'Add title for the source',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Source Description',
-      'slug' => 'topic_page_source_description',
-      'description'=> 'Add short description about the source',
-      'type' => 'textarea',
-      'type_textarea_options' => array('use_html_editor' => 1)
-    )
-  ),
-  'repeatable' => TRUE,
-  'deleted' => false
-));*/
 
 // Tools section
 simple_fields_register_field_group('topic_page_tools', array(
@@ -243,7 +190,7 @@ simple_fields_register_post_connector('topic_page_connector',
     'name' => 'Topic Page',
     'field_groups' => array(
       array('name' => 'Featured Section',
-        'key' => 'topic_page_video_group',
+        'key' => 'topic_page_featured_section',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Learn More Section',
