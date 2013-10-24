@@ -5,7 +5,7 @@ function expert_post_type() {
   $labels = array(
     'name'                => _x( 'Experts', 'Post Type General Name', 'text_domain' ),
     'singular_name'       => _x( 'Expert', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'           => __( 'Expert', 'text_domain' ),
+    'menu_name'           => __( 'Experts', 'text_domain' ),
     'parent_item_colon'   => __( 'Parent Expert:', 'text_domain' ),
     'all_items'           => __( 'All Experts', 'text_domain' ),
     'view_item'           => __( 'View Expert', 'text_domain' ),
@@ -27,7 +27,7 @@ function expert_post_type() {
     'label'               => __( 'expert', 'text_domain' ),
     'description'         => __( 'Expert on the topic', 'text_domain' ),
     'labels'              => $labels,
-    'supports'            => array( 'page-attributes', ),
+    'supports'            => array( 'page-attributes', 'title'),
     'taxonomies'          => array( 'post_tag' ),
     'hierarchical'        => false,
     'public'              => true,
@@ -36,7 +36,7 @@ function expert_post_type() {
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
     'menu_position'       => 20,
-    'menu_icon'           => '',
+    'menu_icon'           => get_bloginfo('template_directory') . '/library/images/cpt-icons/user.png',
     'can_export'          => true,
     'has_archive'         => false,
     'exclude_from_search' => true,
@@ -51,3 +51,5 @@ function expert_post_type() {
 
 // Hook into the 'init' action
 add_action( 'init', 'expert_post_type', 0 );
+
+

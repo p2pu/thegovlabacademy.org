@@ -2,8 +2,25 @@
 
 // Code to create Topic Page Template
 
+// Video section
+simple_fields_register_field_group('topic_page_video_group', array(
+  'name' => 'Topic videos',
+  'fields' => array(
+    array(
+      'name' => 'Video',
+      'slug' => 'videos',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'video'
+      )
+    ),
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
+
 // Featured section
-simple_fields_register_field_group('topic_page_featured_section', array(
+/*simple_fields_register_field_group('topic_page_featured_section', array(
   'name' => 'Featured Section',
   'fields' => array(
     array(
@@ -65,7 +82,7 @@ simple_fields_register_field_group('topic_page_featured_section', array(
   ),
   'repeatable' => FALSE,
   'deleted' => false
-));
+));*/
 
 
 // Learn more section
@@ -97,7 +114,22 @@ simple_fields_register_field_group('topic_page_learn_more_section', array(
 ));
 
 // Read more section
-simple_fields_register_field_group('topic_page_literature', array(
+simple_fields_register_field_group('topic_page_read_more', array(
+  'name' => 'Documents',
+  'fields' => array(
+    array(
+      'name' => 'Document',
+      'slug' => 'documents',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'document'
+      )
+    ),
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
+/*simple_fields_register_field_group('topic_page_literature', array(
   'name' => 'Read',
   'fields' => array(
     array(
@@ -125,7 +157,7 @@ simple_fields_register_field_group('topic_page_literature', array(
   ),
   'repeatable' => TRUE,
   'deleted' => false
-));
+));*/
 
 // Tools section
 simple_fields_register_field_group('topic_page_tools', array(
@@ -211,7 +243,7 @@ simple_fields_register_post_connector('topic_page_connector',
     'name' => 'Topic Page',
     'field_groups' => array(
       array('name' => 'Featured Section',
-        'key' => 'topic_page_featured_section',
+        'key' => 'topic_page_video_group',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Learn More Section',

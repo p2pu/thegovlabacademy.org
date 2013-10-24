@@ -171,10 +171,24 @@ function _get_text_between_tags($string, $tagname) {
 
 /***************** SIMPLE FIELDS *********************/
 require_once('custom-types/custom-experts-type.php');
+require_once('custom-types/custom-video-type.php');
+require_once('custom-types/custom-document-type.php');
 
 include('fields/topic-page.php');
 include('fields/theme-page.php');
 include('fields/experts.php');
+include('fields/video.php');
+include('fields/documents.php');
 
+function hwp_enter_title_here($title){
+  $screen = get_current_screen();
+
+  if ('expert' == $screen->post_type){
+    $title = 'Enter expert name here';
+  }
+
+  return $title;
+}
+add_filter('enter_title_here', 'hwp_enter_title_here');
 
 ?>

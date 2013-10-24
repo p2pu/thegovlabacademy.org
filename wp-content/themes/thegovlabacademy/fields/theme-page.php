@@ -16,8 +16,23 @@ simple_fields_register_field_group('theme_page_subtitle_group', array(
   'deleted' => false
 ));
 
+simple_fields_register_field_group('theme_page_video_group', array(
+  'name' => 'Theme videos',
+  'fields' => array(
+    array(
+      'name' => 'Video',
+      'slug' => 'videos',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'video'
+      )
+    ),
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
 // Featured section
-simple_fields_register_field_group('theme_page_featured_section', array(
+/*simple_fields_register_field_group('theme_page_featured_section', array(
   'name' => 'Featured Section',
   'fields' => array(
     array(
@@ -74,7 +89,7 @@ simple_fields_register_field_group('theme_page_featured_section', array(
   ),
   'repeatable' => FALSE,
   'deleted' => false
-));
+));*/
 
 // Subtitle on theme page
 simple_fields_register_field_group('theme_page_inspirational_quote', array(
@@ -155,8 +170,8 @@ simple_fields_register_post_connector('theme_page_connector',
         'key' => 'theme_page_subtitle_group',
         'context' => 'normal',
         'priority' => 'high'),
-      array('name' => 'Featured Section',
-        'key' => 'theme_page_featured_section',
+      array('name' => 'Video Section',
+        'key' => 'theme_page_video_group',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Inspirational Quote',

@@ -1,14 +1,8 @@
 <?php
 
 simple_fields_register_field_group('expert_fields', array(
-  'name' => 'Experts',
+  'name' => 'Details',
   'fields' => array(
-    array(
-      'name' => 'Name',
-      'slug' => 'expert_name',
-      'description'=> 'Enter first, last name',
-      'type' => 'text'
-    ),
     array(
       'name' => 'About',
       'slug' => 'expert_about',
@@ -21,6 +15,12 @@ simple_fields_register_field_group('expert_fields', array(
       'slug' => 'expert_twitter_handle',
       'description'=> 'Enter twitter handle',
       'type' => 'text'
+    ),
+    array(
+      'name' => 'Image',
+      'slug' => 'expert_image',
+      'description'=> 'Enter image',
+      'type' => 'file'
     )
 
   ),
@@ -42,3 +42,5 @@ simple_fields_register_post_connector('experts_connector',
     'deleted' => false
   )
 );
+
+simple_fields_register_post_type_default('experts_connector', 'expert');
