@@ -4,9 +4,9 @@ simple_fields_register_field_group('documents_fields', array(
   'name' => 'Details',
   'fields' => array(
     array(
-      'name' => 'Document URL',
+      'name' => 'Link to document',
       'slug' => 'document_url',
-      'description'=> 'Enter URL',
+      'description'=> 'Enter URL (e.g. http://goo.gl/QR42y)',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
@@ -15,7 +15,6 @@ simple_fields_register_field_group('documents_fields', array(
     array(
       'name' => 'Description',
       'slug' => 'document_description',
-      'description'=> 'Enter short description about the document',
       'type' => 'textarea'
     )
 

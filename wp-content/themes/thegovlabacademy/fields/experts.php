@@ -6,7 +6,7 @@ simple_fields_register_field_group('expert_fields', array(
     array(
       'name' => 'About',
       'slug' => 'expert_about',
-      'description'=> 'Write expert about description',
+      'description'=> 'Describe your expert',
       'type' => 'textarea',
 
     ),

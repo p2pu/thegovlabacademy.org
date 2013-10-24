@@ -3,7 +3,7 @@
 // Code to create Topic Page Template
 
 simple_fields_register_field_group('topic_page_video_group', array(
-  'name' => 'Video',
+  'name' => 'Primary video section',
   'fields' => array(
     array(
       'name' => 'Video',
@@ -14,50 +14,39 @@ simple_fields_register_field_group('topic_page_video_group', array(
       )
     ),
   ),
-  'repeatable' => TRUE,
+  'repeatable' => FALSE,
   'deleted' => false
 ));
 
 // Learn more section
 simple_fields_register_field_group('topic_page_learn_more_section', array(
-  'name' => 'Learn More Section',
+  'name' => 'Secondary videos section',
   'fields' => array(
     array(
-      'name' => 'Link to Youtube Video',
-      'slug' => 'topic_learn_more_video_link',
-      'type' => 'text',
+      'name' => 'Video',
+      'slug' => 'videos',
+      'type' => 'post',
       'options' => array(
-        'subtype' => 'url'
+        'enabled_post_types' => 'video'
       )
-    ),
-    array(
-      'name' => 'Title',
-      'slug' => 'topic_learn_more_video_title',
-      'type' => 'text'
-    ),
-    array(
-      'name' => 'Description',
-      'slug' => 'topic_learn_more_video_description',
-      'type' => 'textarea',
-      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
   'deleted' => false
 ));
 
-// Read more section
-simple_fields_register_field_group('topic_page_read_more', array(
-  'name' => 'Documents',
+// Learn more section
+simple_fields_register_field_group('topic_page_read_section', array(
+  'name' => 'Read section',
   'fields' => array(
     array(
-      'name' => 'Document',
+      'name' => 'Documents',
       'slug' => 'documents',
       'type' => 'post',
       'options' => array(
         'enabled_post_types' => 'document'
       )
-    ),
+    )
   ),
   'repeatable' => TRUE,
   'deleted' => false
@@ -65,29 +54,26 @@ simple_fields_register_field_group('topic_page_read_more', array(
 
 // Tools section
 simple_fields_register_field_group('topic_page_tools', array(
-  'name' => 'Toolbox',
+  'name' => 'Toolbox section',
   'fields' => array(
     array(
-      'name' => 'Tool url',
+      'name' => 'Tool link',
       'slug' => 'topic_page_tool_url',
-      'description'=> 'Add url to the tool',
+      'description'=> 'Enter URL of the tool (e.g. http://schoolofdata.org)',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
       )
     ),
     array(
-      'name' => 'Tool Title',
+      'name' => 'Title',
       'slug' => 'topic_page_tool_title',
-      'description'=> 'Add title for the tool',
       'type' => 'text'
     ),
     array(
-      'name' => 'Tool Description',
+      'name' => 'Description',
       'slug' => 'topic_page_tool_description',
-      'description'=> 'Add short description about the tool',
       'type' => 'textarea',
-      'type_textarea_options' => array('use_html_editor' => 1)
     )
   ),
   'repeatable' => TRUE,
@@ -96,29 +82,27 @@ simple_fields_register_field_group('topic_page_tools', array(
 
 // Activities section
 simple_fields_register_field_group('topic_page_activities', array(
-  'name' => 'Activities',
+  'name' => 'Activities section',
   'fields' => array(
     array(
-      'name' => 'Activity url',
+      'name' => 'Activity link',
       'slug' => 'topic_page_activity_url',
-      'description'=> 'Add url to the activity',
+      'description'=> 'Enter URL of the activity (e.g. http://schoolofdata.org)',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
       )
     ),
     array(
-      'name' => 'Activity Title',
+      'name' => 'Title',
       'slug' => 'topic_page_activity_title',
-      'description'=> 'Add title for the activity',
       'type' => 'text'
     ),
     array(
-      'name' => 'Activity Description',
+      'name' => 'Description',
       'slug' => 'topic_page_activity_description',
-      'description'=> 'Add short description about the activity',
-      'type' => 'textarea',
-      'type_textarea_options' => array('use_html_editor' => 1)
+      'description'=> 'Enter short description about the activity',
+      'type' => 'textarea'
     )
   ),
   'repeatable' => TRUE,
@@ -126,13 +110,13 @@ simple_fields_register_field_group('topic_page_activities', array(
 ));
 
 simple_fields_register_field_group('topic_page_experts_group', array(
-  'name' => 'Experts',
+  'name' => 'Experts section',
   'fields' => array(
     array(
       'name' => 'Expert',
       'slug' => 'experts',
       'description'=> 'Enter an Expert',
-      'type' => 'text',
+      'type' => 'post',
       'options' => array(
         'enabled_post_types' => 'expert'
       )
@@ -155,7 +139,7 @@ simple_fields_register_post_connector('topic_page_connector',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Topic Literature',
-        'key' => 'topic_page_literature',
+        'key' => 'topic_page_read_section',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Topic Activities',

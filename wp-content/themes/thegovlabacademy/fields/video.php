@@ -11,7 +11,7 @@ simple_fields_register_field_group('video_fields', array(
     array(
       'name' => 'Link to video',
       'slug' => 'video_link',
-      'description'=> 'If you wish to show video on featured jumbotron',
+      'description'=> 'Enter youtube or vimeo URL (e.g. http://youtu.be/9MttCgc_0fg or http://vimeo.com/77484567)',
       'type' => 'text',
       'options' => array(
         'subtype' => 'url'
