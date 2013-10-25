@@ -18,11 +18,21 @@ switch ($number_of_videos){
 }
 
 
-foreach ($learn_more_videos as $key => $values) {?>
+foreach ($learn_more_videos as $key => $value) {
+  $video = get_page_by_title($value['title']);
+  $video_link = simple_fields_get_post_value($value['id'], "Link to video", true);
+  $video_description = simple_fields_get_post_value($value['id'], "Description", true);
+  print_r($video);?>
   <div class="<?php echo $col_class; if ($key === 0 or ($key %4) == 0) echo ' first'?>">
-    <iframe width="100%" height="315" src="<?php echo $values['topic_learn_more_video_link']; ?>" frameborder="0" allowfullscreen></iframe>
-    <h5><?php echo $values['topic_learn_more_video_title']; ?></h5>
-    <p><?php echo $values['topic_learn_more_video_description']; ?></p>
+    <div class="four-col">
+      <h2><?php echo $video['title']; ?></h2>
+      <?php echo do_shortcode('[fve]' . $video_link . '[/fve]') ?>
+    </div>
+    <div class="info">
+      <h3><?php echo $value['title']; ?></h3>
+      <h4></h4>
+      <p><?php echo $video_description ?></p>
+    </div>
   </div>
 <?php } ?>
 </div>

@@ -45,6 +45,35 @@ simple_fields_register_field_group('theme_page_video_group', array(
   'deleted' => false
 ));
 
+simple_fields_register_field_group('theme_page_topic_group', array(
+  'name' => 'Topics section',
+  'fields' => array(
+    array(
+      'name' => 'Enter short description about topic',
+      'slug' => 'theme_page_short_topic_description',
+      'type' => 'text',
+    ),
+    array(
+      'name' => 'Upload topic image',
+      'slug' => 'theme_page_topic_image',
+      'type' => 'file',
+      'options' => array(
+        'enable_extended_return_values' => true
+      )
+    ),
+    array(
+      'name' => 'Set topic page',
+      'slug' => 'topics',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'page',
+      )
+    ),
+  ),
+  'repeatable' => TRUE,
+  'deleted' => false
+));
+
 // Experts section
 simple_fields_register_field_group('theme_page_experts_group', array(
   'name' => 'Experts section',
@@ -72,6 +101,10 @@ simple_fields_register_post_connector('theme_page_connector',
         'priority' => 'high'),
       array('name' => 'Video Section',
         'key' => 'theme_page_video_group',
+        'context' => 'normal',
+        'priority' => 'high'),
+      array('name' => 'Topics',
+        'key' => 'theme_page_topic_group',
         'context' => 'normal',
         'priority' => 'high'),
       array('name' => 'Theme Experts',

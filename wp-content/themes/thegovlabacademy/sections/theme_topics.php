@@ -1,35 +1,18 @@
 <?php
-$my_wp_query = new WP_Query();
-$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+$topic_values = simple_fields_fieldgroup('theme_page_topic_group');
+//print_r($topic_values);
 
-$pages = get_page_children(get_the_ID(), $all_wp_pages);
-
-if ($pages) {
-  ?>
-  <h2>Featured Videos</h2><?php
-  foreach ($pages as $key => $value) {
-    $topic = get_page_by_title($value->post_title);
-    $topic_url = get_permalink($topic->ID);
-    $video_id = simple_fields_get_post_value($topic->ID, "Video", true);
-    $video_link = simple_fields_get_post_value($video_id, "Link to video", true);
-    $video_description = simple_fields_get_post_value($video_id, "Description", true);
-    ?>
-    <div class="threecol <?php if ($key === 0 or ($key % 4) == 0) echo ' first' ?>">
-      <div class="four-col">
-        <h2><?php echo $topic->post_name; ?></h2>
-        <?php echo do_shortcode('[fve]' . $video_link . '[/fve]') ?>
-      </div>
-      <div class="info">
-        <h3><a href="<?php echo $topic_url ?>"><?php echo $topic->post_title; ?></a></h3>
-        <h4></h4>
-
-        <p><?php echo $video_description ?></p>
-      </div>
-    </div><?php
-  }?>
-
-<?php
+foreach($topic_values as $key=> $value){
+  //print_r($key);
+  //print_r($value);?>
+<div class="threecol <?php if($key === 0){echo ' first';} ?>">
+  <div class="topic-img">
+    <img src="<?php echo $value['theme_page_topic_image']['url'] ?>"
+                              alt="<?php echo $value['theme_page_topic_image']['url'] ?>"/>
+  </div>
+  <div class="info">
+    <p><?php echo $value['theme_page_short_topic_description'] ?></p>
+  </div>
+</div><?php
 }
-//print_r($pages);
-
 ?>
