@@ -2,12 +2,13 @@
 $my_wp_query = new WP_Query();
 $all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
 
-$pages = & get_page_children(get_the_ID(), $all_wp_pages);
+$pages = get_page_children(get_the_ID(), $all_wp_pages);
+
 if ($pages) {
   ?>
   <h2>Featured Videos</h2><?php
   foreach ($pages as $key => $value) {
-    $topic = get_page_by_title($pages[0]->post_title);
+    $topic = get_page_by_title($value->post_title);
     $video_id = simple_fields_get_post_value($topic->ID, "Video", true);
     $video_link = simple_fields_get_post_value($video_id, "Link to video", true);
     $video_description = simple_fields_get_post_value($video_id, "Description", true);
