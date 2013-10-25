@@ -10,7 +10,8 @@ simple_fields_register_field_group('topic_page_video_group', array(
       'slug' => 'videos',
       'type' => 'post',
       'options' => array(
-        'enabled_post_types' => 'video'
+        'enabled_post_types' => 'video',
+        'enable_extended_return_values' => true
       )
     ),
   ),

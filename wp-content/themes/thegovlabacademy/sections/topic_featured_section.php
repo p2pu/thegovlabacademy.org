@@ -1,18 +1,17 @@
 <?php $featured_fields = simple_fields_fieldgroup('topic_page_video_group');
-//if (count(array_filter($featured_fields))) {?>
-  <div class="twelvecol first">
-  <div class="sixcol first">
-
-    <iframe width="100%" height="315"
-            src="<?php echo get_post( $featured_fields['videos']) ; ?>"
-            frameborder="0" allowfullscreen></iframe>
+$video_link = simple_fields_get_post_value($featured_fields['id'], "Link to video", true);
+if ($featured_fields) {?>
+  <div class="main-slider">
+  <div class="container eightcol first">
+    <?php echo do_shortcode('[fve]' . $video_link . '[/fve]') ?>
   </div>
-  <div class="sixcol">
-    <h1 class="featured-title"><?php echo simple_fields_value('topic_featured_title'); ?></h1>
+  <div class="info fourcol">
+    <h2><?php print_r($featured_fields['post']->post_title); ?></h2>
 
-    <h2 class="featured-subtitle"><?php echo simple_fields_value('topic_featured_subtitle'); ?></h2>
+    <h3></h3>
 
-    <p class="feautured-description"><?php echo simple_fields_value('topic_featured_description'); ?></p>
+    <p><?php echo simple_fields_get_post_value($featured_fields['id'], "Description", true); ?></p>
   </div>
+
   </div><?php
-//} ?>
+} ?>
