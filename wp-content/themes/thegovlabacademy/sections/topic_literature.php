@@ -2,7 +2,6 @@
 if ($documents_values) {?>
   <h1>Read</h1><?php
   foreach ($documents_values as $key => $values) {
-    print_r($values['id']);
     ?>
     <div class="document">
       <div class="twocol first">
