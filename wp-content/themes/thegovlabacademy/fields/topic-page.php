@@ -25,7 +25,7 @@ simple_fields_register_field_group('topic_page_learn_more_section', array(
   'fields' => array(
     array(
       'name' => 'Video',
-      'slug' => 'videos',
+      'slug' => 'learn_more_videos',
       'type' => 'post',
       'options' => array(
         'enabled_post_types' => 'video'
