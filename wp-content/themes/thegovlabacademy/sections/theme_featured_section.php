@@ -1,44 +1,20 @@
-<?php $featured_fields = simple_fields_fieldgroup('theme_page_featured_section');
-if (count(array_filter($featured_fields))) { ?>
-  <div class="twelvecol first">
-    <div class="sixcol first"><?php
-      if ($featured_fields['theme_page_featured_youtube_link']) {
-        ?>
-      <iframe width="100%" height="315"
-              src="<?php echo $featured_fields['theme_page_featured_youtube_link']; ?>"
-              frameborder="0" allowfullscreen></iframe><?php
-      } elseif ($featured_fields['theme_page_featured_image_link']) {
-        ?>
-        <div class="featured-img">
-        <img src="<?php echo $featured_fields['theme_page_featured_image_link'] ?>"
-             alt="<?php echo $featured_fields['theme_featured_title'] ?> Image"/>
-        </div><?php
-      } elseif ($featured_fields['theme_page_featured_image_upload']) {
-        ?>
-        <div class="featured-img">
-        <img src="<?php echo wp_get_attachment_url($featured_fields['theme_page_featured_image_upload']) ?>"
-             alt="<?php echo $featured_fields['theme_featured_title'] ?> Image"/>
-        </div><?php
-      } elseif ($featured_fields['theme_page_featured_call_to_action_button']) {
-        ?>
-        <div class="featured-call-to-action">
-        <div class="button-extra-large">
-          <a class="btn" href="<?php echo $featured_fields['theme_page_featured_call_to_action_url'] ?>">
-            <?php echo $featured_fields['theme_page_featured_call_to_action_button'] ?>
-          </a>
-        </div>
-        </div><?php
-      } else {
-        ?>
-        <div class="featured-call-to-action">
-          <img src="http://placehold.it/500x400&text=Select+Video+Image+or+Call+to+Action">
-        </div><?php
-      } ?>
+<?php $featured_fields = simple_fields_fieldgroup('theme_page_video_group');
+if ($featured_fields) {?>
+  <div class="main-slider">
+    <!-- Main Slider - I guess we will use a standard plugin. -->
+    <div class="container eightcol first">
+      <iframe width="100%" height="300"
+              src="<?php echo get_the_video_link(simple_fields_get_post_value($featured_fields['id'], "Link to video", true)) ?>"
+              frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="info fourcol">
+      <h2><?php print_r($featured_fields['post']->post_title); ?></h2>
 
+      <h3></h3>
+
+      <p><?php echo simple_fields_get_post_value($featured_fields['id'], "Description", true); ?></p>
     </div>
-    <div class="sixcol">
-      <h1 class="featured-title"><?php echo simple_fields_value('theme_page_featured_title'); ?></h1>
-      <p class="feautured-description"><?php echo simple_fields_value('theme_page_featured_description'); ?></p>
-    </div>
+
   </div><?php
-} ?>
+}?>
+

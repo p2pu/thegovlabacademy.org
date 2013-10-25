@@ -35,6 +35,8 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
+    <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/library/css/styles.css?ver=20120208' type='text/css' media='all' />
+
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
 		<?php // drop Google Analytics Here ?>
@@ -46,7 +48,7 @@
 		<div id="container">
       <header  class="header" role="banner"> <!-- Header and Navigation -->
         <div class="content">
-          <div class="wrapper">
+          <div class="wrap">
             <h1>
               <a href="<?php echo home_url(); ?>" rel="nofollow">
                 <img src="<?php echo get_bloginfo('template_directory');?>/library/images/govlab-academy-logo.png" alt="">
@@ -70,6 +72,12 @@
           </div>
         </div>
       </header>
+      <section class="content-top"> <!-- Main Slider -->
+        <div class="wrap">
+          <?php wp_nav_menu( array( 'theme_location' => 'theme_menu' ) ); ?>
+
+        </div>
+      </section>
       <!--
 			<header class="header" role="banner">
 

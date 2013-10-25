@@ -161,6 +161,21 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/***************** CUSTOM MENUS *********************/
+// Register Navigation Menus
+function site_specific_menus() {
+
+  $locations = array(
+    'institutional_menu' => __( 'Institutional Menu' ),
+    'theme_menu' => __( 'Theme Menu' ),
+    'mobile_footer' => __( 'Footer Menu on mobile devices'),
+  );
+  register_nav_menus( $locations );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'site_specific_menus' );
 
 /****************** SHORTCODES **********************/
 function _get_text_between_tags($string, $tagname) {
@@ -169,16 +184,16 @@ function _get_text_between_tags($string, $tagname) {
     return $matches[1];
 }
 
-/***************** SIMPLE FIELDS *********************/
+/***************** CUSTOM TYPES *********************/
 require_once('custom-types/custom-experts-type.php');
 require_once('custom-types/custom-video-type.php');
 require_once('custom-types/custom-document-type.php');
 
-include('fields/topic-page.php');
-include('fields/theme-page.php');
-include('fields/experts.php');
-include('fields/video.php');
-include('fields/documents.php');
+require_once('fields/topic-page.php');
+require_once('fields/theme-page.php');
+require_once('fields/experts.php');
+require_once('fields/video.php');
+require_once('fields/documents.php');
 
 function hwp_enter_title_here($title){
   $screen = get_current_screen();
@@ -190,5 +205,9 @@ function hwp_enter_title_here($title){
   return $title;
 }
 add_filter('enter_title_here', 'hwp_enter_title_here');
+
+function get_the_video_link($link){
+  return $link;
+}
 
 ?>

@@ -260,8 +260,8 @@ function bones_footer_links() {
 // this is the fallback for header menu
 function bones_main_nav_fallback() {
 	wp_page_menu( array(
-		'show_home' => true,
-    	'menu_class' => 'nav top-nav clearfix',      // adding custom nav class
+		'show_home' => false,
+    	'menu_class' => 'theme-menu',      // adding custom nav class
 		'include'     => '',
 		'exclude'     => '',
 		'echo'        => true,

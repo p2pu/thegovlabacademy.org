@@ -16,12 +16,6 @@ get_header(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope
                  itemtype="http://schema.org/BlogPosting">
 
-          <header class="article-header">
-            <h1 class="page-title" itemprop="headline">
-              <?php echo simple_fields_value('theme_page_subtitle'); ?>
-            </h1>
-          </header><?php // end article header ?>
-
           <section class="entry-content clearfix" itemprop="articleBody">
             <div class="clearfix">
               <?php include (get_template_directory()."/sections/theme_featured_section.php") ?>
