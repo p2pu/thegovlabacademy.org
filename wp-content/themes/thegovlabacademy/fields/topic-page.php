@@ -46,7 +46,8 @@ simple_fields_register_field_group('topic_page_read_section', array(
       'slug' => 'documents',
       'type' => 'post',
       'options' => array(
-        'enabled_post_types' => 'document'
+        'enabled_post_types' => 'document',
+        'enable_extended_return_values' => true
       )
     )
   ),
