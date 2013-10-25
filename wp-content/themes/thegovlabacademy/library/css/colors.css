@@ -1,0 +1,98 @@
+/* Theme Colors */
+
+/* COLORS
+Purple - #50307f | rgba(80, 48, 127, 1)
+Blue   - #00adef | rgba(0,173, 239, 1) 
+Pink   - #ed135a | rgba(237, 19, 90, 1)
+Green  - #00a99c | rgba(0, 169, 156, 1)
+*/
+
+/* Index */
+
+.data { color: #00adef; }
+.crowd { color: #50307f; }
+.behave { color: #ed135a; }
+.history { color: #00a99c; }
+.soon { opacity: .6; }
+
+.theme-menu .data { background-color: #00adef;}
+.theme-menu .crowd { background-color: #50307f;}
+.theme-menu .behave { background-color: #ed135a;}
+.theme-menu .history { background-color: #00a99c;}
+
+.theme-menu a.crowd:after { color: #50307f; }
+.theme-menu a.data:after { 	color:  #00adef; }
+.theme-menu a.behave:after { color: #ed135a; }
+.theme-menu a.history:after { color: #00a99c; }
+
+.data.four-col h2,
+.data.four-col .info,
+.data.main-content > h2  { border-bottom-color: #00adef; }
+.crowd.four-col h2,
+.crowd.four-col .info,
+.crowd.main-content > h2 { border-bottom-color: #50307f; }
+.behave.four-col .info,
+.behave.four-col h2,
+.behave.main-content > h2 { border-bottom-color: #ed135a; }
+.history.four-col .info,
+.history.four-col h2,
+.history.main-content > h2 { border-bottom-color: #00a99c; }
+
+/* Theme Home */
+
+.data .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-data.png); }
+.crowd .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-crowd.png); }
+.behave .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-behave.png); }
+.history .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-history.png); }
+
+
+.data header,
+.data .info,
+.data h2 { border-bottom-color: #00adef; }
+
+.data .content-entry .icon-doc:hover,
+.data .content-entry .icon-activity:hover,
+.data .content-entry .icon-tool:hover { background-color: #00adef; }
+
+.data .experts-list li:hover { border-color:#00adef; }
+
+.data small a { color:#00adef;}
+
+
+.crowd header,
+.crowd .info,
+.crowd h2 { border-bottom-color: #50307f; }
+
+.crowd .content-entry .icon-doc:hover,
+.crowd .content-entry .icon-activity:hover,
+.crowd .content-entry .icon-tool:hover { background-color: #50307f; }
+
+.crowd .experts-list li:hover { border-color:#50307f; }
+
+.crowd small a { color:#50307f;}
+
+
+.behave header,
+.behave .info,
+.behave h2 { border-bottom-color: #ed135a; }
+
+.behave .content-entry .icon-doc:hover,
+.behave .content-entry .icon-activity:hover,
+.behave .content-entry .icon-tool:hover { background-color:  #ed135a; }
+
+.behave .experts-list li:hover { border-color: #ed135a; }
+
+.behave small a { color:#ed135a;}
+
+
+.history header,
+.histroy .info,
+.history h2 { border-bottom-color: #00a99c; }
+
+.history .content-entry .icon-doc:hover,
+.history .content-entry .icon-activity:hover,
+.history .content-entry .icon-tool:hover { background-color:  #00a99c; }
+
+.history .experts-list li:hover { border-color: #00a99c; }
+
+.history small a { color:#00a99c;}
