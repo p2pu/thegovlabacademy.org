@@ -28,7 +28,8 @@ simple_fields_register_field_group('topic_page_learn_more_section', array(
       'slug' => 'learn_more_videos',
       'type' => 'post',
       'options' => array(
-        'enabled_post_types' => 'video'
+        'enabled_post_types' => 'video',
+        'enable_extended_return_values' => true
       )
     )
   ),

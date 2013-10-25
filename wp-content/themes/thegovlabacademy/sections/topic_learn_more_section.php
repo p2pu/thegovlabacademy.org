@@ -3,7 +3,6 @@
 $learn_more_videos = simple_fields_fieldgroup('topic_page_learn_more_section');
 
 $number_of_videos = count($learn_more_videos);
-print_r(get_post($learn_more_videos[0]['id']));
 
 switch ($number_of_videos){
   case 1:
