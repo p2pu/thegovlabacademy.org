@@ -23,7 +23,6 @@ if ($pages) {
 
         <p><?php echo $video_description ?></p>
       </div>
-    </div>
     </div><?php
   }?>
 
