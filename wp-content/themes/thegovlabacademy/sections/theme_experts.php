@@ -2,7 +2,7 @@
 
 if($experts_values){?>
 <div class="experts">
-  <h1>Meet the Experts</h1><?php
+  <h2>Meet the Experts</h2><?php
   foreach ($experts_values as $key =>$values){
     $name = simple_fields_get_post_value($experts_values[0], "Image", true);
     $image_url = wp_get_attachment_url( simple_fields_get_post_value($experts_values[0], "Image", true) );?>

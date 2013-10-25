@@ -236,7 +236,7 @@ footer p {
 /* Main Slider */
 
 .main-slider .container {
-	width: 650px;
+	height: 300px;
 	overflow: hidden;
 	display: inline-block;
 }
