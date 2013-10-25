@@ -9,7 +9,7 @@ if ($pages) {
   <h2>Featured Videos</h2><?php
   foreach ($pages as $key => $value) {
     $topic = get_page_by_title($value->post_title);
-    $topic_url = $topic->guid;
+    $topic_url = get_permalink($topic->ID);
     $video_id = simple_fields_get_post_value($topic->ID, "Video", true);
     $video_link = simple_fields_get_post_value($video_id, "Link to video", true);
     $video_description = simple_fields_get_post_value($video_id, "Description", true);
