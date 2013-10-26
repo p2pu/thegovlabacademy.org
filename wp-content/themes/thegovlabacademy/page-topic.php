@@ -26,11 +26,11 @@ get_header(); ?>
               <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
             </div><?php // End literature section ?>
 
-            <div class="wrapper clearfix">
+            <div class="wrapper content clearfix">
               <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
             </div><?php // End activities section ?>
 
-            <div class="wrapper clearfix">
+            <div class="wrapper content clearfix">
               <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
             </div><?php // End toolbox section ?>
 
