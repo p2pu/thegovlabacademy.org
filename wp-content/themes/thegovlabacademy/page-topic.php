@@ -18,7 +18,7 @@ get_header(); ?>
               <?php include (get_template_directory()."/sections/topic_featured_section.php") ?>
             </div><?php // End featured section ?>
 
-            <div class="clearfix">
+            <div class="wrapper clearfix">
               <?php include (get_template_directory() . "/sections/topic_learn_more_section.php") ;?>
             </div><?php // End learn more section ?>
 

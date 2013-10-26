@@ -326,8 +326,7 @@ footer p {
 	border-bottom: 2px solid #333;
 }
 
-.two-col .info h3,
-.four-col .info h3 {
+.info h3{
 	margin: 0;
 	height: 32px;
 	overflow: hidden;
