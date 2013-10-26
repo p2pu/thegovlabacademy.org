@@ -381,7 +381,10 @@ footer p {
 	width: 355px;
 }
 
-.content .content-entry {	padding-left: 100px; }
+.content .content-entry {
+    padding-left: 100px;
+    min-height: 100px;
+}
 
 .content-entry:hover {
 	background-color: #f2f2f2;

@@ -5,10 +5,9 @@ if ($documents_values) {?>
     ?>
     <a href="<?php echo simple_fields_get_post_value($values['id'], "Link to document", true); ?>"
        target="_blank">
-      <article class="content-entry doc">
+      <article class="content-entry doc twelvecol">
         <div class="icon-doc"></div>
         <h3 class="post-title"><?php echo $values['title']; ?></h3>
-        <small>Posted by <a href="#">Beth Noveck</a> at <a href="#">Oct. 23rd</a></small>
         <p><?php echo simple_fields_get_post_value($values['id'], "Description", true); ?></p>
       </article>
     </a>
