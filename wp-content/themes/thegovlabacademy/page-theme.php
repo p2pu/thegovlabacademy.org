@@ -25,20 +25,15 @@ get_header(); ?>
               <?php include (get_template_directory()."/sections/theme_inspirational_quote.php") ?>
             </div><?php // End inspirational quote section ?>
 
-            <div class="clearfix">
+            <div class="wrapper clearfix">
               <?php include (get_template_directory()."/sections/theme_topics.php") ?>
             </div><?php // End inspirational quote section ?>
 
-            <div class="clearfix">
+            <div class="wrapper clearfix">
               <?php include (get_template_directory() . "/sections/theme_experts.php") ;?>
             </div><?php // End expert section ?>
 
           </section> <?php // end article section ?>
-
-          <footer class="article-footer">
-            <?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
-
-          </footer> <?php // end article footer ?>
 
           <?php comments_template(); ?>
 

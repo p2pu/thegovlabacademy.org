@@ -40,15 +40,13 @@ small {
 /* Layout */
 
 .wrapper {
-	width: 960px;
+	/*width: 960px;*/
 	margin: 0 auto;
 }
-
 section {
-	padding-bottom: 20px;
-	margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
-
 /* Sidebar */
 
 aside {
@@ -179,7 +177,7 @@ footer p {
 	background-color: #f2f2f2;
 	margin-bottom: 15px;
 	text-align: center;
-	height: 27px;
+    height: 27px;
 }
 
 .theme-menu li {
@@ -187,6 +185,7 @@ footer p {
 	margin: 0 -2px;
 	border-left: 7px solid #fff;
 	border-right: 7px solid #fff;
+    height: 27px;
 }
 
 .theme-menu a {
@@ -227,10 +226,10 @@ footer p {
 	transition: top .2s ease;
 }
 
-.theme-menu a.crowd:after { content:'crowd'; }
-.theme-menu a.data:after { content:'data'; }
-.theme-menu a.behave:after { content:'behave'; }
-.theme-menu a.history:after { content:'history'; }
+.theme-menu li.crowd a:after { content:'crowd'; }
+.theme-menu li.data a:after { content:'data'; }
+.theme-menu li.behave a:after { content:'behave'; }
+.theme-menu li.history a:after { content:'history'; }
 
 
 /* Main Slider */
@@ -243,9 +242,7 @@ footer p {
 
 .main-slider .info {
 	display: inline-block;
-	/*width: 265px;*/
 	background-color: #f2f2f2;
-	margin-left: 11px;
 	vertical-align: top;
 	padding: 15px;
 	height: 300px;
@@ -272,12 +269,15 @@ footer p {
 	line-height: 40px;
 	font-weight: 100;
 	font-style: italic;
-	text-align: right;
+	text-align: left;
 	color: #555;
 }
 
 /* Content */
-
+.content-top{
+    margin: 0;
+    padding: 0;
+}
 .info {
 	background-color: #f2f2f2;	
 	padding: 15px;
@@ -287,8 +287,6 @@ footer p {
 
 .main-slider .info {
 	display: inline-block;
-	width: 265px;
-	margin-left: 11px;
 	height: 300px;
 }
 
@@ -421,7 +419,19 @@ footer p {
 	background-size: 52px auto;
 	background-position: 9px 8px;
 }
+/* Topic list */
+.theme-topic-list{
 
+}
+.theme-topic{
+    display: block;
+    text-align: center;
+}
+.theme-topic-list img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
 /* Experts List */
 
 .experts-list {

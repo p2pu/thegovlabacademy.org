@@ -5,7 +5,7 @@
 	overflow: hidden;
 	height: 0;
 	padding-bottom: 56.25%; /* This is default, but will be overriden */
-	margin: 0.5em 0; /* A bit of margin at the bottom */
+	/*margin: 0.5em 0; /* A bit of margin at the bottom */
 }
 
 .fve-video-wrapper iframe,  

@@ -20,10 +20,10 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .theme-menu .behave { background-color: #ed135a;}
 .theme-menu .history { background-color: #00a99c;}
 
-.theme-menu a.crowd:after { color: #50307f; }
-.theme-menu a.data:after { 	color:  #00adef; }
-.theme-menu a.behave:after { color: #ed135a; }
-.theme-menu a.history:after { color: #00a99c; }
+.theme-menu li.crowd a:after { color: #50307f; }
+.theme-menu li.data a:after { 	color:  #00adef; }
+.theme-menu li.behave a:after { color: #ed135a; }
+.theme-menu li.history a:after { color: #00a99c; }
 
 .data.four-col h2,
 .data.four-col .info,

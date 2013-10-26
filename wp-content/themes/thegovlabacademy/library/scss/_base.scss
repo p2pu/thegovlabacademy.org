@@ -76,11 +76,11 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+	//color: $link-color;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
+		//color: $link-hover;
 	}
 
 	/* on click */
