@@ -3,7 +3,7 @@ if($tools_values){?>
   <h1>Toolbox</h1><?php
   foreach ($tools_values as $key => $values) {?>
     <a href="<?php echo $values['topic_page_tool_url']; ?>" target="_blank">
-      <article class="content-entry tool">
+      <article class="content-entry tool twelvecol">
         <div class="icon-tool"></div>
         <h3 class="post-title"><?php echo $values['topic_page_tool_title']; ?></h3>
 
