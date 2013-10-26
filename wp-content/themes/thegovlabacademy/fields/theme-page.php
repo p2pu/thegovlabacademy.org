@@ -54,13 +54,15 @@ simple_fields_register_field_group('theme_page_topic_group', array(
       'type' => 'text',
     ),
     array(
-      'name' => 'Upload topic image',
+      'name' => 'Image',
+      'description' => 'Upload topic image',
       'slug' => 'theme_page_topic_image',
       'type' => 'file',
 
     ),
     array(
-      'name' => 'Set topic page',
+      'name' => 'Topic',
+      'description' => 'Set topic page',
       'slug' => 'theme_topics',
       'type' => 'post',
       'options' => array(
