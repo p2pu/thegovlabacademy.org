@@ -1,6 +1,6 @@
 <?php $experts_values = simple_fields_fieldgroup('topic_page_experts_group');
 if ($experts_values){ ?>
-  <h2>Meet the Experts</h2>
+  <h2>On Twitter</h2>
   <ul class="experts-list"><?php
   foreach ($experts_values as $key => $values) {
     $name = simple_fields_get_post_value($values, "Image", true);
