@@ -12,18 +12,18 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .data { color: #00adef; }
 .crowd { color: #50307f; }
 .behave { color: #ed135a; }
-.history { color: #00a99c; }
+.historyof { color: #00a99c; }
 .soon { opacity: .6; }
 
 .theme-menu .data { background-color: #00adef;}
 .theme-menu .crowd { background-color: #50307f;}
 .theme-menu .behave { background-color: #ed135a;}
-.theme-menu .history { background-color: #00a99c;}
+.theme-menu .historyof { background-color: #00a99c;}
 
 .theme-menu li.crowd a:after { color: #50307f; }
 .theme-menu li.data a:after { 	color:  #00adef; }
 .theme-menu li.behave a:after { color: #ed135a; }
-.theme-menu li.history a:after { color: #00a99c; }
+.theme-menu li.historyof a:after { color: #00a99c; }
 
 .data.four-col h2,
 .data.four-col .info,
@@ -34,16 +34,16 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .behave.four-col .info,
 .behave.four-col h2,
 .behave.main-content > h2 { border-bottom-color: #ed135a; }
-.history.four-col .info,
-.history.four-col h2,
-.history.main-content > h2 { border-bottom-color: #00a99c; }
+.historyof.four-col .info,
+.historyof.four-col h2,
+.historyof.main-content > h2 { border-bottom-color: #00a99c; }
 
 /* Theme Home */
 
 .data .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-data.png); }
 .crowd .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-crowd.png); }
 .behave .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-behave.png); }
-.history .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-history.png); }
+.historyof .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-historyof.png); }
 
 
 .data header,
@@ -85,14 +85,14 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .behave small a { color:#ed135a;}
 
 
-.history header,
+.historyof header,
 .histroy .info,
-.history h2 { border-bottom-color: #00a99c; }
+.historyof h2 { border-bottom-color: #00a99c; }
 
-.history .content-entry .icon-doc:hover,
-.history .content-entry .icon-activity:hover,
-.history .content-entry .icon-tool:hover { background-color:  #00a99c; }
+.historyof .content-entry .icon-doc:hover,
+.historyof .content-entry .icon-activity:hover,
+.historyof .content-entry .icon-tool:hover { background-color:  #00a99c; }
 
-.history .experts-list li:hover { border-color: #00a99c; }
+.historyof .experts-list li:hover { border-color: #00a99c; }
 
-.history small a { color:#00a99c;}
+.historyof small a { color:#00a99c;}

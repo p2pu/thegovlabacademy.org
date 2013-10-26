@@ -229,7 +229,7 @@ footer p {
 .theme-menu li.crowd a:after { content:'crowd'; }
 .theme-menu li.data a:after { content:'data'; }
 .theme-menu li.behave a:after { content:'behave'; }
-.theme-menu li.history a:after { content:'history'; }
+.theme-menu li.historyof a:after { content:'historyof'; }
 
 
 /* Main Slider */
@@ -260,6 +260,10 @@ footer p {
 
 .main-slider .info p {
 	color: #333;
+}
+/* featured video */
+.main-slider iframe{
+    width: 100%;
 }
 
 /* Quote */

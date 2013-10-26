@@ -53,37 +53,36 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="container">
-  <header class="header" role="banner"> <!-- Header and Navigation -->
-    <div class="content">
-      <div class="wrap">
-        <h1>
-          <a href="<?php echo home_url(); ?>" rel="nofollow">
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/library/images/govlab-academy-logo.png" alt="">
-          </a>
-        </h1>
+<header class="header" role="banner"> <!-- Header and Navigation -->
+  <div class="content">
+    <div class="wrap">
+      <h1>
+        <a href="<?php echo home_url(); ?>" rel="nofollow">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/library/images/govlab-academy-logo.png" alt="">
+        </a>
+      </h1>
 
-        <div class="institutional-menu">
-          <nav>
-            <a href="#">Blog</a>
-            <a href="#">About</a>
-          </nav>
-          <div id="subscribe" class="subscribe-form">
-            <a href="#">Subscribe</a>
+      <div class="institutional-menu">
+        <nav>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+        </nav>
+        <div id="subscribe" class="subscribe-form">
+          <a href="#">Subscribe</a>
 
-            <form>
-              <h4>Subscribe to our newsletter</h4>
-              <input type="text" placeholder="Email">
-              <input id="subscribe-submit" class="button" type="submit" value="OK">
-              <span>Subscribe</span>
-            </form>
-          </div>
+          <form>
+            <h4>Subscribe to our newsletter</h4>
+            <input type="text" placeholder="Email">
+            <input id="subscribe-submit" class="button" type="submit" value="OK">
+            <span>Subscribe</span>
+          </form>
         </div>
       </div>
     </div>
-  </header>
-  <section class="content-top"> <!-- Main Slider -->
-    <div class="wrap">
-      <?php wp_nav_menu(array('theme_location' => 'theme_menu', 'container_class' => 'theme-menu')); ?>
-    </div>
-  </section>
+  </div>
+</header>
+<section class="content-top"> <!-- Main Slider -->
+  <div class="wrap">
+    <?php wp_nav_menu(array('theme_location' => 'theme_menu', 'container_class' => 'theme-menu')); ?>
+  </div>
+</section>
