@@ -7,7 +7,7 @@ if($topic_values){?>
     <div class="topic-img">
       <a class="theme-topic" href="<?php echo get_permalink($value['theme_topics']) ?>">
       <img src="<?php echo $value['theme_page_topic_image']['url'] ?>"
-                                alt="<?php echo $value['theme_page_topic_image']['url'] ?>"/>
+                                alt="<?php echo $value['theme_page_topic_image'] ?>"/>
       </a>
     </div>
     <div class="info">
