@@ -408,17 +408,17 @@ footer p {
 }
 
 .content-entry .icon-doc { 	
-	background-image: url(images/doc-icon.png);
+	background-image: url(../images/doc-icon.png);
 	background-size: 35px auto; 
 	background-position: 16px 10px;
 }
 .content-entry .icon-activity {	
-	background-image: url(images/do-icon.png); 
+	background-image: url(../images/do-icon.png);
 	background-size: 60px auto;
 	background-position: 5px 4px;
 }
 .content-entry .icon-tool { 
-	background-image: url(images/tool-icon.png); 
+	background-image: url(../images/tool-icon.png);
 	background-size: 52px auto;
 	background-position: 9px 8px;
 }
