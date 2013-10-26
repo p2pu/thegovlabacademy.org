@@ -70,12 +70,12 @@ class FluidVideoEmbed{
                     if( $this->meta['aspect'] == 'widescreen' )
                         $padding = '56.25%';
                     
-                    return '<iframe class="youtube-player" type="text/html" width="400" height="300" src="http://www.youtube.com/embed/' . $this->meta['id'] . '" frameborder="0" allowfullscreen></iframe>';
+                    return '<iframe class="youtube-player" type="text/html" width="100%" height="100%" src="http://www.youtube.com/embed/' . $this->meta['id'] . '?wmode=transparent&modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>';
                 break;
                 case 'vimeo':
                     $padding = ( $this->meta['aspect'] * 100 ) . '%';
 
-                    return '<iframe src="http://player.vimeo.com/video/' . $this->meta['id'] . '?" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                    return '<iframe src="http://player.vimeo.com/video/' . $this->meta['id'] . '?portrait=0&byline=0&title=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                 break;
             }
         }
