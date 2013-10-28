@@ -198,7 +198,7 @@ function _get_text_between_tags($string, $tagname) {
 require_once('custom-types/custom-experts-type.php');
 require_once('custom-types/custom-video-type.php');
 require_once('custom-types/custom-document-type.php');
-
+require_once('fields/home-page.php');
 require_once('fields/topic-page.php');
 require_once('fields/theme-page.php');
 require_once('fields/experts.php');

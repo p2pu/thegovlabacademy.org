@@ -40,7 +40,7 @@ small {
 /* Layout */
 
 .wrapper {
-	/*width: 960px;*/
+	width: 960px;
 	margin: 0 auto;
 }
 section {
@@ -376,11 +376,14 @@ footer p {
 }
 
 .content-entry.video {
-	margin:0 0 15px 15px;
+	/*margin:0 0 15px 15px;
 	height: 150px;
-	width: 355px;
+	width: 355px;*/
 }
-
+.content-entry .image{
+    width: 310px;
+    max-height: 150px;
+}
 .content .content-entry {
     padding-left: 100px;
     min-height: 100px;
@@ -648,6 +651,7 @@ fieldset {
 	display: none;
 	/*background-color: rgba(255, 0 0, .3);*/
 }
+
 
 
 
