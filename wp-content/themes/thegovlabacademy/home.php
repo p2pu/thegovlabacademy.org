@@ -35,7 +35,7 @@ get_header(); ?>
         }?>
         <div class="four-col behave soon">
           <h2>Behave</h2>
-          <img src="images/behave-theme.png" alt="">
+          <img src="library/images/behave-theme.png" alt="">
           <div class="info">
             <h3>Behavior and Insight</h3>
             <h4>Coming Soon</h4>
@@ -44,7 +44,7 @@ get_header(); ?>
         </div>
         <div class="four-col history soon">
           <h2>History</h2>
-          <img src="images/history-theme.png" alt="">
+          <img src="library/images/history-theme.png" alt="">
           <div class="info">
             <h3>History &amp; Context of Open Governance</h3>
             <h4>Coming Soon</h4>
