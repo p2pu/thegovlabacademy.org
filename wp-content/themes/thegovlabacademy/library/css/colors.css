@@ -96,3 +96,5 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .historyof .experts-list li:hover { border-color: #00a99c; }
 
 .historyof small a { color:#00a99c;}
+
+.involve a{color: #555; }
