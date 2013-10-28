@@ -55,7 +55,7 @@
 <body <?php body_class(); ?>>
 <header class="header" role="banner"> <!-- Header and Navigation -->
   <div class="content">
-    <div class="wrap">
+    <div class="wrapper ">
       <h1>
         <a href="<?php echo home_url(); ?>" rel="nofollow">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/library/images/govlab-academy-logo.png" alt="">
@@ -82,7 +82,7 @@
   </div>
 </header>
 <section class="content-top"> <!-- Main Slider -->
-  <div class="wrap">
+  <div class="wrapper">
     <?php wp_nav_menu(array('theme_location' => 'theme_menu', 'container_class' => 'theme-menu')); ?>
   </div>
 </section>
