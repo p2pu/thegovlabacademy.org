@@ -12,7 +12,7 @@ get_header(); ?>
     <div id="main" class="twelvecol first clearfix" role="main">
 
       <img src="http://placehold.it/960x350" alt=""/>
-
+      <?php dynamic_content_gallery(); ?>
     </div>
     <p class="big-quote">
       <?php $simple_fields = simple_fields_fieldgroup('home_page_quote'); ?>
