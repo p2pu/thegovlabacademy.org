@@ -64,12 +64,13 @@ get_header(); ?>
           <!-- These are Featured Post Excerpts, right? -->
           <h2>Featured Content</h2>
           <?php $featured_content = simple_fields_fieldgroup('home_page_featured_content');
-          foreach ($featured_content as $key => $value) { ?>
+          foreach ($featured_content as $key => $value) {
+            print_r($value)?>
             <article class="clearfix content-entry video">
               <img class="image" src="<?php echo $value['home_page_topic_image']['url']; ?>" alt="">
               <div class="info">
                 <h3 class="post-title"><?php echo $value['home_page_featured_content_title'] ?></h3>
-                <small>Posted by <a href="#">Beth Noveck</a> at <a href="#">Oct. 23rd</a></small>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, non, assumenda reiciendis libero corporis repellendus laudantium architecto minima vero minus error rem blanditiis deserunt soluta quod expedita reprehenderit? Dolorem, quae?</p>
               </div>
             </article><?php
