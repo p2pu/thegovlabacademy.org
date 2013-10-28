@@ -64,8 +64,7 @@ get_header(); ?>
           <!-- These are Featured Post Excerpts, right? -->
           <h2>Featured Content</h2>
           <?php $featured_content = simple_fields_fieldgroup('home_page_featured_content');
-          foreach ($featured_content as $key => $value) {
-            print_r($value)?>
+          foreach ($featured_content as $key => $value) {?>
             <article class="clearfix content-entry video">
               <img class="image" src="<?php echo $value['home_page_topic_image']['url']; ?>" alt="">
               <div class="info">
