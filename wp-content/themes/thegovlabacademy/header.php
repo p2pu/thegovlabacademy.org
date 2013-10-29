@@ -65,7 +65,7 @@
       <div class="institutional-menu">
         <div id="subscribe" class="subscribe-form">
           <a class="subscribe-button" href="#">Subscribe</a>
-          <?php insert_cform(1); ?>
+          <?php insert_cform(); ?>
         </div>
         <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
