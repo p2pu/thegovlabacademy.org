@@ -65,12 +65,7 @@
       <div class="institutional-menu">
         <div id="subscribe" class="subscribe-form">
           <a class="subscribe-button" href="#">Subscribe</a>
-          <form>
-            <h4>Subscribe to our newsletter</h4>
-            <input type="text" placeholder="Email">
-            <input id="subscribe-submit" class="button" type="submit" value="OK">
-            <span>Subscribe</span>
-          </form>
+          <?php insert_cform(1); ?>
         </div>
         <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
