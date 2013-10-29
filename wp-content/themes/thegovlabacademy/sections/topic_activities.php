@@ -1,4 +1,5 @@
 <?php $documents_values = simple_fields_fieldgroup('topic_page_activities');
+
 if($documents_values){?>
   <h2>Activites</h2><?php
   foreach ($documents_values as $key => $values) {?>

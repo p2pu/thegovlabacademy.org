@@ -448,12 +448,9 @@ footer p {
 	background-position: 9px 8px;
 }
 /* Topic list */
-.theme-topic-list{
-    margin-right: 11px;
-    margin-bottom: 10px;
-}
+
 .theme-topic-list .info{
-    height: 130px;
+    height: 200px;
 }
 .theme-topic{
     display: block;
@@ -465,6 +462,15 @@ footer p {
 .theme-topic-list img{
     width: 100%;
     margin: 0;
+}
+.theme-topic-list, .topic-video-info{
+    margin-right: 11px;
+    margin-bottom: 10px;
+}
+
+/* Topic Pages */
+.topic-video-info .info{
+    height: 200px;
 }
 /* Experts List */
 
