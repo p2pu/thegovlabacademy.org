@@ -209,7 +209,7 @@ footer p {
 	display: inline-block;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #fff;
+	color: #fff !important;
 
 	position: relative;
 	overflow: hidden;

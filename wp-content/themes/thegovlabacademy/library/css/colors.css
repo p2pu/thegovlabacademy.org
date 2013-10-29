@@ -9,10 +9,10 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 /* Index */
 
-.data{ color: #00adef; }
-.crowd { color: #50307f; }
-.behave { color: #ed135a; }
-.historyof { color: #00a99c; }
+.data, .data a, .data a:visited{ color: #00adef; }
+.crowd, .crowd a, .crowd a:visited{ color: #50307f; }
+.behave, .behave a, .behave a:visited { color: #ed135a; }
+.historyof, .historyof a, .historyof a:visited { color: #00a99c; }
 .soon { opacity: .6; }
 
 .theme-menu .data { background-color: #00adef;}
