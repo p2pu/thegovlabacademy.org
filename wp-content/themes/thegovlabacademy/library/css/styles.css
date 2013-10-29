@@ -215,11 +215,11 @@ footer p {
     font-size: 16px;
 }
 .subscribe-form.active #usermessagea.success {
-    background: rgba(0, 169, 156, .9) none repeat scroll 0% 50%;
+    background: rgba(0, 169, 156, .9) none repeat scroll 0% 50% !important;
     color: #FFFFFF;
 }
 .subscribe-form.active #usermessagea.failure {
-    background: rgba(252, 23, 65, .9) none repeat scroll 0% 50%;
+    background: rgba(252, 23, 65, .9) none repeat scroll 0% 50% !important;
     color: #FFFFFF;
 }
 /* Theme Menu */
