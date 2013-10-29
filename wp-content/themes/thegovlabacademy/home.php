@@ -22,10 +22,12 @@ get_header(); ?>
 
       ?>
     </div>
-    <p class="big-quote">
-      <?php echo $quote['home_page_quote']; ?><br>
-      <small>- <?php echo $quote['home_page_quote_author']; ?></small>
-    </p>
+    <section class="clearfix">
+      <p class="big-quote">
+        <?php echo $quote['home_page_quote']; ?><br>
+        <small><?php echo $quote['home_page_quote_author']; ?></small>
+      </p>
+    </section>
 
     <section class="theme-columns clearfix"> <!-- Themes Highlights -->
 
