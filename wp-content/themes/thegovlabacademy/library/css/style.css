@@ -1200,6 +1200,9 @@ tweeners.
       margin-left: auto;
       display: block;
       clear: both; }
+    .entry-content ul {
+      list-style-type: disc;
+      padding: 0 0 0 40px; }
 
   /* end .entry-content */
   /*********************
