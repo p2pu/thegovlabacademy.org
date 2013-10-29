@@ -187,7 +187,9 @@ footer p {
     background: transparent;
     box-shadow: none;
 }
-
+.subscribe-form input[type="submit"]:hover, .subscribe-form input[type="submit"]:hover{
+    background: none;
+}
 
 .subscribe-form input.button {
 	padding: 2px;
