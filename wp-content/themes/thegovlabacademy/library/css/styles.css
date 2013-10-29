@@ -228,6 +228,10 @@ footer p {
 .subscribe-form #usermessagea{
     display: none;
 }
+.subscribe-form.active ol.cf-ol li.cf_li_err{
+    background: none !important;
+    border: none;
+}
 /* Theme Menu */
 
 .theme-menu {
