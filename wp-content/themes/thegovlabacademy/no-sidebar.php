@@ -31,7 +31,7 @@ get_header(); ?>
 
 								</footer> <?php // end article footer ?>
 
-								<?php // comments_template(); // uncomment if you want to use them ?>
+								<?php comments_template(); // uncomment if you want to use them ?>
 
 							</article> <?php // end article ?>
 
