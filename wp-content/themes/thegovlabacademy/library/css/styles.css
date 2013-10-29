@@ -183,10 +183,11 @@ footer p {
 	width: 208px;
 	color: #fff;
 }
-.subscribe-form input:focus{
+.subscribe-form input:focus, .subscribe-form input:hover{
     background: transparent;
     box-shadow: none;
 }
+
 
 .subscribe-form input.button {
 	padding: 2px;
