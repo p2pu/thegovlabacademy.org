@@ -143,27 +143,27 @@ footer p {
 	display: inline-block;
 	position:absolute;
 	width: 250px;
-	right: -10px;
+	right: 0;
 	z-index: 1;
 	background-color: rgba(0, 169, 156, .9);
 	padding: 15px 15px;
-	top: 20px;
+	top: 12px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
 
-.subscribe-form.active form span {
-	position: absolute;
-	top:-25px;
-	right: 0;
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight: bold;
+.subscribe-form.active .subscribe-button {
 	color: #fff;
 	background-color: rgba(0, 169, 156, .9);
 	padding: 5px 10px;
 	cursor:pointer;
 	box-shadow: 0 -1px 5px rgba(0,0,0,0.3);
 	z-index: 0;
+}
+.subscribe-form label{
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-weight: 100;
 }
 
 .subscribe-form h4 {
