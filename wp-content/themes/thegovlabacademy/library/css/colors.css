@@ -9,10 +9,10 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 /* Index */
 
-.data, .data a, .data a:visited{ color: #00adef; }
-.crowd, .crowd a, .crowd a:visited{ color: #50307f; }
-.behave, .behave a, .behave a:visited { color: #ed135a; }
-.historyof, .historyof a, .historyof a:visited { color: #00a99c; }
+.data{ color: #00adef; }
+.crowd{ color: #50307f; }
+.behave{ color: #ed135a; }
+.historyof{ color: #00a99c; }
 .soon { opacity: .6; }
 
 .theme-menu .data { background-color: #00adef;}
@@ -21,13 +21,13 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .theme-menu .historyof { background-color: #00a99c;}
 
 .theme-menu li.crowd a:after,
-.crowd .theme-topic { color: #50307f; }
+.crowd h3 { color: #50307f; }
 .theme-menu li.data a:after,
-.data .theme-topic {color:  #00adef; }
+.data h3 {color:  #00adef; }
 .theme-menu li.behave a:after,
-.behave .theme-topic{ color: #ed135a; }
+.behave h3{ color: #ed135a; }
 .theme-menu li.historyof a:after,
-.historyof .theme-topic{ color: #00a99c; }
+.historyof h3{ color: #00a99c; }
 
 .data.four-col h2,
 .data.four-col .info,

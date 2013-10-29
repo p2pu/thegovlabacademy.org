@@ -209,7 +209,7 @@ footer p {
 	display: inline-block;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #fff !important;
+	color: #fff;
 
 	position: relative;
 	overflow: hidden;
@@ -388,7 +388,6 @@ footer p {
 	display: inline-block;
 	position: relative;
 	padding: 15px;
-    background-color: #f2f2f2;
 }
 
 .content-entry p {
