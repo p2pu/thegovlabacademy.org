@@ -97,7 +97,16 @@ header a {
 	color: #333;
 }
 
-header .institutional-menu { float: right; }
+header .institutional-menu {
+    float: right;
+
+}
+.menu-institutional-menu-container{
+    float: right;
+}
+.menu-institutional-menu-container ul{
+    margin: 0;
+}
 
 /* Footer */
 body > footer {
@@ -119,6 +128,10 @@ footer p {
 	display: inline-block;
 	padding-left: 20px;
 	position: relative;
+    float: right;
+}
+.subscribe-form .subscribe-button{
+
 }
 
 .subscribe-form form { display: none; }

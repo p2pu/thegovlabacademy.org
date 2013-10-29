@@ -63,10 +63,8 @@
       </h1>
 
       <div class="institutional-menu">
-        <?php wp_nav_menu(array('theme_location' => 'institutional_menu', 'container_class' => 'institutional-menu')); ?>
         <div id="subscribe" class="subscribe-form">
-          <a href="#">Subscribe</a>
-
+          <a class="subscribe-button" href="#">Subscribe</a>
           <form>
             <h4>Subscribe to our newsletter</h4>
             <input type="text" placeholder="Email">
@@ -74,6 +72,7 @@
             <span>Subscribe</span>
           </form>
         </div>
+        <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
     </div>
   </div>
