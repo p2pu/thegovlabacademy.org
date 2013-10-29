@@ -11,17 +11,24 @@ get_header(); ?>
 
     <div id="main" class="twelvecol first clearfix" role="main">
 
-      <img src="http://placehold.it/960x350" alt=""/>
+      <?php
+      $quote = simple_fields_fieldgroup('home_page_quote');
+      $videos = simple_fields_fieldgroup('home_page_videos');
+      $featured_content = simple_fields_fieldgroup('home_page_featured_content');
 
+      if( function_exists( 'dynamic_content_gallery' ) ) {
+        dynamic_content_gallery();
+      }
+
+      ?>
     </div>
     <p class="big-quote">
-      <?php $simple_fields = simple_fields_fieldgroup('home_page_quote'); ?>
-      <?php echo $simple_fields['home_page_quote']; ?><br>
-      <small>- <?php echo $simple_fields['home_page_quote_author']; ?></small>
+      <?php echo $quote['home_page_quote']; ?><br>
+      <small>- <?php echo $quote['home_page_quote_author']; ?></small>
     </p>
 
     <section class="theme-columns clearfix"> <!-- Themes Highlights -->
-      <?php $videos = simple_fields_fieldgroup('home_page_videos');?>
+
       <div class="wrapper">
         <?php foreach ($videos as $key => $value) {?>
           <div class="four-col <?php echo strtolower($value['home_page_theme_name']); ?>">
@@ -58,17 +65,16 @@ get_header(); ?>
       <div class="wrapper tencol">
         <aside> <!-- Sidebar -->
           <h3 class="sidebar-title">Twitter Feed</h3>
-          <a class="twitter-timeline"  href="https://twitter.com/TheGovLab/network-of-collaborators"  data-widget-id="394876037537861633">Tweets from @TheGovLab/network-of-collaborators</a>
+          <a class="twitter-timeline" height="625" href="https://twitter.com/TheGovLab/network-of-collaborators"  data-widget-id="394876037537861633">Tweets from @TheGovLab/network-of-collaborators</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
         </aside>
 
         <div class="wrapper main-content">
           <!-- These are Featured Post Excerpts, right? -->
           <h2>Featured Content</h2>
-          <?php
-          $featured_content = simple_fields_fieldgroup('home_page_featured_content');
-
-          foreach ($featured_content as $key => $value){ ?>
+          <?php foreach ($featured_content as $key => $value){ ?>
             <article class="clearfix content-entry video">
               <img class="image" src="<?php echo $value['home_page_topic_image']['url']; ?>" alt="">
               <div class="info">

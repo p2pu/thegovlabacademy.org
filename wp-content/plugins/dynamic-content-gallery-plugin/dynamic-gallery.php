@@ -74,4 +74,3 @@ if( $dfcg_options['scripts'] == 'mootools' ) {
 	$output .= "\n" . $dfcg_errmsgs['10'] . "\n";
 	echo $output;
 }
-?>

@@ -31,21 +31,26 @@ get_header(); ?>
               <?php include (get_template_directory() . "/sections/topic_learn_more_section.php") ;?>
             </div><?php // End learn more section ?>
 
-            <div class="wrapper content clearfix">
-              <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
-            </div><?php // End literature section ?>
+            <div>
 
-            <div class="wrapper content clearfix">
-              <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
-            </div><?php // End activities section ?>
+              <div class="wrapper content clearfix">
+                <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
+              </div><?php // End literature section ?>
 
-            <div class="wrapper content clearfix">
-              <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
-            </div><?php // End toolbox section ?>
+              <div class="wrapper content clearfix">
+                <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
+              </div><?php // End activities section ?>
 
-            <div class="wrapper clearfix">
-              <?php include (get_template_directory() . "/sections/topic_experts.php") ;?>
-            </div><?php // End expert section ?>
+              <div class="wrapper content clearfix">
+                <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
+              </div><?php // End toolbox section ?>
+
+              <div class="wrapper clearfix">
+                <?php include (get_template_directory() . "/sections/topic_experts.php") ;?>
+              </div><?php // End expert section ?>
+
+              <?php //get_sidebar(); ?>
+            </div>
 
           </section> <?php // end article section ?>
 
