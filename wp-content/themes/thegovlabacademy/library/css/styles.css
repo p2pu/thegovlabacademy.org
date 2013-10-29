@@ -214,6 +214,9 @@ footer p {
     color: white;
     font-size: 16px;
 }
+.subscribe-form.active #usermessagea > span {
+    text-shadow: initial;
+}
 .subscribe-form.active #usermessagea.success {
     background: rgba(0, 169, 156, .9) none repeat scroll 0% 50% !important;
     color: #FFFFFF;
