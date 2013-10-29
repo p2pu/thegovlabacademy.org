@@ -164,6 +164,9 @@ footer p {
     margin: 0 0 10px 0;
     color: #fff;
     font-weight: 100;
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 
 .subscribe-form h4 {
@@ -176,9 +179,13 @@ footer p {
 .subscribe-form input {
 	border: 1px solid rgba(255, 255, 255, .4);
 	padding: 3px;
-	background-color: transparent;
+	background: transparent;
 	width: 208px;
 	color: #fff;
+}
+.subscribe-form input:focus{
+    background: transparent;
+    box-shadow: none;
 }
 
 .subscribe-form input.button {
