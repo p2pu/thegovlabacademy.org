@@ -20,17 +20,21 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .theme-menu .behave { background-color: #ed135a;}
 .theme-menu .historyof { background-color: #00a99c;}
 
-.theme-menu li.crowd a:after { color: #50307f; }
-.theme-menu li.data a:after { 	color:  #00adef; }
-.theme-menu li.behave a:after { color: #ed135a; }
-.theme-menu li.historyof a:after { color: #00a99c; }
+.theme-menu li.crowd a:after,
+.crowd .theme-topic { color: #50307f; }
+.theme-menu li.data a:after,
+.data .theme-topic {color:  #00adef; }
+.theme-menu li.behave a:after,
+.behave .theme-topic{ color: #ed135a; }
+.theme-menu li.historyof a:after,
+.historyof .theme-topic{ color: #00a99c; }
 
 .data.four-col h2,
 .data.four-col .info,
 .data.main-content > h2  { border-bottom-color: #00adef; }
 .crowd.four-col h2,
 .crowd.four-col .info,
-.crowd.main-content > h2 { border-bottom-color: #50307f; }
+.crowd.main-content > h2, { border-bottom-color: #50307f; }
 .behave.four-col .info,
 .behave.four-col h2,
 .behave.main-content > h2 { border-bottom-color: #ed135a; }
