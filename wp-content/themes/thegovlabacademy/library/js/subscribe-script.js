@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$('#subscribe a').click(function(){
-		$('#subscribe').addClass('active');
+	$('#subscribe .subscribe-button').click(function(){
+		$('#subscribe').toggleClass('active');
 		$('#overlay').show();
 	});
 
