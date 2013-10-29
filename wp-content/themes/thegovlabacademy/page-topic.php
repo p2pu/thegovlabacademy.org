@@ -5,6 +5,15 @@
   */
 get_header(); ?>
 
+<div class="wrapper">
+  <div class="breadcrumbs">
+    <?php if(function_exists('bcn_display'))
+    {
+      bcn_display();
+    }?>
+  </div>
+</div>
+
 <div id="content">
   <div id="inner-content" class="wrapper clearfix">
     <div id="main" class="twelvecol first clearfix" role="main">
