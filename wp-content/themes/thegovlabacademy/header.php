@@ -40,10 +40,11 @@
   <?php wp_head(); ?>
   <?php // end of wordpress head ?>
 
-  <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/library/css/styles.css' type='text/css'
-        media='all'/>
   <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/library/css/colors.css' type='text/css'
         media='all'/>
+  <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/library/css/styles.css' type='text/css'
+        media='all'/>
+
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 

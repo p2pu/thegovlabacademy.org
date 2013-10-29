@@ -451,6 +451,7 @@ footer p {
 /* Topic list */
 .theme-topic-list{
     margin-right: 11px;
+    margin-bottom: 10px;
 }
 .theme-topic-list .info{
     height: 130px;
