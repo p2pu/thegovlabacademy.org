@@ -144,7 +144,7 @@ footer p {
 	position:absolute;
 	width: 250px;
 	right: 0;
-	z-index: 1;
+	z-index: 100;
 	background-color: rgba(0, 169, 156, .9);
 	padding: 15px 15px;
 	top: 12px;

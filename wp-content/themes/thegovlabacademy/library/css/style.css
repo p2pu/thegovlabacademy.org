@@ -771,6 +771,7 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
+  color: inherit;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
