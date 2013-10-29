@@ -63,10 +63,7 @@
       </h1>
 
       <div class="institutional-menu">
-        <nav>
-          <a href="#">Blog</a>
-          <a href="#">About</a>
-        </nav>
+        <?php wp_nav_menu(array('theme_location' => 'institutional_menu', 'container_class' => 'institutional-menu')); ?>
         <div id="subscribe" class="subscribe-form">
           <a href="#">Subscribe</a>
 
