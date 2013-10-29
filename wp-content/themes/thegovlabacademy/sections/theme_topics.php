@@ -11,6 +11,9 @@ if($topic_values){?>
       </a>
     </div>
     <div class="info">
+      <a class="theme-topic" href="<?php echo $value['theme_topics']['permalink'] ?>">
+        <h3><?php echo $value['theme_page_topic_title'] ?></h3>
+      </a>
       <p><?php echo $value['theme_page_short_topic_description'] ?></p>
     </div>
   </div><?php

@@ -51,12 +51,12 @@ simple_fields_register_field_group('theme_page_topic_group', array(
     array(
       'name' => 'Title',
       'description'=> 'Enter title',
-      'slug' => 'theme_page_short_topic_description',
+      'slug' => 'theme_page_topic_title',
       'type' => 'text',
     ),
     array(
       'name' => 'Description',
-      'description'=> 'Enter short description about topic',
+      'description'=> 'Enter short description about the topic',
       'slug' => 'theme_page_short_topic_description',
       'type' => 'text',
     ),
