@@ -247,7 +247,14 @@ footer p {
 .theme-menu li.behave a:after { content:'behave'; }
 .theme-menu li.historyof a:after { content:'historyof'; }
 
-
+/* Breadcrumbs */
+.breadcrumbs{
+    font-weight: bold;
+}
+.breadcrumbs .page{
+    font-weight: normal;
+    text-decoration: underline;
+}
 /* Main Slider */
 
 .main-slider .container {
