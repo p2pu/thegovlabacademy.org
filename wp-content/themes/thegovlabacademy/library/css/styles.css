@@ -225,6 +225,9 @@ footer p {
     background: rgba(252, 23, 65, .9) none repeat scroll 0% 50% !important;
     color: #FFFFFF;
 }
+.subscribe-form #usermessagea{
+    display: none;
+}
 /* Theme Menu */
 
 .theme-menu {
