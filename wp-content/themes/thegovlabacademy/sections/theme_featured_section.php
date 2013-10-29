@@ -4,10 +4,10 @@ if ($featured_fields) {
   $video_link = simple_fields_get_post_value($featured_fields['id'], "Link to video", true);
   ?>
   <div class="main-slider">
-    <div class="container eightcol first">
+    <div class="container first">
       <?php echo do_shortcode('[fve]' . $video_link . '[/fve]') ?>
     </div>
-    <div class="info fourcol">
+    <div class="info">
       <h2><?php print_r($featured_fields['post']->post_title); ?></h2>
 
       <h3></h3>

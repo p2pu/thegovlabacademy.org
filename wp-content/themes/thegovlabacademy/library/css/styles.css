@@ -251,6 +251,7 @@ footer p {
 /* Main Slider */
 
 .main-slider .container {
+    width: 650px;
 	height: 300px;
 	overflow: hidden;
 	display: inline-block;
@@ -262,6 +263,8 @@ footer p {
 	vertical-align: top;
 	padding: 15px;
 	height: 300px;
+    width: 295px;
+    margin-left: 11px;
 }
 
 .main-slider .info h2 {
@@ -447,15 +450,17 @@ footer p {
 }
 /* Topic list */
 .theme-topic-list{
-
+    margin-right: 11px;
+}
+.theme-topic-list .info{
+    height: 130px;
 }
 .theme-topic{
     display: block;
     text-align: center;
 }
 .theme-topic-list img{
-    width: 100px;
-    height: 100px;
+    width: 100%;
     margin: 0;
 }
 /* Experts List */
