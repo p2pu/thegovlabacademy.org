@@ -179,7 +179,7 @@ function theme_class_names($classes,$item) {
   $slug = get_permalink($id);//strtolower(str_replace(' ', '-', trim(get_bloginfo('name'))));
   if(strpos($slug,'data') !== false){
     $classes[] = 'data';
-  }elseif(strpos($slug,'crowd') !== false){
+  }elseif(strpos($slug,'crowdsourcing') !== false){
     $classes[] = 'crowd';
   }
 
