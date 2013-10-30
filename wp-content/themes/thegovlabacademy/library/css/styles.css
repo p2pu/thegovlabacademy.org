@@ -692,7 +692,7 @@ footer p {
 	background-position: 9px 8px;
 }
 
-.post-title { margin: 0; }
+.post-title { margin: 0; line-height: 20px }
 
 .content-entry .info p { margin: 5px 0; }
 
