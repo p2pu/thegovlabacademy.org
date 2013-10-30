@@ -34,15 +34,21 @@ get_header(); ?>
             <div>
 
               <div class="wrapper content clearfix">
-                <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
+                <div class="eightcol first">
+                  <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
+                </div>
               </div><?php // End literature section ?>
 
               <div class="wrapper content clearfix">
-                <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
+                <div class="eightcol first">
+                  <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
+                </div>
               </div><?php // End activities section ?>
 
               <div class="wrapper content clearfix">
-                <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
+                <div class="eightcol first">
+                  <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
+                </div>
               </div><?php // End toolbox section ?>
 
               <div class="wrapper clearfix">
