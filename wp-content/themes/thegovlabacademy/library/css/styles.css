@@ -78,7 +78,16 @@ header h1 {
 	display: inline-block;
 	margin: 0;
 }
-
+.close{
+    background: transparent;
+    border: 1px solid #FFF;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+.close:hover{
+    font-weight: bold;
+}
 .govlab-academy-logo a {
 	background-image: url(../images/govlab-academy-logo-crowd.png);
 	background-repeat: no-repeat;
@@ -549,27 +558,69 @@ footer p {
 .experts-list {
 	padding-left: 0;
 	width: 702px;
-	overflow: hidden;
 }
 
 .experts-list li {
 	list-style: none;
 	display: inline-block;
-	background-color: #333;
-	height: 60px;
-	width: 60px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
+	background-color: #FFF;
 	margin-right: 11px;
-	overflow: hidden;
-	border: 2px solid #fff;
-	cursor:pointer;
+    position: relative;
 }
 
 .experts-list li img {
 	width: 60px;
 	height: auto;
+    height: 60px;
+    width: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    cursor:pointer;
+}
+.experts-list li .modal{
+    position: absolute;
+    left: 70px;
+    top: 0;
+}
+.experts-list li .modal.left{
+    left: -405px;
+}
+.experts-list li .modal .arrow{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 11px;
+    top: 16%;
+}
+.experts-list li .modal .arrow.left{
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: #999;
+    border-right-color: rgba(0, 169, 156, 1);
+    border-left-width: 0;
+}
+.experts-list li .modal .arrow.right{
+    right: -11px;
+    margin-top: -11px;
+    border-left-color: #999;
+    border-left-color: rgba(0, 169, 156, 1);
+    border-right-width: 0;
+}
+.experts-list li .modal h2{
+    border-top: none;
+}
+.experts-list li .modal p{
+    color: #FFF;
+}
+.experts-list li .modal .twitter-follow-button{
+    float: right;
+    width: 85px !important;
 }
 
 
@@ -649,7 +700,7 @@ footer p {
 
 .modal {
 	width: 400px;
-	position: absolute;
+	position: fixed;
 	top: 50px;
 	left: calc(50% - 215px);
 	background-color: rgba(0, 169, 156, 1);

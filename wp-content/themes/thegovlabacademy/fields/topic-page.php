@@ -121,7 +121,8 @@ simple_fields_register_field_group('topic_page_experts_group', array(
       'description'=> 'Enter an Expert',
       'type' => 'post',
       'options' => array(
-        'enabled_post_types' => 'expert'
+        'enabled_post_types' => 'expert',
+        'enable_extended_return_values' => true
       )
     ),
   ),

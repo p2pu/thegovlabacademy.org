@@ -23,6 +23,22 @@ var Subscribe = window.Subscribe || {};
                 $('#overlay').hide();
             });
 
+            $('.expert-img').click(function (e) {
+                e.preventDefault();
+                var $this = this;
+                $('.expert-img').each(function () {
+                    var $that = this;
+                    if ($that !== $this) {
+                        $($that).siblings('.expert-list-bio').removeClass('active');
+                    }
+                });
+                $($this).siblings('.expert-list-bio').toggleClass('active');
+            });
+            $('.close').click(function (e) {
+                e.preventDefault();
+                var $this = $(this);
+                $this.parents('.modal').removeClass('active');
+            });
             //  Function for the Overlay functionalities
             $('#overlay').click(function () {
                 $('#subscribe').removeClass('active');

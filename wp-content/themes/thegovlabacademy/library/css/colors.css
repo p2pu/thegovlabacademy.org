@@ -58,7 +58,7 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .data .content-entry .icon-activity:hover,
 .data .content-entry .icon-tool:hover { background-color: #00adef; }
 
-.data .experts-list li:hover { border-color:#00adef; }
+.data .experts-list li img:hover { border-color:#00adef; }
 
 .data small a { color:#00adef;}
 
@@ -71,7 +71,7 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .crowd .content-entry .icon-activity:hover,
 .crowd .content-entry .icon-tool:hover { background-color: #50307f; }
 
-.crowd .experts-list li:hover { border-color:#50307f; }
+.crowd .experts-list li img:hover { border-color:#50307f; }
 
 .crowd small a { color:#50307f;}
 
@@ -84,7 +84,7 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .behave .content-entry .icon-activity:hover,
 .behave .content-entry .icon-tool:hover { background-color:  #ed135a; }
 
-.behave .experts-list li:hover { border-color: #ed135a; }
+.behave .experts-list li img:hover { border-color: #ed135a; }
 
 .behave small a { color:#ed135a;}
 
@@ -97,7 +97,7 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .historyof .content-entry .icon-activity:hover,
 .historyof .content-entry .icon-tool:hover { background-color:  #00a99c; }
 
-.historyof .experts-list li:hover { border-color: #00a99c; }
+.historyof .experts-list li img:hover { border-color: #00a99c; }
 
 .historyof small a { color:#00a99c;}
 
