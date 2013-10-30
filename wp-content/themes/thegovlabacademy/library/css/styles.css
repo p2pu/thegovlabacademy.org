@@ -104,6 +104,13 @@ header .institutional-menu {
     float: right;
 
 }
+#menu-institutional-menu a {
+    color: #333;
+}
+#menu-institutional-menu a:hover, #menu-institutional-menu a:focus {
+    text-decoration: none;
+    color: #ed135a;
+}
 .menu-institutional-menu-container{
     float: right;
 }
