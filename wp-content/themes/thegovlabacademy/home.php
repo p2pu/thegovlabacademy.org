@@ -47,13 +47,13 @@ get_header(); ?>
           <h2>Behave</h2>
           <img src="<?php echo bloginfo('template_directory'); ?>/library/images/behave-theme.png" alt="">
           <div class="info">
-            <h3>Behavior and Insight</h3>
-            <h4>Coming Soon</h4>
-            <p>
+            <h3 class="one-line">Behavior and Insight</h3>
+            <p class="margin-bottom-6">
               In the Behavioral and Social Insights theme, learn about
               research methodology and tech-enabled strategies such as gamification,
               user-driven design, prizes, and challenges for encouraging large-scale participation.
             </p>
+            <h4>Coming Soon</h4>
           </div>
         </div>
         <div class="four-col history soon">
@@ -61,12 +61,12 @@ get_header(); ?>
           <img src="<?php echo bloginfo('template_directory'); ?>/library/images/history-theme.png" alt="">
           <div class="info">
             <h3>History &amp; Context of Open Governance</h3>
-            <h4>Coming Soon</h4>
             <p>
               Explore and discuss tthe nature of our current crisis of governance,
               today's international open government movement, and the legal and policy context for
               innovation in this open governance.
             </p>
+            <h4>Coming Soon</h4>
           </div>
         </div>
       </div>

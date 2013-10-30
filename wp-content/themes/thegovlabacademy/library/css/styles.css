@@ -417,6 +417,12 @@ footer p {
 	height: 32px;
 	overflow: hidden;
 }
+.info h3.one-line{
+    height: 16px;
+}
+.info p.margin-bottom-6{
+    margin-bottom: 6px;
+}
 
 .two-col .info h4,
 .four-col .info h4 {
@@ -467,7 +473,7 @@ footer p {
 }
 .content-entry .image{
     width: 310px;
-    max-height: 150px;
+    height: 150px;
 }
 .content .content-entry {
     padding-left: 100px;
