@@ -105,7 +105,7 @@ header .institutional-menu {
 
 }
 #menu-institutional-menu a, .subscribe-button {
-    color: #333;
+    color: #333 !important;
 }
 #menu-institutional-menu a:hover,
 .subscribe-button:hover,
