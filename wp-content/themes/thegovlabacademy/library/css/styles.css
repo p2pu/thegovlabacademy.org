@@ -617,6 +617,7 @@ footer p {
 }
 .experts-list li .modal p{
     color: #FFF;
+    line-height: 22px;
 }
 .experts-list li .modal .twitter-follow-button{
     float: right;
