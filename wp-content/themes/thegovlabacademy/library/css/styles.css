@@ -104,10 +104,13 @@ header .institutional-menu {
     float: right;
 
 }
-#menu-institutional-menu a {
+#menu-institutional-menu a, .subscribe-button {
     color: #333;
 }
-#menu-institutional-menu a:hover, #menu-institutional-menu a:focus {
+#menu-institutional-menu a:hover,
+.subscribe-button:hover,
+#menu-institutional-menu a:focus
+.subscribe-button:focus{
     text-decoration: none;
     color: #ed135a;
 }
