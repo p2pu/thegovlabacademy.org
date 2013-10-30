@@ -162,27 +162,28 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 /****************** CLASS ON BODY ********************/
-
-add_filter( 'wp_nav_menu_objects', 'wpse16243_wp_nav_menu_objects' );
-function wpse16243_wp_nav_menu_objects( $sorted_menu_items )
-{
-  foreach ( $sorted_menu_items as $menu_item ) {
-    if ( $menu_item->current ) {
-      $GLOBALS['wpse16243_title'] = $menu_item->title;
-      break;
-    }
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+  if( in_array('current-menu-item', $classes) ){
+    //$classes[] = 'crowd';//$classes[0];
+    //print_r($classes[0]);
   }
-  return $sorted_menu_items;
+
+  return $classes;
 }
-
 // Add specific CSS class by filter
-add_filter('body_class','theme_class_names');
-function theme_class_names($classes) {
+add_filter('body_class','theme_class_names', 10, 10);
+function theme_class_names($classes,$item) {
   // add 'class-name' to the $classes array
-  if ( isset( $GLOBALS['wpse16243_title'] ) ) {
-    $classes[] =  $GLOBALS['wpse16243_title'];
+  $id = get_the_ID();
+  $slug = get_permalink($id);//strtolower(str_replace(' ', '-', trim(get_bloginfo('name'))));
+  if(strpos($slug,'data') !== false){
+    $classes[] = 'data';
+  }elseif(strpos($slug,'crowd') !== false){
+    $classes[] = 'crowd';
   }
 
+  $classes[] =  'something';
   // return the $classes array
   return $classes;
 }
@@ -194,7 +195,6 @@ function site_specific_menus() {
   $locations = array(
     'institutional_menu' => __( 'Institutional Menu' ),
     'theme_menu' => __( 'Theme Menu' ),
-    'mobile_footer' => __( 'Footer Menu on mobile devices'),
   );
   register_nav_menus( $locations );
 
