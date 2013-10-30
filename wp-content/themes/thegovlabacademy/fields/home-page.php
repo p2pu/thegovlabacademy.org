@@ -63,6 +63,15 @@ simple_fields_register_field_group('home_page_videos', array(
         'enabled_post_types' => 'video',
         'enable_extended_return_values' => true
       )
+    ),
+    array(
+      'name' => 'Page',
+      'slug' => 'home_page_featured_pages',
+      'type' => 'post',
+      'options' => array(
+        'enabled_post_types' => 'page',
+        //'enable_extended_return_values' => true
+      )
     )
   ),
   'repeatable' => TRUE,

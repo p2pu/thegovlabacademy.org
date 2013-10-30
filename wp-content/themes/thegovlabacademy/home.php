@@ -35,13 +35,17 @@ get_header(); ?>
     <section class="theme-columns clearfix"> <!-- Themes Highlights -->
 
       <div class="wrapper">
-        <?php foreach ($videos as $key => $value) {?>
+        <?php foreach ($videos as $key => $value) { ;?>
           <div class="four-col <?php echo strtolower($value['home_page_theme_name']); ?>">
             <h2><?php echo $value['home_page_theme_name']; ?></h2>
 
             <?php echo do_shortcode('[fve]' . simple_fields_get_post_value($value['home_page_featured_videos']['id'], "Link to video", true) . '[/fve]') ?>
             <div class="info">
-              <h3><?php echo $value['home_page_video_title']; ?></h3>
+              <h3>
+                <a href="<?php echo get_permalink($value['home_page_featured_pages']); ?>">
+                  <?php echo $value['home_page_video_title']; ?>
+                </a>
+              </h3>
               <p><?php echo $value['home_page_video_description']; ?></p>
             </div>
           </div><?php
