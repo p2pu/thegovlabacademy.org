@@ -172,19 +172,22 @@ function special_nav_class($classes, $item){
   return $classes;
 }
 // Add specific CSS class by filter
-add_filter('body_class','theme_class_names', 10, 10);
-function theme_class_names($classes,$item) {
+add_filter('body_class','theme_class_names');
+function theme_class_names( $classes ) {
   // add 'class-name' to the $classes array
-  $id = get_the_ID();
-  $slug = get_permalink($id);//strtolower(str_replace(' ', '-', trim(get_bloginfo('name'))));
-  if(strpos($slug,'data') !== false){
+  $slug = get_permalink( get_the_ID() );
+  if( strpos($slug,'data') !== false ){
     $classes[] = 'data';
-  }elseif(strpos($slug,'crowdsourcing') !== false){
+  }
+  elseif( strpos($slug,'history') !== false ) {
+    $classes[] = 'history';
+  }
+  elseif( strpos($slug,'behave') !== false ) {
+    $classes[] = 'behave';
+  }
+  else{
     $classes[] = 'crowd';
   }
-
-  $classes[] =  'something';
-  // return the $classes array
   return $classes;
 }
 
