@@ -29,7 +29,10 @@ a:hover {
 
 h2 { margin: 0; }
 
-p { color: #333; }
+p {
+    color: #333;
+    word-break: break-word;
+}
 
 small {
 	margin: 0;
