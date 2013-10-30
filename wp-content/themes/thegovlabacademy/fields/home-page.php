@@ -10,15 +10,24 @@ simple_fields_register_field_group('home_page_quote', array(
     array(
       'name' => 'Quote',
       'slug' => 'home_page_quote',
-      'description'=> 'Add Inspirational Quote',
+      'description'=> 'Add Introduction Quote',
       'type' => 'textarea',
     ),
     array(
-      'name' => 'Quote Author',
+      'name' => 'Call to action',
       'slug' => 'home_page_quote_author',
-      'description'=> 'Add Inspirational Quote Author (if any)',
+      'description'=> 'Add Call to Action Text',
       'type' => 'text'
-    )
+    ),
+    array(
+      'name' => 'Call to action link',
+      'slug' => 'home_page_quote_author_link',
+      'description'=> 'Add Call to Action Link',
+      'type' => 'text',
+      'options' => array(
+        'subtype' => 'url'
+      )
+    ),
   ),
   'repeatable' => FALSE,
   'deleted' => false

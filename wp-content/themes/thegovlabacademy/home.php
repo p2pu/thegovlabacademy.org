@@ -25,8 +25,11 @@ get_header(); ?>
     <section class="clearfix">
       <p class="big-quote">
         <?php echo $quote['home_page_quote']; ?><br>
-        <small><?php echo $quote['home_page_quote_author']; ?></small>
       </p>
+
+      <a class="call-to-action" href="<?php echo $quote['home_page_quote_author_link'];?>">
+        <?php echo $quote['home_page_quote_author']; ?>
+      </a>
     </section>
 
     <section class="theme-columns clearfix"> <!-- Themes Highlights -->

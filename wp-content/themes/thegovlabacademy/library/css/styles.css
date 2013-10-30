@@ -355,6 +355,21 @@ footer p {
 .main-slider .info p {
 	color: #333;
 }
+.call-to-action{
+    font-size: 25px;
+    background: #50307f;
+    padding: 8px 5px;
+    color: #FFFFFF !important;
+}
+.call-to-action:hover{
+    background: rgba(80,48,127,.4);
+    color: #50307f;
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -ms-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+}
 /* featured video */
 .main-slider iframe{
     width: 100%;
