@@ -162,15 +162,6 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 /****************** CLASS ON BODY ********************/
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-function special_nav_class($classes, $item){
-  if( in_array('current-menu-item', $classes) ){
-    //$classes[] = 'crowd';//$classes[0];
-    //print_r($classes[0]);
-  }
-
-  return $classes;
-}
 // Add specific CSS class by filter
 add_filter('body_class','theme_class_names');
 function theme_class_names( $classes ) {

@@ -44,10 +44,10 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 /* Theme Home */
 
-.data .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-data.png); }
-.crowd .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-crowd.png); }
-.behave .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-behave.png); }
-.historyof .govlab-academy-logo a { background-image: url(images/govlab-academy-logo-historyof.png); }
+.data .govlab-academy-logo a { background-image: url(../images/govlab-academy-logo-data.png); }
+.crowd .govlab-academy-logo a { background-image: url(../images/govlab-academy-logo-crowd.png); }
+.behave .govlab-academy-logo a { background-image: url(../images/govlab-academy-logo-behave.png); }
+.historyof .govlab-academy-logo a { background-image: url(../images/govlab-academy-logo-history.png); }
 
 
 .data header,

@@ -56,9 +56,9 @@
 <header class="header" role="banner"> <!-- Header and Navigation -->
   <div class="content">
     <div class="wrapper ">
-      <h1>
+      <h1 class="govlab-academy-logo">
         <a href="<?php echo home_url(); ?>" rel="nofollow">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/library/images/govlab-academy-logo.png" alt="">
+          <!--<img src="<?php echo get_bloginfo('template_directory'); ?>/library/images/govlab-academy-logo.png" alt="">-->
         </a>
       </h1>
 

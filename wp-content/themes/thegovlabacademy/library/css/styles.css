@@ -80,11 +80,14 @@ header h1 {
 }
 
 .govlab-academy-logo a {
-	background-image: url(images/govlab-academy-logo-crowd.png);
+	background-image: url(../images/govlab-academy-logo-crowd.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	color:transparent;
 	background-color: transparent;
+    height: 22px;
+    width: 265px;
+    display: block;
 }
 
 header nav { display: inline-block; }
