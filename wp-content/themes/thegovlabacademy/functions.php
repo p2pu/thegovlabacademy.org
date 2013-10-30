@@ -162,15 +162,31 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 /****************** CLASS ON BODY ********************/
+
+add_filter( 'wp_nav_menu_objects', 'wpse16243_wp_nav_menu_objects' );
+function wpse16243_wp_nav_menu_objects( $sorted_menu_items )
+{
+  foreach ( $sorted_menu_items as $menu_item ) {
+    if ( $menu_item->current ) {
+      $GLOBALS['wpse16243_title'] = $menu_item->title;
+      break;
+    }
+  }
+  return $sorted_menu_items;
+}
+
 // Add specific CSS class by filter
 add_filter('body_class','theme_class_names');
 function theme_class_names($classes) {
   // add 'class-name' to the $classes array
+  if ( isset( $GLOBALS['wpse16243_title'] ) ) {
+    $classes[] =  $GLOBALS['wpse16243_title'];
+  }
 
-  $classes[] = 'crowd';
   // return the $classes array
   return $classes;
 }
+
 /***************** CUSTOM MENUS *********************/
 // Register Navigation Menus
 function site_specific_menus() {

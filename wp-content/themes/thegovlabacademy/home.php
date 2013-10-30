@@ -49,7 +49,11 @@ get_header(); ?>
           <div class="info">
             <h3>Behavior and Insight</h3>
             <h4>Coming Soon</h4>
-            <p></p>
+            <p>
+              In the Behavioral and Social Insights theme, learn about
+              research methodology and tech-enabled strategies such as gamification,
+              user-driven design, prizes, and challenges for encouraging large-scale participation.
+            </p>
           </div>
         </div>
         <div class="four-col history soon">
@@ -58,7 +62,11 @@ get_header(); ?>
           <div class="info">
             <h3>History &amp; Context of Open Governance</h3>
             <h4>Coming Soon</h4>
-            <p></p>
+            <p>
+              Explore and discuss tthe nature of our current crisis of governance,
+              today's international open government movement, and the legal and policy context for
+              innovation in this open governance.
+            </p>
           </div>
         </div>
       </div>
