@@ -382,7 +382,7 @@ footer p {
 }
 .call-to-action:hover{
     background: rgba(80,48,127,.4);
-    color: #50307f;
+    color: #50307f !important;
     -webkit-transition: background .5s ease;
     -moz-transition: background .5s ease;
     -ms-transition: background .5s ease;
