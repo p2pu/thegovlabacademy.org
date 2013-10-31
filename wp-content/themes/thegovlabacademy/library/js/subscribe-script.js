@@ -52,6 +52,7 @@ var Subscribe = window.Subscribe || {};
                 }
             });
 
+
             form.parsley({
                 errors: {
                     container: function (element, isRadioOrCheckbox) {

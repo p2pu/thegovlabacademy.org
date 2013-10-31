@@ -1,0 +1,36 @@
+/*
+Errno::ENOENT: No such file or directory - library/css/styles.scss
+
+Backtrace:
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `read'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:299:in `watch'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:117:in `initialize_adapter'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/linux.rb:48:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/linux.rb:48:in `initialize'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/linux.rb:48:in `new'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/linux.rb:48:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin/compiler.rb:307:in `watch'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/exec.rb:445:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/exec.rb:307:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.2.7/bin/sass:9
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - library/css/styles.scss"; }
