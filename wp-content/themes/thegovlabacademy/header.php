@@ -45,7 +45,7 @@
   <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/library/css/colors.css' type='text/css'
         media='all'/>
 
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css" rel="stylesheet">
 
   <?php // drop Google Analytics Here ?>
   <?php // end analytics ?>
@@ -53,7 +53,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<!--<div id="overlay"></div>-->
+
 <header class="header" role="banner"> <!-- Header and Navigation -->
   <div class="content">
     <div class="wrapper ">

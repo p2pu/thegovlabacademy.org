@@ -379,6 +379,7 @@ footer p {
     color: #FFFFFF !important;
     display: block;
     text-align: center;
+    line-height: 26px;
 }
 .call-to-action:hover{
     background: rgba(80,48,127,.4);
@@ -655,9 +656,8 @@ footer p {
 }
 .experts-list li .modal .twitter-follow-button{
     float: right;
-    width: 85px !important;
+    font-size: 30px;
 }
-
 
 /* Content Entry */
 

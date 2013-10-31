@@ -33,8 +33,9 @@ var Subscribe = window.Subscribe || {};
                 if (form.parsley('isValid')) {
                     form.submit();
                     $('.modal').removeClass('active');
+                    $('#overlay').hide();
                 }
-                $('#overlay').hide();
+
             });
 
             $('.subscribe-cancel').click(function () {
@@ -50,15 +51,6 @@ var Subscribe = window.Subscribe || {};
                     $this.siblings('.q-other').attr('disabled', 'true');
                 }
             });
-
-            //  Function for the Overlay functionalities
-            /*$('#overlay').click(function () {
-                var $this = $(this);
-                $('#subscribe').removeClass('active');
-                $('.modal').removeClass('active');
-                $this.hide();
-                form.submit();
-            });*/
 
             form.parsley({
                 errors: {

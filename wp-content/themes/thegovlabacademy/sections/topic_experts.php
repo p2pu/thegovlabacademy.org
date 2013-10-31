@@ -20,8 +20,7 @@ if ($experts_values){ ?>
           <h2><?php echo $name; ?></h2>
           <p><?php echo $bio; ?></p>
           <p>
-            <a href="https://twitter.com/<?php echo $twitter ;?>" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @<?php echo $twitter; ?></a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <a href="https://twitter.com/<?php echo $twitter ;?>" class="twitter-follow-button" target="_blank"><i class="fa fa-twitter"></i></a>
           </p>
         </div>
       </li>
