@@ -63,34 +63,35 @@
       </h1>
 
       <div class="institutional-menu">
-        <!--<div id="subscribe" class="subscribe-form">
+        <div id="subscribe" class="subscribe-form">
           <a class="subscribe-button" href="#">Subscribe</a>
           <?php
           if( function_exists( 'insert_cform' ) ) {
-            //insert_cform();
+            insert_cform();
           } else { ?>
             <script type="text/javascript">var submitted=false;</script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                     onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
             <form action="https://docs.google.com/a/p2pu.org/forms/d/10_hpJEe-PWITqwTfLHZkpjxlnqlgmS71pHG8Uz00Uek/formResponse"
                   method="POST" id="ss-form" onsubmit="" target="hidden_iframe"
-                  onsubmit="submitted=true;"  data-validate="parsley">
+                  onsubmit="submitted=true;" data-validate="parsley">
               <div class="subscribe-email">
                 <h4>Subscribe to our newsletter</h4>
                 <a href="#" class="subscribe-email-action ">OK</a>
-                <input type="text" name="entry.1925900036" value="" class="ss-q-short" id="entry_1925900036"
-                       dir="auto" aria-required="true" required="true" title="" placeholder="Email"
-                       data-required="true" type="email" data-type="email">
+                <div class="parsley-container">
+                  <input type="text" name="entry.1925900036" value="" class="ss-q-short" id="entry_1925900036"
+                         dir="auto" aria-required="true" required="true" title="" placeholder="Email"
+                         data-required="true" type="email" data-type="email" data-trigger="change keyup focusin focusout">
+                </div>
               </div>
 
               <div id="modal-subscribe-successful" class="modal">
 
                 <h1>Subscription Sucessful!</h1>
                 <h2>Please help our research <br> by answering a few questions?</h2>
-                <input type="text" name="entry.42963135" value="" class="ss-q-short" id="entry_42963135"
-                       dir="auto" title=""  placeholder="Name" data-required="true">
-
-                  <select name="entry.2068497808" id="entry_2068497808" class="valid">
+                <div class="parsley-container" style="float: right;">
+                  <select name="entry.2068497808" id="entry_2068497808" class="valid" data-required="true"
+                        data-trigger="change keyup focusin focusout">
                     <option value="">Choose your Country</option>
                     <option value="United States of America">United States of America</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -346,80 +347,112 @@
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                   </select>
+                </div>
+                <div class="parsley-container">
+                  <input type="text" name="entry.42963135" value="" class="ss-q-short" id="entry_42963135"
+                         dir="auto" title=""  placeholder="Name" data-required="true" data-trigger="change keyup focusin focusout">
+                </div>
 
                   <fieldset>
                     <h3><label for="">I work in</label></h3>
-                    <ul class="ss-choices">
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.1732365831" value="Government" id="group_1732365831_1"
-                              class="ss-q-checkbox"></span>
-                          <span class="ss-choice-label">Government</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.1732365831" value="Civil society/ Non-profit"
-                              id="group_1732365831_2" class="ss-q-checkbox"></span>
-                          <span class="ss-choice-label">Civil society/ Non-profit</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.1732365831" value="Private sector" id="group_1732365831_3"
-                              class="ss-q-checkbox"></span>
-                          <span class="ss-choice-label">Private sector</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                    <div class="parsley-container">
+                      <ul class="ss-choices">
+                        <li class="ss-choice-item">
+                          <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.1732365831" value="Government" id="group_1732365831_1"
+                                   class="ss-q-checkbox" data-group="work-field" data-mincheck="1" data-trigger="change">
+                          </span>
+                            <span class="ss-choice-label">Government</span>
+                          </label></li>
+                        <li class="ss-choice-item">
+                          <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.1732365831" value="Civil society/ Non-profit"
+                                   id="group_1732365831_2" class="ss-q-checkbox" data-group="work-field">
+                          </span>
+                            <span class="ss-choice-label">Civil society/ Non-profit</span>
+                          </label></li>
+                        <li class="ss-choice-item">
+                          <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.1732365831" value="Private sector" id="group_1732365831_3"
+                                   class="ss-q-checkbox" data-group="work-field">
+                          </span>
+                            <span class="ss-choice-label">Private sector</span>
+                          </label></li>
+                        <li class="ss-choice-item">
+                          <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input
                               type="checkbox" name="entry.1732365831" value="Education" id="group_1732365831_4"
-                              class="ss-q-checkbox"></span>
-                          <span class="ss-choice-label">Education</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.1732365831" value="__other_option__" id="group_1732365831_5"
-                              class="ss-q-checkbox ss-q-other-toggle"></span>
-                          Other:</label>
-                        <span class="ss-q-other-container goog-inline-block"><input type="text"
-                                                                                    name="entry.1732365831.other_option_response"
-                                                                                    value="" class="ss-q-other"
-                                                                                    id="entry_1732365831_other_option_response"
-                                                                                    dir="auto"
-                                                                                    aria-label="Other"></span>
-                      </li>
-                    </ul>
+                              class="ss-q-checkbox" data-group="work-field">
+                          </span>
+                            <span class="ss-choice-label">Education</span>
+                          </label>
+                        </li>
+                        <li class="ss-choice-item">
+                          <input type="checkbox" name="entry.1732365831" value="__other_option__" id="group_1732365831_5"
+                                 class="ss-q-checkbox other-toggle" data-group="work-field">
+                          <label for="group_1732365831_5" style="display: inline">Other:</label>
+                          <input type="text" name="entry.1732365831.other_option_response" value="" class="q-other"
+                                 id="entry_1732365831_other_option_response" dir="auto" aria-label="Other" disabled>
+
+                        </li>
+                      </ul>
+                    </div>
+
                   </fieldset>
                   <fieldset>
                     <h3><label for="">I am interested in</label></h3>
-                    <ul class="ss-choices">
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.2059951128" value="New research" id="group_2059951128_1"
-                              class="ss-q-checkbox"></span>
+                    <div class="parsley-container">
+                      <ul class="ss-choices">
+                      <li class="ss-choice-item">
+                        <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.2059951128" value="New research" id="group_2059951128_1"
+                              class="ss-q-checkbox" data-group="interest" data-mincheck="1" data-trigger="change">
+                          </span>
                           <span class="ss-choice-label">New research</span>
                         </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.2059951128" value="Courses I can sign-up for"
-                              id="group_2059951128_2" class="ss-q-checkbox"></span>
+                      <li class="ss-choice-item">
+                        <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.2059951128" value="Courses I can sign-up for"
+                              id="group_2059951128_2" class="ss-q-checkbox" data-group="interest">
+                          </span>
                           <span class="ss-choice-label">Courses I can sign-up for</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.2059951128" value="Learning materials for independent study"
-                              id="group_2059951128_3" class="ss-q-checkbox"></span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.2059951128" value="Learning materials for independent study"
+                              id="group_2059951128_3" class="ss-q-checkbox" data-group="interest">
+                          </span>
                           <span class="ss-choice-label">Learning materials for independent study</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.2059951128" value="Conferences to attend"
-                              id="group_2059951128_4" class="ss-q-checkbox"></span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <label>
+                          <span class="ss-choice-item-control goog-inline-block">
+                            <input type="checkbox" name="entry.2059951128" value="Conferences to attend"
+                              id="group_2059951128_4" class="ss-q-checkbox" data-group="interest">
+                          </span>
                           <span class="ss-choice-label">Conferences to attend</span>
-                        </label></li>
-                      <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
-                              type="checkbox" name="entry.2059951128" value="__other_option__" id="group_2059951128_5"
-                              class="ss-q-checkbox ss-q-other-toggle"></span>
-                          Other:</label>
-                        <span class="ss-q-other-container goog-inline-block"><input type="text"
-                                                                                    name="entry.2059951128.other_option_response"
-                                                                                    value="" class="ss-q-other"
-                                                                                    id="entry_2059951128_other_option_response"
-                                                                                    dir="auto"
-                                                                                    aria-label="Other"></span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <input type="checkbox" name="entry.2059951128" value="__other_option__" id="group_2059951128_5"
+                          class="ss-q-checkbox other-toggle" data-group="interest">
+                        <label for="group_2059951128_5" style="display: inline">Other:</label>
+                        <input type="text" name="entry.2059951128.other_option_response" value="" class="q-other"
+                               id="entry_2059951128_other_option_response" dir="auto" aria-label="Other" disabled>
                       </li>
                     </ul>
+                    </div>
                   </fieldset>
-                  <input type="submit" class="button cancel" value="Cancel">
+                  <input type="submit" class="button subscribe-cancel" value="Cancel">
                   <input type="submit" name="submit" value="OK" id="ss-submit" class="button subscribe-submit confirm">
               </div>
 
@@ -428,7 +461,7 @@
             </form>
 
           <?php } ?>
-        </div>-->
+        </div>
         <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
     </div>

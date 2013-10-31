@@ -757,7 +757,9 @@ fieldset {
 	border-bottom: 1px solid rgba(255, 255, 255, .7);
 	padding: 15px 0;
 }
-
+.modal input[disabled] {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
 .modal input[type="text"] {
 	width: 200px;
 	background-color: transparent;
@@ -778,13 +780,13 @@ fieldset {
 .modal select {
 	border: 1px solid rgba(255, 255, 255, .7);
 	padding: 5px 4px 3px;
-	margin-left: 10px;
 	width: 174px;
 	background-color: transparent;
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: 100;
+    float: right;
 }
 .modal select option {
     color: #ccc;
@@ -830,7 +832,7 @@ fieldset {
     background-image: none;
 }
 
-.modal .button.cancel {
+.modal .button.subscribe-cancel {
 	background-color: #ed135a;	
 }
 
@@ -852,7 +854,9 @@ fieldset {
     margin-top: 35px;
 }
 
-
+.parsley-error-list {
+    color: rgba(255, 0, 0, .8);
+}
 
 
 

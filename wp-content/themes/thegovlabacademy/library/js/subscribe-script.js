@@ -8,7 +8,9 @@ var Subscribe = window.Subscribe || {};
 
     var init = function () {
         $(function () {
-            var survey = $('#modal-subscribe-successful');
+            var form = $('#ss-form'),
+                survey = $('#modal-subscribe-successful');
+
             $('.subscribe-button').click(function () {
                 $('#subscribe, .subscribe-email').toggleClass('active');
                 if (survey.hasClass('active')) {
@@ -27,10 +29,46 @@ var Subscribe = window.Subscribe || {};
                 }
             });
 
-            $('.modal .button').click(function () {
-                $('.modal').removeClass('active');
+            $('.subscribe-submit').click(function () {
+                if (form.parsley('isValid')) {
+                    form.submit();
+                    $('.modal').removeClass('active');
+                }
                 $('#overlay').hide();
             });
+
+            $('.subscribe-cancel').click(function () {
+                form.parsley('destroy').submit();
+                $('.modal').removeClass('active');
+            });
+
+            $('.other-toggle').click(function (e) {
+                var $this = $(this);
+                if ($this.is(':checked')) {
+                    $this.siblings('.q-other').removeAttr('disabled');
+                } else {
+                    $this.siblings('.q-other').attr('disabled', 'true');
+                }
+            });
+
+            survey.blur(function () {
+                console.log('clicked away, you cheeky bastart you');
+            });
+
+            form.parsley({
+                errors: {
+                    container: function (element, isRadioOrCheckbox) {
+                        var $container = element.closest(".parsley-container");
+                        if ($container.length === 0) {
+                            $container = $("<div class='parsley-container'></div>").insertBefore(element);
+                        }
+                        return $container;
+                    },
+                    errorsWrapper: '<div></div>',
+                    errorElem: '<span></span>'
+                }
+            });
+
 
             $('.expert-img').click(function (e) {
                 e.preventDefault();
@@ -52,7 +90,6 @@ var Subscribe = window.Subscribe || {};
             $('#overlay').click(function () {
                 $('#subscribe').removeClass('active');
                 $('.modal').removeClass('active');
-                $('#overlay').hide();
             });
 
 
