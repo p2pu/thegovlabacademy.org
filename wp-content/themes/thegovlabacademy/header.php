@@ -63,7 +63,7 @@
       </h1>
 
       <div class="institutional-menu">
-        <div id="subscribe" class="subscribe-form">
+        <!--<div id="subscribe" class="subscribe-form">
           <a class="subscribe-button" href="#">Subscribe</a>
           <?php
           if( function_exists( 'insert_cform' ) ) {
@@ -83,7 +83,7 @@
                        data-required="true" type="email" data-type="email">
               </div>
 
-              <div id="modal-subscribe-successful" class="modal"> <!-- Subscribe Modal Window -->
+              <div id="modal-subscribe-successful" class="modal">
 
                 <h1>Subscription Sucessful!</h1>
                 <h2>Please help our research <br> by answering a few questions?</h2>
@@ -428,7 +428,7 @@
             </form>
 
           <?php } ?>
-        </div>
+        </div>-->
         <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
     </div>
