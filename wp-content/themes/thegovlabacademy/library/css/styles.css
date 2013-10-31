@@ -162,17 +162,36 @@ footer p {
 
 }
 
-.subscribe-form form { display: none; }
+.subscribe-email { display: none; }
 
-.subscribe-form.active form {
+.subscribe-email-action{
+    border: 1px solid rgba(255, 255, 255, .4);
+    background-color: transparent;
+    color: #fff !important;
+    background-image: none;
+    padding: 2px 4px 3px 4px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: normal;
+    float: right;
+}
+.subscribe-email-action:hover, .subscribe-email-action:focus{
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .4);
+}
+/*.subscribe-form.active form {*/
+.subscribe-email.active {
 	display: inline-block;
 	position:absolute;
-	width: 250px;
+	width: 270px;
 	right: 0;
 	z-index: 100;
 	background-color: rgba(0, 169, 156, .9);
 	padding: 15px 15px;
-	top: 12px;
+	top: 21px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
     border: none;
 }
@@ -202,7 +221,7 @@ footer p {
 	font-weight: 100;
 }
 
-.subscribe-form input {
+.subscribe-form input[type="text"] {
 	border: 1px solid rgba(255, 255, 255, .4);
 	padding: 3px;
 	background: transparent;
@@ -213,15 +232,10 @@ footer p {
     background: transparent;
     box-shadow: none;
 }
-.subscribe-form input[type="submit"],
-.subscribe-form input[type="submit"]:hover,
-.subscribe-form input[type="submit"]:hover{
-    background: none;
-}
 
 .subscribe-form input.button {
-	padding: 2px;
-	width: 30px;
+	/*padding: 2px;
+	width: 30px;*/
 	cursor:pointer;
 }
 .subscribe-form.active #usermessagea {
@@ -718,8 +732,8 @@ footer p {
 /* Modal Windows */
 
 .modal {
-	width: 400px;
-	position: fixed;
+	width: 430px;
+	position: absolute;
 	top: 50px;
 	left: calc(50% - 215px);
 	background-color: rgba(0, 169, 156, 1);
@@ -729,7 +743,7 @@ footer p {
 	font-size: 14px;
 	font-weight: 100;
 	display: none;
-	z-index: 2;
+	z-index: 200;
 }
 
 .modal.active {
@@ -755,6 +769,8 @@ fieldset {
 
 .modal input[type="checkbox"] {
 	margin-right: 10px;
+    width: 15px;
+    float: left;
 }
 
 .modal select {
@@ -768,13 +784,16 @@ fieldset {
 	font-size: 14px;
 	font-weight: 100;
 }
-
+.modal select option {
+    color: #ccc;
+}
 .modal h1,
 .modal h2 {
 	text-align: center;
 	font-size: 20px;
 	color: #fff;
 	font-weight: 100;
+    display: block;
 }
 
 .modal h2 {
@@ -805,6 +824,8 @@ fieldset {
 	width: 192px;
 	margin: 10px 10px 0 0;
 	cursor:pointer;
+    border-radius: 0;
+    background-image: none;
 }
 
 .modal .button.cancel {
@@ -817,12 +838,13 @@ fieldset {
 }
 
 #overlay {
-	position: absolute;
+	position: fixed;
 	top:0;
+    left: 0;
 	width: 100%;
 	height: 100%;
 	display: none;
-	/*background-color: rgba(255, 0 0, .3);*/
+	background-color: rgba(255, 0, 0, .3);
 }
 .sidebar-title{
     margin-top: 35px;

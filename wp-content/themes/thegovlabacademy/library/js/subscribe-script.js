@@ -8,14 +8,23 @@ var Subscribe = window.Subscribe || {};
 
     var init = function () {
         $(function () {
+            var survey = $('#modal-subscribe-successful');
             $('.subscribe-button').click(function () {
-                $('#subscribe').toggleClass('active');
-                $('#overlay').show();
+                $('#subscribe, .subscribe-email').toggleClass('active');
+                if (survey.hasClass('active')) {
+                    survey.removeClass('active');
+                }
+                $('#subscribe').css('position', 'relative');
+
+
             });
 
-            $('#subscribe-submit').click(function () {
-                $('#subscribe').removeClass('active');
-                $('#modal-subscribe-successful').addClass('active');
+            $('.subscribe-email-action').click(function () {
+                if ($('#entry_1925900036').parsley('isValid')) {
+                    $('#subscribe, .subscribe-email').removeClass('active');
+                    survey.addClass('active');
+                    $('#subscribe').css('position', 'initial');
+                }
             });
 
             $('.modal .button').click(function () {
