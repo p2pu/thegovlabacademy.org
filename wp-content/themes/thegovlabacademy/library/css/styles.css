@@ -377,6 +377,8 @@ footer p {
     background: #50307f;
     padding: 8px 5px;
     color: #FFFFFF !important;
+    display: block;
+    text-align: center;
 }
 .call-to-action:hover{
     background: rgba(80,48,127,.4);
