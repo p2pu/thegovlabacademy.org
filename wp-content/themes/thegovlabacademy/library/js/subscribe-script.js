@@ -18,7 +18,6 @@ var Subscribe = window.Subscribe || {};
                 }
                 $('#subscribe').css('position', 'relative');
 
-
             });
 
             $('.subscribe-email-action').click(function () {
@@ -26,6 +25,7 @@ var Subscribe = window.Subscribe || {};
                     $('#subscribe, .subscribe-email').removeClass('active');
                     survey.addClass('active');
                     $('#subscribe').css('position', 'initial');
+                    $('#overlay').show();
                 }
             });
 
@@ -51,9 +51,14 @@ var Subscribe = window.Subscribe || {};
                 }
             });
 
-            survey.blur(function () {
-                console.log('clicked away, you cheeky bastart you');
-            });
+            //  Function for the Overlay functionalities
+            /*$('#overlay').click(function () {
+                var $this = $(this);
+                $('#subscribe').removeClass('active');
+                $('.modal').removeClass('active');
+                $this.hide();
+                form.submit();
+            });*/
 
             form.parsley({
                 errors: {
@@ -86,11 +91,7 @@ var Subscribe = window.Subscribe || {};
                 var $this = $(this);
                 $this.parents('.modal').removeClass('active');
             });
-            //  Function for the Overlay functionalities
-            $('#overlay').click(function () {
-                $('#subscribe').removeClass('active');
-                $('.modal').removeClass('active');
-            });
+
 
 
             // Function for interface color changing
