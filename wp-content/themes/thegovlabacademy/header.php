@@ -53,7 +53,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<!--<div id="overlay"></div>-->
 <header class="header" role="banner"> <!-- Header and Navigation -->
   <div class="content">
     <div class="wrapper ">
@@ -71,7 +71,7 @@
           } else { ?>
             <script type="text/javascript">var submitted=false;</script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
+                    onload="if(submitted) {window.location='';}"></iframe>
             <form action="https://docs.google.com/a/p2pu.org/forms/d/10_hpJEe-PWITqwTfLHZkpjxlnqlgmS71pHG8Uz00Uek/formResponse"
                   method="POST" id="ss-form" onsubmit="" target="hidden_iframe"
                   onsubmit="submitted=true;" data-validate="parsley">
@@ -393,7 +393,7 @@
                         </li>
                         <li class="ss-choice-item">
                           <input type="checkbox" name="entry.1732365831" value="__other_option__" id="group_1732365831_5"
-                                 class="ss-q-checkbox other-toggle" data-group="work-field">
+                                 class="ss-q-checkbox other-toggle" data-group="work-field" style="margin-top: 8px">
                           <label for="group_1732365831_5" style="display: inline">Other:</label>
                           <input type="text" name="entry.1732365831.other_option_response" value="" class="q-other"
                                  id="entry_1732365831_other_option_response" dir="auto" aria-label="Other" disabled>
@@ -444,7 +444,7 @@
                       </li>
                       <li class="ss-choice-item">
                         <input type="checkbox" name="entry.2059951128" value="__other_option__" id="group_2059951128_5"
-                          class="ss-q-checkbox other-toggle" data-group="interest">
+                          class="ss-q-checkbox other-toggle" data-group="interest" style="margin-top: 8px">
                         <label for="group_2059951128_5" style="display: inline">Other:</label>
                         <input type="text" name="entry.2059951128.other_option_response" value="" class="q-other"
                                id="entry_2059951128_other_option_response" dir="auto" aria-label="Other" disabled>
