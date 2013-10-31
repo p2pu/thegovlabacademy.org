@@ -65,10 +65,7 @@
       <div class="institutional-menu">
         <div id="subscribe" class="subscribe-form">
           <a class="subscribe-button" href="#">Subscribe</a>
-          <?php
-          if( function_exists( 'insert_cform' ) ) {
-            insert_cform();
-          } else { ?>
+
             <script type="text/javascript">var submitted=false;</script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                     onload="if(submitted) {window.location='';}"></iframe>
@@ -460,7 +457,6 @@
               <input type="hidden" name="pageHistory" value="0">
             </form>
 
-          <?php } ?>
         </div>
         <?php wp_nav_menu(array('theme_location' => 'institutional_menu')); ?>
       </div>
