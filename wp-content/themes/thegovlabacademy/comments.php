@@ -100,16 +100,16 @@ The comments page for Bones
 
 	<?php endif; ?>
 
+    <div class="alert">
+		<p id="allowed_tags" class="small"><strong>Note:</strong> <?php _e( 'You can use these HTML tags when commenting', 'bonestheme' ); ?>: <code><?php echo allowed_tags(); ?></code></p>
+	</div>
+
 	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
 
 	<p>
 		<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e( 'Submit', 'bonestheme' ); ?>" />
 		<?php comment_id_fields(); ?>
 	</p>
-
-	<div class="alert alert-info">
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e( 'You can use these tags', 'bonestheme' ); ?>: <code><?php echo allowed_tags(); ?></code></p>
-	</div>
 
 	<?php do_action( 'comment_form', $post->ID ); ?>
 

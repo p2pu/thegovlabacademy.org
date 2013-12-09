@@ -694,21 +694,6 @@ BUTTONS
   margin: 0 auto;
   display: block; }
 
-body > footer {
-  color: #999999; }
-  body > footer .govlab-info img {
-    width: 100%; }
-  body > footer .social {
-    float: right; }
-    body > footer .social li {
-      font-size: 25px;
-      float: left;
-      margin-left: 10px; }
-      body > footer .social li a:hover {
-        color: #ed135a; }
-      body > footer .social li a:visited {
-        color: #999999; }
-
 /*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

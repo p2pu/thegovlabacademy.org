@@ -1,0 +1,24 @@
+body > footer {
+  color: #999999;
+  .govlab-info {
+    img {
+      width: 100%;
+    }
+  }
+  .social {
+    float: right;
+    li {
+      font-size: 25px;
+      float: left;
+      margin-left: 10px;
+      a {
+        &:hover {
+          color: #ed135a;
+        }
+        &:visited {
+          color: #999999;
+        }
+      }
+    }
+  }
+}
