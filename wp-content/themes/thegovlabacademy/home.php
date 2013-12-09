@@ -101,6 +101,11 @@ get_header(); ?>
         </div>
       </div>
     </section>
+    <section>
+        <div class="wrapper">
+
+        </div>
+    </section>
   </div> <?php // end #inner-content ?>
 
 </div> <?php // end #content ?>

@@ -940,6 +940,19 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
+.twocolumns {
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -moz-column-rule: none;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -webkit-column-rule: none;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: none;
+  font-size: 1.1em;
+  line-height: 1.5em; }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1027,7 +1040,11 @@ COMMENT STYLES
   .commentlist .even {
     background: #fefefe; }
   .commentlist .vcard {
-    margin-left: 50px; }
+    margin-left: 50px;
+    background-color: #efefef;
+    border-bottom: 2px solid #50307f;
+    padding: 0 10px;
+    line-height: 30px; }
     .commentlist .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }

@@ -117,7 +117,7 @@ function bones_comments( $comment, $args, $depth ) {
    $GLOBALS['comment'] = $comment; ?>
 	<li <?php comment_class(); ?>>
 		<article id="comment-<?php comment_ID(); ?>" class="clearfix">
-			<header class="comment-author vcard">
+			<div class="comment-author vcard">
 				<?php
 				/*
 					this is the new responsive optimized comment image. It used the new HTML5 data-attribute to display comment gravatars on larger screens only. What this means is that on larger posts, mobile sites don't have a ton of requests for comment images. This makes load time incredibly fast! If you'd like to change it back, just replace it with the regular wordpress gravatar call:
@@ -134,7 +134,7 @@ function bones_comments( $comment, $args, $depth ) {
 				<?php printf(__( '<cite class="fn">%s</cite>', 'bonestheme' ), get_comment_author_link()) ?>
 				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'bonestheme' )); ?> </a></time>
 				<?php edit_comment_link(__( '(Edit)', 'bonestheme' ),'  ','') ?>
-			</header>
+			</div>
 			<?php if ($comment->comment_approved == '0') : ?>
 				<div class="alert alert-info">
 					<p><?php _e( 'Your comment is awaiting moderation.', 'bonestheme' ) ?></p>
