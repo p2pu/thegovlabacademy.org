@@ -5,25 +5,25 @@
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
-                    <div class="govlab-info sevencol first">
+                    <div class="govlab-info sixcol first">
                         <a href="http://thegovlab.org/" target="_blank">
-                            <div class="threecol first">
+                            <div class="twocol first">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/govlab-logo.png" alt="GovLab Logo"/>
                             </div>
                         </a>
-                        <div class="sevencol">
-                            The Governance Lab (The GovLab) aims to improve people’s
+                        <div class="tencol first">
+                             The <a href="http://thegovlab.org/" tarhet="_blank">Governance Lab (The GovLab)</a> aims to improve people’s
                              lives by changing how we govern. We are seeking
                              new ways to solve public problems using advances in
                              technology and science.
                         </div>
                     </div>
-                    <div class="copyright thereecol">
+                    <div class="copyright fourcol">
 
-                            <div class="onecol first">
+                            <div class="threecol first">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/licence.png" alt="Licence CC BY CA"/>
                             </div>
-                            <div class="twocol source-org">
+                            <div class="sevencol source-org">
                                 Unless otherwise noted,
                                 all content licensed under
                                 <a href="http://creativecommons.org/licenses/by-sa/3.0/">

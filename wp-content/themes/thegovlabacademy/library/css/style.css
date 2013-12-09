@@ -696,8 +696,6 @@ BUTTONS
 
 body > footer {
   color: #999999; }
-  body > footer .govlab-info img {
-    width: 100%; }
   body > footer .social {
     float: right; }
     body > footer .social li {
