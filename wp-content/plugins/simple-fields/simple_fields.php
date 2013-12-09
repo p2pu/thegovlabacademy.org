@@ -3,7 +3,7 @@
 Plugin Name: Simple Fields
 Plugin URI: http://simple-fields.com
 Description: Add groups of textareas, input-fields, dropdowns, radiobuttons, checkboxes and files to your edit post screen.
-Version: 1.4.2
+Version: 1.4.4
 Author: Pär Thernström
 Author URI: http://eskapism.se/
 License: GPL2
@@ -56,9 +56,9 @@ class simple_fields {
 	 */
 	function init() {
 
-
-		define( "SIMPLE_FIELDS_VERSION", "1.4.2");
+		define( "SIMPLE_FIELDS_VERSION", "1.4.4");
 		define( "SIMPLE_FIELDS_URL", plugins_url(basename(dirname(__FILE__))). "/");
+
 		define( "SIMPLE_FIELDS_NAME", "Simple Fields");
 
 		load_plugin_textdomain( 'simple-fields', null, basename(dirname(__FILE__)).'/languages/');
@@ -366,7 +366,7 @@ class simple_fields {
 	/**
 	 * Get maybe translated string
 	 * If WPML is installed and activated then icl_t() is used on the string
-	 * If WPML is not instaled, then it's just returned unmodified
+	 * If WPML is not installed, then it's just returned unmodified
 	 *
 	 * @param string $name Name to use in icl_t
 	 * @param string $value Value to use in icl_t
@@ -723,12 +723,15 @@ class simple_fields {
 			return $post_id;
 		}
 	
+
 		// verify if this is an auto save routine. If it is our form has not been submitted, so we dont want to do anything
 		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) { return $post_id; }
 
+		// why dont' we want to save revisions? i'll do that from now on, let's se what happens
 		// dont's save if is revision
-		if (wp_is_post_revision($post_id) !== FALSE) return $post_id;
-		
+		// preview is a revison? should save then so preview with fields work
+		// if (wp_is_post_revision($post_id) !== FALSE) return $post_id;
+
 		// attach post connector
 		// only save if being found in post variable, beacuse it may not exist if meta box is hidden/not outputted on page
 		if ( isset($_POST["simple_fields_selected_connector"]) ) {
@@ -1363,7 +1366,11 @@ sf_d($one_field_slug, 'one_field_slug');*/
 									<script>
 										// We need to call _buttonsInit to make quicktags buttons appear/work, but it's private. however calling addButtons calls _buttonsInit
 										// so we fake-add a button, just to fire _buttonsInit again.
-										QTags.addButton( 'simple_fields_dummy_button', '...', '<br />', null, null, null, null, "apa" );
+										// @todo: If editor does not exist in post then QTags does not exist at all.
+										// 		  Quick fix: only add if QTags exists. Better fix: always load editor even if it's not t be shown? Hide it with JS/CSS? Load editor scripts?
+										if (window.QTags) {
+											QTags.addButton( 'simple_fields_dummy_button', '...', '<br />', null, null, null, null, "apa" );
+										}
 									</script>
 									<?php
 
@@ -1783,9 +1790,19 @@ sf_d($one_field_slug, 'one_field_slug');*/
 			$field_group_wrapper_css .= " simple-fields-meta-box-field-group-wrapper-view-table ";
 		}
 
+		// Start div that will contain fieldgroup and fields in the edit post screen
 		echo "<div class='simple-fields-meta-box-field-group-wrapper $num_added_field_groups_css $field_group_slug_css $field_group_wrapper_css'>";
 		echo "<input type='hidden' name='simple-fields-meta-box-field-group-id' value='$post_connector_field_id' />";
-	 
+	 	
+		// Show edit link if debug is enabled
+		if ( defined("WP_DEBUG") && WP_DEBUG ) {
+			printf(
+				'<div class="sf-meta-box-edit-field-group"><a href="%1$s">%2$s</a></div>',
+				admin_url( "options-general.php?page=simple-fields-options&action=edit-field-group&group-id=" . $current_field_group["id"] ),
+				__('Edit Field Group', 'simple-fields')
+			);
+		}
+
 		// show description
 		if ( ! empty($current_field_group["description"]) ) {
 			printf("<p class='%s'>%s</p>", "simple-fields-meta-box-field-group-description", esc_html( $this->get_string("Field group description, " . $current_field_group["slug"], $current_field_group["description"]) ) );
@@ -2040,6 +2057,9 @@ sf_d($one_field_slug, 'one_field_slug');*/
 
 					if ( ! $one_field["deleted"] ) $num_active_fields++;
 
+					// Make sure all props are set
+					if ( ! isset( $one_field["slug"] ) ) $one_field["slug"] = "";
+
 					$one_field["meta_key"] = $this->get_meta_key( $field_groups[$i]["id"], $one_field["id"], null, $field_groups[$i]["slug"], $one_field["slug"] );
 
 				}
@@ -2220,8 +2240,17 @@ sf_d($one_field_slug, 'one_field_slug');*/
 			}
 		}
 
+		// Show link to edit post connector
+		if ( defined("WP_DEBUG") && WP_DEBUG &&  "__none__" !== $connector_selected && "__inherit__" !== $connector_selected ) {
+			printf(
+				'<div class="sf-post-edit-side-field-edit-post-connector"><a href="%2$s">%1$s</a></div>',
+				__('Edit Post Connector', 'simple-fields'),
+				admin_url( "options-general.php?page=simple-fields-options&action=edit-post-connector&connector-id=" . $connector_selected )
+			);
+		}
+
 		?>
-		<div class="inside">
+		<!-- <div class="inside"> -->
 
 			<?php
 
@@ -2237,7 +2266,7 @@ sf_d($one_field_slug, 'one_field_slug');*/
 			} else {
 
 				// dropdown with post connectors ?>
-				<div>
+				<p>
 					<select name="simple_fields_selected_connector" id="simple-fields-post-edit-side-field-settings-select-connector">
 						<option <?php echo ($saved_connector_to_use == "__none__") ? " selected='selected' " : "" ?> value="__none__"><?php _e('None', 'simple-fields') ?></option>
 						<option <?php echo ($saved_connector_to_use == "__inherit__") ? " selected='selected' " : "" ?> value="__inherit__"><?php _e('Inherit from parent', 'simple-fields') ?>
@@ -2250,7 +2279,7 @@ sf_d($one_field_slug, 'one_field_slug');*/
 							<option <?php echo ($saved_connector_to_use == $one_connector["id"]) ? " selected='selected' " : "" ?> value="<?php echo $one_connector["id"] ?>"><?php echo $one_connector["name"] ?></option>
 						<?php endforeach; ?>
 					</select>
-				</div>
+				</p>
 				<?php
 
 				// If connector has been changed with filter then show was connector is being used
@@ -2271,7 +2300,9 @@ sf_d($one_field_slug, 'one_field_slug');*/
 			<div>
 				<p><a href="#" id="simple-fields-post-edit-side-field-settings-show-keys"><?php _e('Show custom field keys', 'simple-fields') ?></a></p>
 			</div>
-		</div>
+		
+		<!-- </div> -->
+
 		<?php
 	} // function 
 
@@ -3580,29 +3611,41 @@ sf_d($one_field_slug, 'one_field_slug');*/
 
 			// field is of type file
 			// lets get more info about that file then, so we have most useful stuff in an array – hooray!
-			
 			if (isset($field_value) && is_numeric($field_value)) {
 
-				$file_id                             = (int) $field_value;
-				$return_field_value["id"]            = $file_id;
-				$return_field_value["is_image"]      = wp_attachment_is_image( $file_id );
-				$return_field_value["url"]           = wp_get_attachment_url( $file_id );
-				$return_field_value["mime"]          = get_post_mime_type( $file_id );
+				$file_id = (int) $field_value;
 
-				// generate html for all registered image sizes
-				$arr_sizes = array_merge(array("full"), get_intermediate_image_sizes());
-				$return_field_value["link"]      = array();
-				$return_field_value["image"]     = array();
-				$return_field_value["image_src"] = array();
-				foreach ($arr_sizes as $size_key) {
-					$return_field_value["link"][$size_key]      = wp_get_attachment_link( $file_id, $size_key );
-					$return_field_value["image"][$size_key]     = wp_get_attachment_image( $file_id, $size_key );
-					$return_field_value["image_src"][$size_key] = wp_get_attachment_image_src( $file_id, $size_key );
-				}
-			
-				$return_field_value["metadata"] = wp_get_attachment_metadata( $file_id );
-				$return_field_value["post"] = get_post( $file_id );
+				$file_post_object = get_post( $file_id );
 				
+				if ( is_null($file_post_object) ) {
+					
+					// Post does not exist, do not return anything (i.e. keep array empty)
+
+				} else {
+
+					// Post object does contain something
+
+					$return_field_value["id"]            = $file_id;
+					$return_field_value["is_image"]      = wp_attachment_is_image( $file_id );
+					$return_field_value["url"]           = wp_get_attachment_url( $file_id );
+					$return_field_value["mime"]          = get_post_mime_type( $file_id );
+
+					// generate html for all registered image sizes
+					$arr_sizes = array_merge(array("full"), get_intermediate_image_sizes());
+					$return_field_value["link"]      = array();
+					$return_field_value["image"]     = array();
+					$return_field_value["image_src"] = array();
+					foreach ($arr_sizes as $size_key) {
+						$return_field_value["link"][$size_key]      = wp_get_attachment_link( $file_id, $size_key );
+						$return_field_value["image"][$size_key]     = wp_get_attachment_image( $file_id, $size_key );
+						$return_field_value["image_src"][$size_key] = wp_get_attachment_image_src( $file_id, $size_key );
+					}
+				
+					$return_field_value["metadata"] = wp_get_attachment_metadata( $file_id );
+					$return_field_value["post"] = get_post( $file_id );
+				
+				} // if get_post returns null
+
 			}
 
 		} else if ("radiobuttons" === $field["type"]) {
@@ -3822,7 +3865,7 @@ sf_d($one_field_slug, 'one_field_slug');*/
 
 		$cache_key = 'simple_fields_'.$this->ns_key.'_get_field_group_by_slug_deleted_' . (int) $include_deleted . "_" . $field_group_slug;
 		$return_val = wp_cache_get( $cache_key, 'simple_fields' );
-		
+
 		if (FALSE === $return_val) {
 
 			$field_groups = $this->get_field_groups();

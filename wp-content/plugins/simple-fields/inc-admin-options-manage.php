@@ -25,7 +25,7 @@ if ("edit-post-type-defaults" == $action) {
 						<p><?php _e('Post type', "simple-fields" ) ?></p>
 					</th>
 					<td>
-						<p><?php echo esc_html( $selected_post_type->label ) ?></p>
+						<p><?php echo esc_html( $selected_post_type->labels->name . " (" . $selected_post_type->name . ")" ) ?></p>
 					</td>
 				</tr>
 				
@@ -234,24 +234,31 @@ if ("edit-post-connector" == $action) {
 					$arr_post_types_to_ignore = array("revision", "nav_menu_item");
 					foreach ($wp_post_types as $one_post_type) {
 						if (!in_array($one_post_type->name, $arr_post_types_to_ignore)) {
+							$input_id = "post_types_" . $one_post_type->name;
 							?>
 							<p>
-								<input <?php echo (in_array($one_post_type->name, $post_connector_in_edit["post_types"]) ? " checked='checked' " : ""); ?> type="checkbox" name="post_types[]" value="<?php echo $one_post_type->name ?>" />
-								<?php echo $one_post_type->name ?>
-							<?php
-							/*
-							<!-- <td>
-								<input <?php echo (in_array($one_post_type->name, $post_connector_in_edit["post_types_type_default"]) ? " checked='checked' " : "") ?> type="checkbox" name="post_types_type_default[]" value="<?php echo $one_post_type->name ?>" />
+								<input 
+									<?php echo (in_array($one_post_type->name, $post_connector_in_edit["post_types"]) ? " checked='checked' " : ""); ?> 
+									type="checkbox" 
+									name="post_types[]" 
+									value="<?php echo $one_post_type->name ?>"
+									id="<?php echo $input_id ?>"
+								/>
+								<?php
+								printf( '<label for="%3$s">%1$s (%2$s)</label>', $one_post_type->labels->name, $one_post_type->name, $input_id);
+								?>
+								
+								<?php /* <input <?php echo (in_array($one_post_type->name, $post_connector_in_edit["post_types_type_default"]) ? " checked='checked' " : "") ?> type="checkbox" name="post_types_type_default[]" value="<?php echo $one_post_type->name ?>" />
 								Default connector for post type <?php echo $one_post_type->name ?>
-							</td> -->
-							*/
-							?>
+								*/
+								?>
 							</p>
 							<?php
 						}
 					}
 					?>
 				</td>
+
 			</tr>
 
 		</table>
@@ -481,7 +488,7 @@ if ( ! $action ) {
 				<a href="%2$s" class="add-new-h2">%3$s</a>
 			</h3>
 			',
-			__('Field groups', 'simple-fields'),
+			__('Field Groups', 'simple-fields'),
 			SIMPLE_FIELDS_FILE . "&amp;action=edit-field-group&amp;group-id=0",
 			__('Add new')
 		);
@@ -664,14 +671,14 @@ if ( ! $action ) {
 
 	<div class="simple-fields-post-type-defaults">
 		
-		<h3><?php _e('Post type defaults', 'simple-fields') ?></h3>
+		<h3><?php _e('Post Type Defaults', 'simple-fields') ?></h3>
 		
 		<table class="wp-list-table widefat fixed">
 				
 			<thead>
 				<tr>
 					<th><?php _e("Post type", "simple-fields") ?></th>
-					<th><?php _e("Default connector", "simple-fields") ?></th>
+					<th><?php _e("Default Post Connector", "simple-fields") ?></th>
 					<th></th><!-- two empty to make table widths same as the other tables -->
 					<th></th>
 				</tr>
@@ -691,17 +698,17 @@ if ( ! $action ) {
 						$default_connector = $this->get_default_connector_for_post_type($one_post_type);
 						switch ($default_connector) {
 							case "__none__":
-								$default_connector_str = __('Default is to use <em>no connector</em>', 'simple-fields');
+								$default_connector_str = __('No connector', 'simple-fields');
 								break;
 							case "__inherit__":
-								$default_connector_str = __('Default is to inherit from <em>parent connector</em>', 'simple-fields');
+								$default_connector_str = __('Inherit parent connector', 'simple-fields');
 								break;
 							default:
 								if (is_numeric($default_connector)) {
 									
 									$connector = $this->get_connector_by_id($default_connector);
 									if ($connector !== FALSE) {
-										$default_connector_str = sprintf(__('Default is to use connector <em>%s</em>', 'simple-fields'), $connector["name"]);
+										$default_connector_str = $connector["name"];
 									}
 								}
 

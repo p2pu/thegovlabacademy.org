@@ -49,6 +49,8 @@ class simple_fields_options_page_import_export {
 
 			}
 
+			// We have JSON contents from file or textarea
+			// @todo: create function of the next part
 			$arr_import = json_decode($import_json, true);
 			if ( is_null( $arr_import ) ) {
 				wp_die( __("Import failed: JSON data is not valid.", "simple-fields") );
@@ -159,7 +161,7 @@ class simple_fields_options_page_import_export {
 					
 					// Abort prev call
 					if (ajaxPost && ajaxPost.readyState !== 4) {
-						console.log("aborted");
+//						console.log("aborted");
 						ajaxPost.abort();
 					}
 

@@ -77,3 +77,12 @@ it a week, maybe two, and you will never go back.
 Happy Developing!
 
 ******************************************************************/
+
+.commentlist .vcard {
+padding: 5px 10px 5px 40px;
+margin: 0;
+}
+
+.commentlist .vcard img.avatar {
+top: 15px;
+}

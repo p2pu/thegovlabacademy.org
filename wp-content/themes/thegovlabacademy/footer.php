@@ -6,7 +6,7 @@
 							<?php bones_footer_links(); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">All content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY SA 3.0</a> unless otherwise noted.</p>
 
 				</div> <?php // end #inner-footer ?>
 

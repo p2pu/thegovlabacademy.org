@@ -539,3 +539,33 @@ ul.simple-fields-file-browser-list {
 .simple-fields-metabox-field-group-view-table-headline-count-10 {
 	width: 10%;
 }
+
+/* edit link for field group shown in edit post screen */
+.sf-meta-box-edit-field-group {
+	position: absolute;
+	top: -3em;
+	right: 2em;
+	display: none;
+}
+.sf-meta-box-edit-field-group a {
+	font-size: 11px;
+}
+.postbox-container:hover .sf-meta-box-edit-field-group {
+	display: block;
+}
+
+/* edit link for post connetor shown in edit post screen */
+.sf-post-edit-side-field-edit-post-connector {
+	position: absolute;
+	top: -2.9em;
+	right: 2em;
+	display: none;
+}
+
+.sf-post-edit-side-field-edit-post-connector a {
+	font-size: 11px;
+}
+
+.postbox:hover .sf-post-edit-side-field-edit-post-connector {
+	display: block;
+}

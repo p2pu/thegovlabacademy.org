@@ -11,6 +11,14 @@ for the latest and stable version.
 * See http://simple-fields.com for getting started guides and API documentation.
 * Author: [Pär Thernström](https://twitter.com/eskapism "@eskapism")
 
+## Current build status
+
+Master branch
+[![Build Status](https://travis-ci.org/bonny/WordPress-Simple-Fields.png)](https://travis-ci.org/bonny/WordPress-Simple-Fields)
+
+Develop branch
+[![Build Status](https://travis-ci.org/bonny/WordPress-Simple-Fields.png?branch=develop)](https://travis-ci.org/bonny/WordPress-Simple-Fields?branch=develop)
+
 ## Screenshots
 
 Works great for attachments
