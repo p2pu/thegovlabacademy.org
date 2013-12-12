@@ -61,6 +61,7 @@ style a page via class
 .logged-in {}                     /* if user is logged in */
 .paged {}                         /* paged items like search results or archives */
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+.relative{position: relative}
 
 /*********************
 LAYOUT & GRID STYLES

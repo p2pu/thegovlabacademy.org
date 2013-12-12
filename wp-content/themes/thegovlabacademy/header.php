@@ -464,7 +464,7 @@
   </div>
 </header>
 <section class="content-top"> <!-- Main Slider -->
-  <div class="wrapper">
+  <div class="wrapper relative">
     <?php wp_nav_menu(array('theme_location' => 'theme_menu', 'container_class' => 'theme-menu')); ?>
   </div>
 </section>

@@ -9,7 +9,7 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
-/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -694,6 +694,25 @@ BUTTONS
   margin: 0 auto;
   display: block; }
 
+#searchform {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  #searchform #s {
+    width: 220px;
+    border: 1px solid;
+    height: 27px;
+    line-height: 25px;
+    padding: 0 22px 0 5px; }
+  #searchform #searchsubmit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 3px 5px; }
+
 body > footer {
   color: #999999; }
   body > footer .social {
@@ -773,6 +792,9 @@ style a page via class
 /* if user is logged in */
 /* paged items like search results or archives */
 /* individual paged (i.e. body.paged-3) */
+.relative {
+  position: relative; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/

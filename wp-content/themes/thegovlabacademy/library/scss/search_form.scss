@@ -1,0 +1,21 @@
+#searchform{
+  position: absolute;
+  right: 0;
+  top: 0;
+  #s{
+    width: 220px;
+    border: 1px solid;
+    height: 27px;
+    line-height: 25px;
+    padding: 0 22px 0 5px;
+  }
+  #searchsubmit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 3px 5px;
+  }
+}

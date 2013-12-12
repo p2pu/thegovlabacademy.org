@@ -154,12 +154,12 @@ function bones_comments( $comment, $args, $depth ) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'bonestheme' ) . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search the Site...', 'bonestheme' ) . '" />
-	<input type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'" />
+	<button type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'"><i class="fa fa-search"></i></button>
 	</form>';
 	return $form;
 } // don't remove this bracket!
+//<label class="screen-reader-text" for="s">' . __( 'Search for:', 'bonestheme' ) . '</label>
 
 /****************** CLASS ON BODY ********************/
 // Add specific CSS class by filter
@@ -196,6 +196,15 @@ function site_specific_menus() {
 
 // Hook into the 'init' action
 add_action( 'init', 'site_specific_menus' );
+
+/******************ADDING SEARCH TO THE THEME MENU************/
+add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
+function add_search_box_to_menu( $items, $args ) {
+    if( $args->theme_location == 'theme_menu' )
+        return $items.get_search_form();
+
+    return $items;
+}
 
 /****************** SHORTCODES **********************/
 function _get_text_between_tags($string, $tagname) {
