@@ -80,10 +80,8 @@ get_header(); ?>
       <div class="wrapper tencol">
         <aside> <!-- Sidebar -->
           <h3 class="sidebar-title">Twitter Feed</h3>
-          <a class="twitter-timeline" height="625" href="https://twitter.com/TheGovLab/network-of-collaborators"  data-widget-id="394876037537861633">Tweets from @TheGovLab/network-of-collaborators</a>
+           <a class="twitter-timeline" height="625" href="https://twitter.com/TheGovLab/lists/open-governance"  data-widget-id="411113767246643200">Tweets from @TheGovLab/open-governance</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
         </aside>
 
         <div class="wrapper main-content">
