@@ -12,10 +12,14 @@
                             </div>
                         </a>
                         <div class="tencol first">
-                             The <a href="http://thegovlab.org/" tarhet="_blank">Governance Lab (The GovLab)</a> aims to improve people’s
-                             lives by changing how we govern. We are seeking
-                             new ways to solve public problems using advances in
-                             technology and science.
+                             <address>
+                                 <a href="http://thegovlab.org/" tarhet="_blank">The GovLab</a><br/>
+                                 Wagner Graduate School of Public Service <br/>
+                                 New York University <br/>
+                                 The Puck Building
+                                 295 Lafayette Street
+                                 New York, NY 10012
+                             </address>
                         </div>
                     </div>
                     <div class="copyright fourcol">
