@@ -2,15 +2,15 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrapper clearfix">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="clearfix" role="main">
 
 						<article id="post-not-found" class="hentry clearfix">
 
 							<header class="article-header">
 
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'bonestheme' ); ?></h1>
+								<h1><?php _e( 'Sorry, This Article is Not Found', 'bonestheme' ); ?></h1>
 
 							</header> <?php // end article header ?>
 

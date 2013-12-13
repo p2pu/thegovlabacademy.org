@@ -4,7 +4,7 @@
   top: 0;
   #s{
     width: 220px;
-    border: 1px solid;
+    border: 1px #cccccc solid;
     height: 27px;
     line-height: 25px;
     padding: 0 22px 0 5px;
@@ -17,5 +17,8 @@
     background: transparent;
     font-size: 16px;
     padding: 3px 5px;
+    i{
+      color: #CCCCCC;
+    }
   }
 }

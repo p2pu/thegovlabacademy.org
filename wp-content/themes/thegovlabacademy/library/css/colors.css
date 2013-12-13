@@ -61,14 +61,12 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 .data .experts-list li img:hover { border-color:#00adef; }
 
 .data small a { color:#00adef;}
-.data #searchform #s{ border-color: #00adef; }
+
 .data #searchform #s:focus {
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(0,173, 239,0.6);
     border-color: #00adef;
     outline: 1px dotted #00adef;
 }
-.data #searchform #searchsubmit i{ color: #00adef; }
-
 
 .crowd header,
 .crowd .info,
@@ -82,13 +80,12 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 .crowd small a { color:#50307f;}
 
-.crowd #searchform #s{ border-color: #50307f; }
+
 .crowd #searchform #s:focus {
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(80,48, 127,0.6);
     border-color: #50307f;
     outline: 1px dotted #50307f;
 }
-.crowd #searchform #searchsubmit i{ color: #50307f; }
 
 
 .behave header,
@@ -103,13 +100,12 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 .behave small a { color:#ed135a;}
 
-.behave #searchform #s{ border-color: #ed135a; }
+
 .behave #searchform #s:focus {
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(237,19, 90,0.6);
     border-color: #ed135a;
     outline: 1px dotted #ed135a;
 }
-.behave #searchform #searchsubmit i{ color: #ed135a; }
 
 
 .historyof header,
@@ -124,12 +120,10 @@ Green  - #00a99c | rgba(0, 169, 156, 1)
 
 .historyof small a { color:#00a99c;}
 
-.historyof #searchform #s{ border-color: #00a99c; }
+
 .historyof #searchform #s:focus {
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(0,169, 156,0.6);
     border-color: #00a99c;
     outline: 1px dotted #00a99c;
 }
-.historyof #searchform #searchsubmit i{ color: #00a99c; }
-
 .involve a{color: #555; }

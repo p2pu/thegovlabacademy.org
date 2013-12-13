@@ -58,7 +58,7 @@ aside {
 }
 
 /* Typography */
-.wrapper > h2, .section-heading {
+.wrapper h2, .section-heading {
 	font-weight: 100;
 	font-size: 24px;
 	padding: 0 0 5px;

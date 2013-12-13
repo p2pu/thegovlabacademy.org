@@ -700,7 +700,7 @@ BUTTONS
   top: 0; }
   #searchform #s {
     width: 220px;
-    border: 1px solid;
+    border: 1px #cccccc solid;
     height: 27px;
     line-height: 25px;
     padding: 0 22px 0 5px; }
@@ -712,6 +712,8 @@ BUTTONS
     background: transparent;
     font-size: 16px;
     padding: 3px 5px; }
+    #searchform #searchsubmit i {
+      color: #CCCCCC; }
 
 body > footer {
   color: #999999; }
