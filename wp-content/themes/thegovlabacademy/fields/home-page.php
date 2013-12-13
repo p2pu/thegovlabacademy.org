@@ -126,7 +126,7 @@ simple_fields_register_post_connector('home_page_connector',
         'priority' => 'high'),
     ),
     'post_types' => array('page'),
-    'hide_editor' => 1,
+    'hide_editor' => 0,
     'deleted' => false
   )
 );
