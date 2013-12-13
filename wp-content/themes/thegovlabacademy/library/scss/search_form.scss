@@ -1,15 +1,15 @@
-#searchform{
+#searchform {
   position: absolute;
   right: 0;
   top: 0;
-  #s{
+  #s {
     width: 220px;
     border: 1px #cccccc solid;
     height: 27px;
     line-height: 25px;
     padding: 0 22px 0 5px;
   }
-  #searchsubmit{
+  #searchsubmit {
     position: absolute;
     right: 0;
     top: 0;
@@ -17,8 +17,29 @@
     background: transparent;
     font-size: 16px;
     padding: 3px 5px;
-    i{
+    i {
       color: #CCCCCC;
     }
+  }
+}
+
+.digest-div {
+  padding: 0 10px;
+  #digest-form {
+    top: 55px;
+    right: 10px;
+    width: 100%;
+    #digest-input {
+      width: 208px;
+      border: 1px #cccccc solid;
+      height: 27px;
+      line-height: 25px;
+      padding: 0 5px 0 5px;
+    }
+  }
+  #digest-submit {
+    padding: 4px 6px;
+    border: 2px #f2f2f2 solid;
+    background-color: #f2f2f2;
   }
 }
