@@ -34,19 +34,19 @@ get_header(); ?>
             <div>
 
               <div class="wrapper content clearfix">
-                <div class="eightcol first">
+                <div class="ninecol first">
                   <?php include (get_template_directory() . "/sections/topic_literature.php") ;?>
                 </div>
               </div><?php // End literature section ?>
 
               <div class="wrapper content clearfix">
-                <div class="eightcol first">
+                <div class="ninecol first">
                   <?php include (get_template_directory() . "/sections/topic_activities.php") ;?>
                 </div>
               </div><?php // End activities section ?>
 
               <div class="wrapper content clearfix">
-                <div class="eightcol first">
+                <div class="ninecol first">
                   <?php include (get_template_directory() . "/sections/topic_toolbox.php") ;?>
                 </div>
               </div><?php // End toolbox section ?>
