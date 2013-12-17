@@ -8,8 +8,6 @@ if ($featured_fields) {?>
   <div class="info fourcol">
     <h2><?php print_r($featured_fields['post']->post_title); ?></h2>
 
-    <h3></h3>
-
     <p><?php echo simple_fields_get_post_value($featured_fields['id'], "Description", true); ?></p>
   </div>
 
