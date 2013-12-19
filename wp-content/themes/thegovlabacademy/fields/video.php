@@ -1,5 +1,33 @@
 <?php
 
+// WP_Query arguments
+$args = array (
+  'post_type'              => 'video_category',
+  'post_status'            => 'publish',
+  'posts_per_page'         =>  -1,
+  'ignore_sticky_posts'    =>  1
+);
+
+// The Query
+$query = new WP_Query( $args );
+$dropdown_values = array();
+// The Loop
+if ( $query->have_posts() ) {
+  $num = 1;
+  while ( $query->have_posts() ) {
+    $query->the_post();
+    $title = the_title($before='', $after='', $echo=false);
+    $arr = array('num' => $num, 'value' => $title);
+    $num++;
+    array_push($dropdown_values, $arr);
+
+  }
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+
+
 simple_fields_register_field_group('video_fields', array(
   'name' => 'Details',
   'fields' => array(
@@ -16,9 +44,20 @@ simple_fields_register_field_group('video_fields', array(
       'options' => array(
         'subtype' => 'url'
       )
+    ),
+    array(
+      'name' => 'Category',
+      'slug' => 'video_category_slug',
+      'description'=> 'Enter Category',
+      'type' => 'dropdown',
+      'options' => array(
+        'enable_multiple' => true,
+        'values' => $dropdown_values,
+        //'enable_extended_return_values' => true
+      )
     )
   ),
-  'repeatable' => FALSE,
+  'repeatable' => TRUE,
   'deleted' => false
 ));
 

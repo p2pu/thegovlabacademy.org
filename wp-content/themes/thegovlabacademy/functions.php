@@ -216,12 +216,14 @@ function _get_text_between_tags($string, $tagname) {
 /***************** CUSTOM TYPES *********************/
 require_once('custom-types/custom-experts-type.php');
 require_once('custom-types/custom-video-type.php');
+require_once('custom-types/custom-video-category-type.php');
 require_once('custom-types/custom-document-type.php');
 require_once('fields/home-page.php');
 require_once('fields/topic-page.php');
 require_once('fields/theme-page.php');
 require_once('fields/experts.php');
 require_once('fields/video.php');
+require_once('fields/video-category.php');
 require_once('fields/documents.php');
 
 function hwp_enter_title_here($title){
