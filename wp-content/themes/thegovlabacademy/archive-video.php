@@ -47,7 +47,7 @@
         <ul class="video-thumnails twelvecol first"><?php
           while (have_posts()) : the_post(); ?>
 
-          <li class="threecol <?php if ($count == 0 || $count % 4 == 0) {
+          <li class="threecol video-thumnails-item <?php if ($count == 0 || $count % 4 == 0) {
             echo 'first';
           } ?>">
             <a class="video-overlay-link" href="<?php the_permalink() ?>"></a>

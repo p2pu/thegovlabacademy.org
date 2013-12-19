@@ -332,7 +332,9 @@ footer p {
 .theme-menu li.behave a:after { content:'behave'; }
 .theme-menu li.historyof a:after { content:'historyof'; }
 
-
+.video-thumnails-item{
+    min-height: 250px;
+}
 .video-thumnails .fve-video-wrapper{
     margin: 0;
     border: 3px solid #B8ABCB;
