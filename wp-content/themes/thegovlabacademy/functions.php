@@ -224,6 +224,29 @@ function template_chooser($template)
   return $template;
 }
 add_filter('template_include', 'template_chooser');
+
+/****************** VIDEO THUMBNAILS **********************/
+function parse_thumbnail_for_video($video_link){
+  $video_arr = explode("/", $video_link);
+  if (strpos($video_arr[2], 'vimeo.com') !== false) {
+    if (strpos($video_link, '/review/') !== false) {
+      end($video_arr);
+      $json = json_decode(file_get_contents("http://vimeo.com/api/v2/video/" . trim(prev($video_arr)) . ".json"), true);
+    } else {
+      $json = json_decode(file_get_contents("http://vimeo.com/api/v2/video/" . trim(end($video_arr)) . ".json"), true);
+    }
+    $img_src = $json[0]["thumbnail_large"];
+  } else {
+    $video_id = trim(end($video_arr));
+
+    if (strpos($video_id, "watch?v=") !== false) {
+      $video_id_arr = explode("=", $video_id);
+      $video_id = end($video_id_arr);
+    }
+    $img_src = "http://img.youtube.com/vi/" . $video_id . "/0.jpg";
+  }
+  return $img_src;
+}
 /***************** CUSTOM TYPES *********************/
 require_once('custom-types/custom-experts-type.php');
 require_once('custom-types/custom-video-type.php');

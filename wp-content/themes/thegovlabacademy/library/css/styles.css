@@ -332,6 +332,9 @@ footer p {
 .theme-menu li.behave a:after { content:'behave'; }
 .theme-menu li.historyof a:after { content:'historyof'; }
 
+#infscr-loading{
+    text-align: center;
+}
 .video-thumnails-item{
     min-height: 250px;
 }
@@ -344,6 +347,9 @@ footer p {
 }
 .video-thumnails .video-info{
     height: 35px;
+}
+.video-thumnails .img-thumb{
+    width: 100%;
 }
 .type-video{
     height: 35px;
@@ -364,14 +370,11 @@ footer p {
 .video-categories-menu li a:hover{
 
 }
-a.video-overlay-link{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    z-index: 100000;
-}
 .video-page.main-slider .info{
     height: 355px;
+}
+.video-page.main-slider .info h2{
+    margin-top: 0;
 }
 .video-page.main-slider .fve-video-wrapper{
     margin: 0;

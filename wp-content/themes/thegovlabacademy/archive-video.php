@@ -54,19 +54,17 @@
       <?php if (have_posts()):
         $count = 0;?>
         <ul class="video-thumnails twelvecol first"><?php
-          while (have_posts()) : the_post(); ?>
-
-          <li class="threecol video-thumnails-item <?php if ($count == 0 || $count % 4 == 0) {
-            echo 'first';
-          } ?>">
-            <a class="video-overlay-link" href="<?php the_permalink() ?>"></a>
-            <?php
-            $count++;
-            echo do_shortcode('[fve]' . simple_fields_get_post_value(get_the_ID(), "Link to video", true) . '[/fve]') ?>
+          while (have_posts()) : the_post();
+          $video_link = simple_fields_get_post_value(get_the_ID(), "Link to video", true);?>
+          <li class="threecol video-thumnails-item <?php if ($count == 0 || $count % 4 == 0) {echo 'first';} ?>">
+            <a class="video-overlay-link" href="<?php the_permalink() ?>">
+              <img src="<?php echo parse_thumbnail_for_video($video_link) ?>" alt="<?php the_title(); ?>" class="img-thumb"/>
+            </a>
             <p class="video-info align-center">
               <small><?php the_title(); ?></small>
             </p>
             </li><?php
+            $count++;
           endwhile; ?>
         </ul>
         <?php if (function_exists('bones_page_navi')) { ?>
