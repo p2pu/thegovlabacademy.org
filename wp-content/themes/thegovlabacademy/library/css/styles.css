@@ -334,6 +334,7 @@ footer p {
 
 #infscr-loading{
     text-align: center;
+    clear: both;
 }
 .video-thumnails-item{
     min-height: 250px;
