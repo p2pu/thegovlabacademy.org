@@ -345,6 +345,9 @@ footer p {
 .video-thumnails .video-info{
     height: 35px;
 }
+.type-video{
+    height: 35px;
+}
 .video-categories-menu li{
     display: inline-block;
     margin: 0 -2px;
