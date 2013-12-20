@@ -6,7 +6,7 @@ wp-content/upgrade/
 wp-content/backup-db/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
-wp-includes/
+wp-includes/*
 wp-content/themes/thegovlabacademy/library/images/cpt-icons/
 wp-admin/
 wp-content/themes/thegovlabacademy/.sass-cache/
