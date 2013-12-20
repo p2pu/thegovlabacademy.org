@@ -167,7 +167,7 @@ add_filter('body_class','theme_class_names');
 function theme_class_names( $classes ) {
   // add 'class-name' to the $classes array
   $slug = get_permalink( get_the_ID() );
-  if( strpos($slug,'data') !== false ){
+  if( strpos($slug,'/data/') !== false ){
     $classes[] = 'data';
   }
   elseif( strpos($slug,'history') !== false ) {
@@ -212,7 +212,18 @@ function _get_text_between_tags($string, $tagname) {
     preg_match($pattern, $string, $matches);
     return $matches[1];
 }
-
+/****************** VIDEO SERCH PAGE **********************/
+function template_chooser($template)
+{
+  global $wp_query;
+  $post_type = get_query_var('post_type');
+  if( $wp_query->is_search && $post_type == 'video' )
+  {
+    return locate_template('archive-video.php');
+  }
+  return $template;
+}
+add_filter('template_include', 'template_chooser');
 /***************** CUSTOM TYPES *********************/
 require_once('custom-types/custom-experts-type.php');
 require_once('custom-types/custom-video-type.php');

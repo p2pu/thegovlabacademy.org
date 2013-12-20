@@ -6,6 +6,15 @@
 
     <div id="main" class="twelvecol first clearfix" role="main">
 
+      <nav id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+        <?php include(get_template_directory() . "/sections/video_navigation.php") ?>
+        <form id="searchform" action="<?php bloginfo('url'); ?>/" method="get">
+          <input class="inlineSearch" type="text" name="s" id="s" placeholder="Search for a video" />
+          <input type="hidden" name="post_type" value="video" />
+          <button id="searchsubmit" type="submit" value="Search"><i class="fa fa-search"></i></button>
+        </form>
+      </nav>
+
       <?php if (is_category()) { ?>
         <h1 class="archive-title h2">
           <span><?php _e('Posts Categorized:', 'bonestheme'); ?></span> <?php single_cat_title(); ?>
