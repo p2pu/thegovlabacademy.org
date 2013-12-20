@@ -135,7 +135,10 @@ get_header(); ?>
 					</div>
 					<div class="eightcol">
 						<h2>We are inspired by</h2>
-            <?php if(function_exists('wp_content_slider')) { wp_content_slider(); } ?>
+            <object width="630" height="362" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" class="">
+              <param name="src" value="https://picasaweb.google.com/s/c/bin/slideshow.swf">
+              <param name="flashvars" value="host=picasaweb.google.com&amp;hl=en_US&amp;feat=flashalbum&amp;RGB=0xFFFFFF&amp;feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fnyuwagner%2Falbumid%2F5856759830981440881%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCITD24nm1bPQHQ%26hl%3Den_US">
+              <embed width="630" height="362" type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" flashvars="host=picasaweb.google.com&amp;hl=en_US&amp;feat=flashalbum&amp;RGB=0xFFFFFF&amp;feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fnyuwagner%2Falbumid%2F5856759830981440881%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCITD24nm1bPQHQ%26hl%3Den_US" class=""></object>
 					</div>
 				</div>
 			</div>
