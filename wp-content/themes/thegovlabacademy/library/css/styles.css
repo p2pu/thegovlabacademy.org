@@ -346,13 +346,10 @@ footer p {
 .video-thumnails .video-info{
     height: 35px;
 }
-.video-thumnails .video-info{
-    height: 35px;
-}
 .video-thumnails .img-thumb{
     width: 100%;
 }
-.type-video{
+nav.type-video{
     height: 35px;
 }
 .video-categories-menu li{
@@ -915,7 +912,14 @@ fieldset {
 .parsley-error-list {
     color: rgba(255, 0, 0, .8);
 }
-
+.post-type-indicator{
+    margin: 0;
+    color: #333333;
+}
+.search-title{
+    margin-top: 5px;
+    line-height: 25px;
+}
 
 
 

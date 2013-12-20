@@ -11,14 +11,32 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
-								<header class="article-header">
+								<div class="article-header">
 
-									<h3 class="search-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                  <?php
+                  $post_type = get_post_type( get_post() );
+                  switch ($post_type){
+                    case 'video': $item_icon="fa fa-video-camera";
+                      break;
+                    case 'document': $item_icon="fa fa-file-text";
+                      break;
+                    case 'page': $item_icon="fa fa-magic";
+                      break;
+                    case 'post': $item_icon="fa fa-eye";
+                      break;
+                    default: $item_icon="fa fa-star";
+                  }
+
+                  ?>
+                  <h5 class="post-type-indicator"><i class="<?php echo $item_icon; ?>"></i> <span><?php echo $post_type ?></span></h5>
+                  <h3 class="search-title">
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                  </h3>
 									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link() );
 									?></p>
 
-								</header> <?php // end article header ?>
+								</div> <?php // end article header ?>
 
 								<section class="entry-content">
 										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'bonestheme' ) . '</span>' ); ?>
