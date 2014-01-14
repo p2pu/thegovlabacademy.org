@@ -4,7 +4,7 @@
 
 // Subtitle on theme page
 // Subtitle on theme page
-/*simple_fields_register_field_group('home_page_quote', array(
+simple_fields_register_field_group('home_page_quote', array(
   'name' => 'Inspirational quote',
   'fields' => array(
     array(
@@ -31,10 +31,10 @@
   ),
   'repeatable' => FALSE,
   'deleted' => false
-));*/
+));
 
 // Videos section
-/*simple_fields_register_field_group('home_page_videos', array(
+simple_fields_register_field_group('home_page_videos', array(
   'name' => 'Videos section',
   'fields' => array(
     array(
@@ -76,9 +76,9 @@
   ),
   'repeatable' => TRUE,
   'deleted' => false
-));*/
+));
 
-/*simple_fields_register_field_group('home_page_featured_content', array(
+simple_fields_register_field_group('home_page_featured_content', array(
   'name' => 'Featured content',
   'fields' => array(
     array(
@@ -105,10 +105,10 @@
   ),
   'repeatable' => TRUE,
   'deleted' => false
-));*/
+));
 
 
-/*simple_fields_register_post_connector('home_page_connector',
+simple_fields_register_post_connector('home_page_connector',
   array (
     'name' => 'Home Page',
     'field_groups' => array(
@@ -129,4 +129,4 @@
     'hide_editor' => 0,
     'deleted' => false
   )
-);*/
+);
