@@ -108,7 +108,7 @@
 ));*/
 
 
-simple_fields_register_post_connector('home_page_connector',
+/*simple_fields_register_post_connector('home_page_connector',
   array (
     'name' => 'Home Page',
     'field_groups' => array(
@@ -129,4 +129,4 @@ simple_fields_register_post_connector('home_page_connector',
     'hide_editor' => 0,
     'deleted' => false
   )
-);
+);*/
